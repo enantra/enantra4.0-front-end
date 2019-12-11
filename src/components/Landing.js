@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import '../css/Landing.css';
+import '../css/Social.css';
+import toplogo from '../img/toplogo.png';
+import enantralogo from '../img/enantralogo.png';
 import pallete from '../img/pallete.png';
 import charming from '../js/vendor/charming.min.js';
 import Sky from '../js/vendor/Sky.js';
@@ -251,7 +254,7 @@ class Landing extends Component {
 
 	loadScript(source,id,type){
 		var tag = document.createElement('script');
-		tag.async = false;
+		tag.async = true;
 	
 		if(source){
 			tag.src = source;
@@ -268,22 +271,16 @@ class Landing extends Component {
 	componentDidMount()
 	{
 		let body = document.getElementsByTagName('div')[0];
-		let main = document.getElementsByTagName('main')[0];
-
 
 		let background = this.loadScript("","custom-vertex","x-shader/x-vertex");
-		main.appendChild(background);
+		body.appendChild(background);
 		background.textContent = LandingBackground;
 
 		let fog = this.loadScript("","custom-fragment","x-shader/x-fragment");
-		main.appendChild(fog);
+		body.appendChild(fog);
 		fog.textContent = LandingFog;
 		
-		body.appendChild(this.loadScript("../js/vendor/three.min.js","",""));
 		body.appendChild(this.loadScript("../js/vendor/Sky.js","",""));
-		body.appendChild(this.loadScript("../js/vendor/hammer.min.js","",""));
-		body.appendChild(this.loadScript("../js/vendor/charming.min.js","",""));
-		body.appendChild(this.loadScript("../js/vendor/TweenMax.min.js","",""));
 
 		createLandscape({
 			palleteImage: pallete
@@ -470,7 +467,7 @@ class Landing extends Component {
 		  
 		  function animateTitles() {
 			const overlay = document.querySelector('.overlay'); 
-			const title = document.querySelector('.content__title');
+			const title = document.querySelector('.content__subtitle');
 			charming(title);
 			const titleLetters = Array.from(title.querySelectorAll('span'));
 		  
@@ -488,7 +485,7 @@ class Landing extends Component {
 			  z: 0
 			}, 0.1);
 		  
-			const subtitle = document.querySelector('.content__subtitle');
+			const subtitle = document.querySelector('.content__tagline');
 			Tween.TweenMax.set(subtitle, {opacity: 0});
 			Tween.TweenMax.to(subtitle, 1.5, {
 			  ease: Tween.Expo.easeOut,
@@ -524,18 +521,42 @@ class Landing extends Component {
 		  }
 
 	}
+
 	render(){
 		return (
-				<div className="stripes">
+				<div className="stripes landingbody">
 					<link href="https://fonts.googleapis.com/css?family=Barlow:400,800" rel="stylesheet" />
-					<main>
 						<div className="content">
 							<canvas className="landscape"></canvas>
-							<h2 className="content__title">ENANTRA</h2>
-							<p className="content__subtitle">4.0</p>
+							<div class="social">
+								<ul>
+									<a href="https://www.twitter.com/enantra/" target="_blank">
+									<li class="twitter">Twitter<i class="fab fa-twitter" aria-hidden="true"></i></li>
+									</a>
+								</ul>	
+								<ul>	
+									<a href="https://www.facebook.com/enantra/" target="_blank">
+									<li class="facebook">Facebook<i class="fab fa-facebook" aria-hidden="true"></i></li>
+									</a>
+								</ul>
+								<ul>
+									<a href="https://www.linkedin.com/company/enantra" target="_blank">
+									<li class="linkedin">Linkedin<i class="fab fa-linkedin" aria-hidden="true"></i></li>
+									</a>
+								</ul>
+								<ul>	
+									<a href="https://www.instagram.com/enantra.fest/" target="_blank">
+									<li class="instagram">Instagram<i class="fab fa-instagram" aria-hidden="true"></i></li>
+									</a>
+								</ul>
+							</div>
+							<p className="dates">20 &mdash; 23 Feb 2020 &middot; Anna University &middot; Chennai</p>
+							<img className="logo_corner" src={toplogo} alt="Top Logo" />
+							<img className="content__title" src={enantralogo} alt="Logo" />
+							<p className="content__subtitle">4<sup>TH</sup> EDITION</p>
+							<p className="content__tagline">South India's biggest Entrepreneurship and Management fest</p>
 						</div>
 						<div className="overlay"></div>
-					</main>
 				</div>
 		)
 	}

@@ -1,0 +1,74 @@
+
+.social {
+    color : white;
+    font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: inherit;
+    left : 0;
+    top : 30%;
+    z-index : 100;
+}
+
+.social a{
+    color: white;
+}
+
+.social ul {
+    list-style-type : none;
+    padding : 0;
+    transform: translateX(-270px);
+}
+
+.social ul li{
+    display: block;
+    margin : 10px;
+    background-color : rgba(0,0,0,0.5);
+    width : 320px;
+    text-align : right;
+    padding : 10px;
+    border-radius : 0 50px 50px 0;
+    transition: all 1s;
+}
+
+.social ul li:hover {
+    transform : translateX(110px);
+}
+
+.social ul li.twitter:hover{
+        background-color : #55acee;
+
+}
+
+.social ul li.facebook:hover{
+    background-color : #3d5999;
+}
+
+.social ul li.linkedin:hover{
+    background-color : #2e4985; 
+}
+
+.social ul li.instagram:hover{
+    background-color : #e4405f;
+}
+
+.social ul li a {
+    color : white;
+    text-decoration: none;
+}
+
+.social ul li i{
+    text-align : center;
+    margin-left : 14px;
+    color : black;
+    background-color : white;
+    padding : 10px;
+    border-radius : 50%;
+    width : 40px;
+    height : 40px;
+    font-size : 20px;
+    transform : rotate(0deg);
+}
+
+.social ul li:hover i{
+    transform : rotate(360deg);
+    transition: all 1s;
+}

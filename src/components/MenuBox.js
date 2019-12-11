@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router';
+import { BrowserRouter as Router, Route, Link, Switch,Redirect } from "react-router-dom";
 import '../css/MenuBox.css';
 import TweenBox from '../js/vendor/TweenMax.min.js';
-
 
 class MenuBox extends Component {
 
@@ -137,17 +138,19 @@ class MenuBox extends Component {
     render(){
         var useTagActionMenu = '<use xlink:href="#icon-menu"></use>';
         var useTagActionClose = '<use xlink:href="#icon-close"></use>';
-
-        return(
-        <div>
+       
+       return( 
+        <Router>                     
+        <div className="menuboxbody">
             <nav className="menu">
                 <div className="menu__item menu__item--1" data-direction="bt">
                     <div className="menu__item-inner">
                         <div className="mainmenu">
-                            <a href="#" className="mainmenu__item">Flagships</a>
-                            <a href="#" className="mainmenu__item">Events</a>
-                            <a href="#" className="mainmenu__item">Workshops</a>
-                        </div>
+                            <Link to='/' onClick={() => this.props.handleMenuClick('Home')} className="mainmenu__item amenubox">Home</Link>
+                            <Link to='/flagships' onClick={() => this.props.handleMenuClick('Flagships')} className="mainmenu__item amenubox">Flagships</Link>
+                            <a href='/workshops' className="mainmenu__item amenubox">Workshops</a>
+                            <Link to='/events' onClick={() => this.props.handleMenuClick('Events')} className="mainmenu__item amenubox">Events</Link>
+                        </div>  
                         <p className="label label--topleft label--vert-mirror">the important stuff</p>
                         <p className="label label--bottomright label--vert">enantra</p>
                     </div>
@@ -155,25 +158,25 @@ class MenuBox extends Component {
                 <div className="menu__item menu__item--2" data-direction="lr">
                     <div className="menu__item-inner">
                         <div className="menu__item-map"></div>
-                        <a href="#" className="menu__item-hoverlink">The location</a>
+                        <a href="#" className="menu__item-hoverlink amenubox">The location</a>
                     </div>
                 </div>
                 <div className="menu__item menu__item--3" data-direction="bt">
                     <div className="menu__item-inner">
                         <div className="sidemenu">
-                            <a href="#" className="sidemenu__item"><span className="sidemenu__item-inner">ABOUT US</span></a>
-                            <a href="#" className="sidemenu__item"><span className="sidemenu__item-inner">ACCOMODATION</span></a>
-                            <a href="#" className="sidemenu__item"><span className="sidemenu__item-inner">THE TEAM</span></a>
-                            <a href="#" className="sidemenu__item"><span className="sidemenu__item-inner">SPONSORS</span></a>
-                            <a href="#" className="sidemenu__item"><span className="sidemenu__item-inner">CONTACT US</span></a>
-                            <a href="#" className="sidemenu__item"><span className="sidemenu__item-inner">...</span></a>
+                            <a href="#" className="sidemenu__item"><span className="sidemenu__item-inner amenubox">ABOUT US</span></a>
+                            <a href="#" className="sidemenu__item"><span className="sidemenu__item-inner amenubox">ACCOMODATION</span></a>
+                            <a href="#" className="sidemenu__item"><span className="sidemenu__item-inner amenubox">THE TEAM</span></a>
+                            <a href="#" className="sidemenu__item"><span className="sidemenu__item-inner amenubox">SPONSORS</span></a>
+                            <a href="#" className="sidemenu__item"><span className="sidemenu__item-inner amenubox">CONTACT US</span></a>
+                            <a href="#" className="sidemenu__item"><span className="sidemenu__item-inner amenubox">...</span></a>
                         </div>
                     </div>
                 </div>
                 <div className="menu__item menu__item--4" data-direction="rl">
                     <div className="menu__item-inner">
                         <p className="label label--topleft label--line">join us now</p>
-                        <a href="#" className="menu__item-link">Learn how to <br/> participate</a>
+                        <a href="#" className="menu__item-link amenubox">Learn how to <br/> participate</a>
                     </div>
                 </div>
                 <div className="menu__item menu__item--5" data-direction="tb">
@@ -182,15 +185,16 @@ class MenuBox extends Component {
                     </div>
                 </div>
                 <button className="action action--menu">
-                    <svg className="icon icon--menu" dangerouslySetInnerHTML={{__html : useTagActionMenu}}>
+                    <svg className="icon-menubox icon--menu" dangerouslySetInnerHTML={{__html : useTagActionMenu}}>
                     </svg>
                 </button>
                 <button>
-                    <svg className="icon icon--close" dangerouslySetInnerHTML={{__html : useTagActionClose}}>
+                    <svg className="icon-menubox icon--close" dangerouslySetInnerHTML={{__html : useTagActionClose}}>
                     </svg>
                 </button>    
             </nav>
-        </div> 
+        </div>
+        </Router>
         )
     }
 }

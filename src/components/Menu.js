@@ -1,175 +1,178 @@
-import React, { Component } from 'react';
+import React,{ Component } from 'react';
+import { BrowserRouter as Router, Route, Link, Switch,Redirect } from "react-router-dom";
 import '../css/Menu.css';
 import '../css/NormalizeMenu.css';
-import MenuBox from './MenuBox';
+
+
+var elmHamburger;
+var gNavItems;
+var elmOverlay;
+
+
+var overlay;
 
 class Menu extends Component {
     
-    componentDidMount() {
+    componentDidMount(){
 
-        const menubox = document.querySelector('.global-menu').children[0];
-        menubox.style.display = 'none';
-
-        function showPage(){
-          menubox.style.display = 'block';
-          menubox.children[0].classList.add('animated','slideInDown');
+      const ease = {
+        exponentialIn: (t) => {
+          return t == 0.0 ? t : Math.pow(2.0, 10.0 * (t - 1.0));
+        },
+        exponentialOut: (t) => {
+          return t == 1.0 ? t : 1.0 - Math.pow(2.0, -10.0 * t);
+        },
+        exponentialInOut: (t) => {
+          return t == 0.0 || t == 1.0
+            ? t
+            : t < 0.5
+              ? +0.5 * Math.pow(2.0, (20.0 * t) - 10.0)
+              : -0.5 * Math.pow(2.0, 10.0 - (t * 20.0)) + 1.0;
+        },
+        sineOut: (t) => {
+          const HALF_PI = 1.5707963267948966;
+          return Math.sin(t * HALF_PI);
+        },
+        circularInOut: (t) => {
+          return t < 0.5
+              ? 0.5 * (1.0 - Math.sqrt(1.0 - 4.0 * t * t))
+              : 0.5 * (Math.sqrt((3.0 - 2.0 * t) * (2.0 * t - 1.0)) + 1.0);
+        },
+        cubicIn: (t) => {
+          return t * t * t;
+        },
+        cubicOut: (t) => {
+          const f = t - 1.0;
+          return f * f * f + 1.0;
+        },
+        cubicInOut: (t) => {
+          return t < 0.5
+            ? 4.0 * t * t * t
+            : 0.5 * Math.pow(2.0 * t - 2.0, 3.0) + 1.0;
+        },
+        quadraticOut: (t) => {
+          return -t * (t - 2.0);
+        },
+        quarticOut: (t) => {
+          return Math.pow(t - 1.0, 3.0) * (1.0 - t) + 1.0;
+        },
+      }       
+      
+      class ShapeOverlays {
+        constructor(elm) {
+          this.elm = elm;
+          this.path = elm.querySelectorAll('path');
+          this.numPoints = 18;
+          this.duration = 600;
+          this.delayPointsArray = [];
+          this.delayPointsMax = 300;
+          this.delayPerPath = 100;
+          this.timeStart = Date.now();
+          this.isOpened = false;
+          this.isAnimating = false;
         }
-
-        function hidePage(){
-          menubox.style.display = 'none';
+        toggle() {
+          this.isAnimating = true;
+          const range = 4 * Math.random() + 6;
+          for (var i = 0; i < this.numPoints; i++) {
+            const radian = i / (this.numPoints - 1) * Math.PI;
+            this.delayPointsArray[i] = (Math.sin(-radian) + Math.sin(-radian * range) + 2) / 4 * this.delayPointsMax;
+          }
+          if (this.isOpened === false) {
+              this.open();
+          } else {
+              this.close();
+          }
         }
-
-        const ease = {
-            exponentialIn: (t) => {
-              return t == 0.0 ? t : Math.pow(2.0, 10.0 * (t - 1.0));
-            },
-            exponentialOut: (t) => {
-              return t == 1.0 ? t : 1.0 - Math.pow(2.0, -10.0 * t);
-            },
-            exponentialInOut: (t) => {
-              return t == 0.0 || t == 1.0
-                ? t
-                : t < 0.5
-                  ? +0.5 * Math.pow(2.0, (20.0 * t) - 10.0)
-                  : -0.5 * Math.pow(2.0, 10.0 - (t * 20.0)) + 1.0;
-            },
-            sineOut: (t) => {
-              const HALF_PI = 1.5707963267948966;
-              return Math.sin(t * HALF_PI);
-            },
-            circularInOut: (t) => {
-              return t < 0.5
-                  ? 0.5 * (1.0 - Math.sqrt(1.0 - 4.0 * t * t))
-                  : 0.5 * (Math.sqrt((3.0 - 2.0 * t) * (2.0 * t - 1.0)) + 1.0);
-            },
-            cubicIn: (t) => {
-              return t * t * t;
-            },
-            cubicOut: (t) => {
-              const f = t - 1.0;
-              return f * f * f + 1.0;
-            },
-            cubicInOut: (t) => {
-              return t < 0.5
-                ? 4.0 * t * t * t
-                : 0.5 * Math.pow(2.0 * t - 2.0, 3.0) + 1.0;
-            },
-            quadraticOut: (t) => {
-              return -t * (t - 2.0);
-            },
-            quarticOut: (t) => {
-              return Math.pow(t - 1.0, 3.0) * (1.0 - t) + 1.0;
-            },
-        }       
-
-        class ShapeOverlays {
-            constructor(elm) {
-              this.elm = elm;
-              this.path = elm.querySelectorAll('path');
-              this.numPoints = 18;
-              this.duration = 600;
-              this.delayPointsArray = [];
-              this.delayPointsMax = 300;
-              this.delayPerPath = 100;
-              this.timeStart = Date.now();
-              this.isOpened = false;
-              this.isAnimating = false;
+        open() {
+          this.isOpened = true;
+          this.elm.classList.add('is-opened');
+          this.timeStart = Date.now();
+          this.renderLoop();
+        }
+        close() {
+          this.isOpened = false;
+          this.elm.classList.remove('is-opened');
+          this.timeStart = Date.now();
+          this.renderLoop();
+        }
+        updatePath(time) {
+          const points = [];
+          for (var i = 0; i < this.numPoints + 1; i++) {
+            points[i] = ease.cubicInOut(Math.min(Math.max(time - this.delayPointsArray[i], 0) / this.duration, 1)) * 100
+          }
+      
+          let str = '';
+          str += (this.isOpened) ? `M 0 0 V ${points[0]} ` : `M 0 ${points[0]} `;
+          for (var i = 0; i < this.numPoints - 1; i++) {
+            const p = (i + 1) / (this.numPoints - 1) * 100;
+            const cp = p - (1 / (this.numPoints - 1) * 100) / 2;
+            str += `C ${cp} ${points[i]} ${cp} ${points[i + 1]} ${p} ${points[i + 1]} `;
+          }
+          str += (this.isOpened) ? `V 0 H 0` : `V 100 H 0`;
+          return str;
+        }
+        render() {
+          if (this.isOpened) {
+            for (var i = 0; i < this.path.length; i++) {
+              this.path[i].setAttribute('d', this.updatePath(Date.now() - (this.timeStart + this.delayPerPath * i)));
             }
-            toggle() {
-              this.isAnimating = true;
-              const range = 4 * Math.random() + 6;
-              for (var i = 0; i < this.numPoints; i++) {
-                const radian = i / (this.numPoints - 1) * Math.PI;
-                this.delayPointsArray[i] = (Math.sin(-radian) + Math.sin(-radian * range) + 2) / 4 * this.delayPointsMax;
-              }
-              if (this.isOpened === false) {
-                  this.open();
-              } else {
-                  this.close("Close",function hidePage(){
-                    console.log("Hide page");
-                    menubox.style.display = 'none';
-                  });
-              }
-            }
-            open() {
-              setTimeout(showPage,600);
-              this.isOpened = true;
-              this.elm.classList.add('is-opened');
-              this.timeStart = Date.now();
-              this.renderLoop();
-            }
-            close() {
-              this.isOpened = false;
-              this.elm.classList.remove('is-opened');
-              this.timeStart = Date.now();
-              this.renderLoop();
-              hidePage();
-            }
-            updatePath(time) {
-              const points = [];
-              for (var i = 0; i < this.numPoints + 1; i++) {
-                points[i] = ease.cubicInOut(Math.min(Math.max(time - this.delayPointsArray[i], 0) / this.duration, 1)) * 100
-              }
-          
-              let str = '';
-              str += (this.isOpened) ? `M 0 0 V ${points[0]} ` : `M 0 ${points[0]} `;
-              for (var i = 0; i < this.numPoints - 1; i++) {
-                const p = (i + 1) / (this.numPoints - 1) * 100;
-                const cp = p - (1 / (this.numPoints - 1) * 100) / 2;
-                str += `C ${cp} ${points[i]} ${cp} ${points[i + 1]} ${p} ${points[i + 1]} `;
-              }
-              str += (this.isOpened) ? `V 0 H 0` : `V 100 H 0`;
-              return str;
-            }
-            render() {
-              if (this.isOpened) {
-                for (var i = 0; i < this.path.length; i++) {
-                  this.path[i].setAttribute('d', this.updatePath(Date.now() - (this.timeStart + this.delayPerPath * i)));
-                }
-              } else {
-                for (var i = 0; i < this.path.length; i++) {
-                  this.path[i].setAttribute('d', this.updatePath(Date.now() - (this.timeStart + this.delayPerPath * (this.path.length - i - 1))));
-                }
-              }
-            }
-            renderLoop() {
-              this.render();
-              if (Date.now() - this.timeStart < this.duration + this.delayPerPath * (this.path.length - 1) + this.delayPointsMax) {
-                requestAnimationFrame(() => {
-                  this.renderLoop();
-                });
-              }
-              else {
-                this.isAnimating = false;
-              }
+          } else {
+            for (var i = 0; i < this.path.length; i++) {
+              this.path[i].setAttribute('d', this.updatePath(Date.now() - (this.timeStart + this.delayPerPath * (this.path.length - i - 1))));
             }
           }
-          
-          (function() {
-            const elmHamburger = document.querySelector('.hamburger');
-            const elmOverlay = document.querySelector('.shape-overlays');
-
-            const overlay = new ShapeOverlays(elmOverlay);
-          
-            elmHamburger.addEventListener('click', () => {
-              if (overlay.isAnimating) {
-                return false;
-              }
-              overlay.toggle();
-              if (overlay.isOpened === true) {
-                elmHamburger.classList.add('is-opened-navi');
-              } else {
-                elmHamburger.classList.remove('is-opened-navi');
-              }
+        }
+        renderLoop() {
+          this.render();
+          if (Date.now() - this.timeStart < this.duration + this.delayPerPath * (this.path.length - 1) + this.delayPointsMax) {
+            requestAnimationFrame(() => {
+              this.renderLoop();
             });
-          }());
-          
+          }
+          else {
+            this.isAnimating = false;
+          }
+        }
+      }
+
+      elmHamburger = document.querySelector('.hamburger');
+      gNavItems = document.querySelectorAll('.global-menu__item');
+      elmOverlay = document.querySelector('.shape-overlays');
+
+      overlay = new ShapeOverlays(elmOverlay);      
+    
+      elmHamburger.addEventListener('click', () => {
+        if (overlay.isAnimating) {
+          return false;
+        }
+        overlay.toggle();
+        if (overlay.isOpened === true) {
+          elmHamburger.classList.add('is-opened-navi');
+          for (var i = 0; i < gNavItems.length; i++) {
+            gNavItems[i].classList.add('is-opened');
+          }
+        }else{
+          elmHamburger.classList.remove('is-opened-navi');
+          for(var i = 0; i < gNavItems.length; i++){
+          gNavItems[i].classList.remove('is-opened');
+        }
+        }
+      });
+    }
+
+    closeMenu = () => {
+        overlay.toggle();
+        elmHamburger.classList.remove('is-opened-navi');
+        for(var i = 0; i < gNavItems.length; i++){
+          gNavItems[i].classList.remove('is-opened');
+        }
     }
 
     render(){
-        return(
-	      <div className="demo-1">
-				<div className="hamburger js-hover">
+            return (
+            <div className="demo-1">
+				    <div className="hamburger js-hover">
 					    <div className="hamburger__line hamburger__line--01">
 						    <div className="hamburger__line-in hamburger__line-in--01"></div>
 					    </div>
@@ -185,17 +188,34 @@ class Menu extends Component {
 					    <div className="hamburger__line hamburger__line--cross02">
 						    <div className="hamburger__line-in hamburger__line-in--cross02"></div>
 					    </div>
-				</div>
-				<svg className="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
-					    <path className="shape-overlays__path"></path>
-					    <path className="shape-overlays__path"></path>
-					    <path className="shape-overlays__path"></path>
-				</svg>
-        <div className="global-menu">
-						<MenuBox />
-				</div>
-	      </div>
-        )
+				    </div>
+              <Router>
+                <div class="global-menu">
+					        <div class="global-menu__wrap">
+						              <Link to='/' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Home');}} class="menu-anchor global-menu__item global-menu__item--demo-1">Home</Link>
+                          <Link to='/about' onClick={() => {this.closeMenu(); this.props.handleMenuClick('About');}} class="menu-anchor global-menu__item global-menu__item--demo-1">About</Link>
+						              <Link to='/events' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Events')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Events</Link>
+						              <Link to='/flagships' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Flagships')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Flagships</Link>
+						              <Link to='/workshops' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Workshops')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Workshops</Link>
+                          <a class="global-menu__item global-menu__item--demo-1" href="#">Attractions</a>
+					        </div>
+                  <div class="global-menu__wrap">
+						              <Link to='/login' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Login')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Login</Link>
+						              <Link to='/signup' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Signup')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Sign Up</Link>
+						              <Link to='/accommodation' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Accommodation')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Accommodation</Link>
+						              <a class="menu-anchor global-menu__item global-menu__item--demo-1" href="#">The Team</a>
+                          <Link to='/sponsors' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Sponsors')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Sponsors</Link>
+                          <a class="menu-anchor global-menu__item global-menu__item--demo-1" href="#">Contact Us</a>
+			            </div>
+				        </div>
+              </Router>
+			            <svg className="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
+					              <path className="shape-overlays__path"></path>
+					              <path className="shape-overlays__path"></path>
+                        <path className="shape-overlays__path"></path>
+			            </svg>
+              </div>
+            )
     }
 }
 
