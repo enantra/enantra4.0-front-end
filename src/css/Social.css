@@ -8,8 +8,9 @@
     z-index : 100;
 }
 
-.social a{
+.social a.social-anchor{
     color: white;
+    text-decoration: none;
 }
 
 .social ul {
@@ -34,23 +35,23 @@
 }
 
 .social ul li.twitter:hover{
-        background-color : #55acee;
+        background-color : #414040;
 
 }
 
 .social ul li.facebook:hover{
-    background-color : #3d5999;
+    background-color : #414040;
 }
 
 .social ul li.linkedin:hover{
-    background-color : #2e4985; 
+    background-color : #414040; 
 }
 
 .social ul li.instagram:hover{
-    background-color : #e4405f;
+    background-color : #414040;
 }
 
-.social ul li a {
+.social .social-anchor ul li a {
     color : white;
     text-decoration: none;
 }

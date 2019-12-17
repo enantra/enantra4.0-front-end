@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link, Switch, Redirect } from "react-router-dom";
 import '../css/Flagships.css';
-import mun from '../img/mun.jpg';
+import mun from '../img/aumun.jpg';
 import entretainment from '../img/entretainment.jpg';
-import sixdt from '../img/sixdt.jpg';
-import startuppitchfest from '../img/startuppitchfest.jpg';
-import startupweekend from '../img/startupweekend.jpg';
-import startupstreet from '../img/startupstreet.jpg';
+import sixdt from '../img/6dt.jpg';
+import startuppitchfest from '../img/sp.jpg';
+import startupweekend from '../img/sw.jpg';
+import startupstreet from '../img/ss.jpg';
 import TweenFlag from '../js/vendor/TweenMax.min.js';
 import charming from '../js/vendor/charming.min.js';
 
@@ -657,7 +657,7 @@ class Flagships extends Component {
 					    <div className="slide__side">Flagships</div>
 					    <div className="slide__title-wrap">
 						    <span className="slide__number">2</span>
-						    <h3 className="slide__title">Entre-tainment</h3>
+						    <h3 className="slide__title">Entretainment</h3>
 					    </div>
 				    </div>
 				    <div className="slide">
@@ -677,7 +677,7 @@ class Flagships extends Component {
 					    <div className="slide__side">Flagships</div>
 					    <div className="slide__title-wrap">
 						    <span className="slide__number">4</span>
-						    <h3 className="slide__title">6 Degree Talk</h3>
+						    <h3 className="slide__title">6 Degree Talks</h3>
 					    </div>
 				    </div>
 				    <div className="slide">
@@ -719,7 +719,7 @@ class Flagships extends Component {
 				    </div>
 				    <div className="content__item-flagships">
 					    <span className="content__number">2</span>
-					    <h3 className="content__title-flagships">Entre-tainment</h3>
+					    <h3 className="content__title-flagships">Entretainment</h3>
 					    <h4 className="content__subtitle-flagships"></h4>
 					    <div className="content__text">Entre-tainment is a high profile dinner setup for the sole purpose of providing a complacent atmosphere wherein interaction with top business personnel is provided. This session includes E-awards as well which involves awarding potential entrepreneurs across the country. It creates a casual ambulance where entrepreneurs from various fields can network informally. Innovative titles will be awarded to various executives based on market surveys.</div>
 				    </div>
@@ -732,7 +732,7 @@ class Flagships extends Component {
 				    </div>
 				    <div className="content__item-flagships">
 					    <span className="content__number">4</span>
-					    <h3 className="content__title-flagships">6 Degree Talk</h3>
+					    <h3 className="content__title-flagships">6 Degree Talks</h3>
 					    <h4 className="content__subtitle-flagships"></h4>
 					    <div className="content__text">A professional interactive talk session in both physical and virtual levels. This will host prominent guests, mentors, and high level entrepreneurs in a closed arena to share and express their stories.</div>
 				    </div>

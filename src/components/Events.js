@@ -438,7 +438,7 @@ class Events extends Component {
         <div class="eventsbody">
 			<div class="grid-wrap">
 				<div class="grid">
-					<Link onClick={() => this.props.handleEventClick('Btrivia')} class="grid__item aeventsbucket">
+					<Link to='/btrivia' onClick={() => this.props.handleEventClick('Btrivia')} class="grid__item aeventsbucket">
                         <div class="grid__item-bg">
                         </div>
 						<div class="grid__item-wrap">
@@ -447,7 +447,7 @@ class Events extends Component {
 						<h3 class="grid__item-title">Events</h3>
 						<h4 class="grid__item-number">B-Trivia</h4>
 					</Link>
-					<Link onClick={() => this.props.handleEventClick('BM')} class="grid__item aeventsbucket">
+					<Link to='/bm' onClick={() => this.props.handleEventClick('BM')} class="grid__item aeventsbucket">
 						<div class="grid__item-bg"></div>
 						<div class="grid__item-wrap">
 							<img class="grid__item-img" src={bm} alt="Some image" />
@@ -455,7 +455,7 @@ class Events extends Component {
 						<h3 class="grid__item-title">Events</h3>
 						<h4 class="grid__item-number">Business&nbsp;Management</h4>
 					</Link>
-					<Link onClick={() => this.props.handleEventClick('Coding')} class="grid__item aeventsbucket">
+					<Link to='/coding' onClick={() => this.props.handleEventClick('Coding')} class="grid__item aeventsbucket">
 						<div class="grid__item-bg"></div>
 						<div class="grid__item-wrap">
 							<img class="grid__item-img" src={coding} alt="Some image" />
@@ -463,7 +463,7 @@ class Events extends Component {
 						<h3 class="grid__item-title">Events</h3>
 						<h4 class="grid__item-number">Technical&nbsp;and&nbsp;Coding</h4>
 					</Link>
-					<Link onClick={() => this.props.handleEventClick('EFAC')} class="grid__item aeventsbucket">
+					<Link to='/efac' onClick={() => this.props.handleEventClick('EFAC')} class="grid__item aeventsbucket">
 						<div class="grid__item-bg"></div>
 						<div class="grid__item-wrap">
 							<img class="grid__item-img" src={efac} alt="Some image" />
@@ -471,7 +471,7 @@ class Events extends Component {
 						<h3 class="grid__item-title">Events</h3>
 						<h4 class="grid__item-number">Events&nbsp;for&nbsp;a&nbsp;cause</h4>
 					</Link>
-					<Link onClick={() => this.props.handleEventClick('Fun')} class="grid__item aeventsbucket">
+					<Link to='/extravaganza' onClick={() => this.props.handleEventClick('Fun')} class="grid__item aeventsbucket">
 						<div class="grid__item-bg"></div>
 						<div class="grid__item-wrap">
 							<img class="grid__item-img" src={fun} alt="Some image" />
@@ -479,7 +479,7 @@ class Events extends Component {
 						<h3 class="grid__item-title">Events</h3>
 						<h4 class="grid__item-number">Fun&nbsp;and&nbsp;Extravaganza</h4>
 					</Link>
-					<Link onClick={() => this.props.handleEventClick('Online')} class="grid__item aeventsbucket">
+					<Link to='/online' onClick={() => this.props.handleEventClick('Online')} class="grid__item aeventsbucket">
 						<div class="grid__item-bg"></div>
 						<div class="grid__item-wrap">
 							<img class="grid__item-img" src={online} alt="Some image" />

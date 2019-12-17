@@ -18,6 +18,8 @@
 	color: var(--color-text);
 	background-color: var(--color-bg);
 	font-family: Barlow, Arial, sans-serif;
+	overflow: hidden;
+	height: 100vh;
 }
 
 .stripes {
@@ -40,10 +42,10 @@
 
 .logo_corner {
 	perspective: 1000px;
-	width: 120px;
-	height: 150px;
+	width: 100px;
+	height: 130px;
 	position: absolute;
-	top: 1em;
+	top: 0.5em;
 	left: 1em;
 }
 

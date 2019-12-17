@@ -172,6 +172,7 @@ class Menu extends Component {
     render(){
             return (
             <div className="demo-1">
+            <div class="main-menu">
 				    <div className="hamburger js-hover">
 					    <div className="hamburger__line hamburger__line--01">
 						    <div className="hamburger__line-in hamburger__line-in--01"></div>
@@ -197,7 +198,7 @@ class Menu extends Component {
 						              <Link to='/events' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Events')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Events</Link>
 						              <Link to='/flagships' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Flagships')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Flagships</Link>
 						              <Link to='/workshops' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Workshops')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Workshops</Link>
-                          <a class="global-menu__item global-menu__item--demo-1" href="#">Attractions</a>
+                          <Link to='/attractions' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Attractions')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Attractions</Link>
 					        </div>
                   <div class="global-menu__wrap">
 						              <Link to='/login' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Login')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Login</Link>
@@ -214,6 +215,7 @@ class Menu extends Component {
 					              <path className="shape-overlays__path"></path>
                         <path className="shape-overlays__path"></path>
 			            </svg>
+              </div>
               </div>
             )
     }

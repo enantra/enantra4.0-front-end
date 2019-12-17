@@ -582,7 +582,7 @@ class Extravaganza extends Component{
         var slideshow = new CircleSlideshow(document.getElementById('slideshow'));
 }
     
-    componentWillUnmount(){
+    componentDidUpdate(){
         this.props.resetMenu();
     }
 
@@ -619,7 +619,7 @@ class Extravaganza extends Component{
                                 5. Quiz<br/>
                                 6. Strictly 3 teams will be taken for the next round<br/>
                                 </p>
-                                <p class="rounds">Round 2:&nbsp;&nbsp;DEVIL'S ESCAPE</p>
+                                <p class="rounds">Round 3:&nbsp;&nbsp;DEVIL'S ESCAPE</p>
                                 <p>
                                 1. One escape room for each team.<br/>
                                 2. One participant should find the clues and guess the answer.<br/>

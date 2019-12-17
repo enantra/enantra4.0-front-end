@@ -579,7 +579,7 @@ class BusinessManagement extends Component{
         var slideshow = new CircleSlideshow(document.getElementById('slideshow'));
 }
     
-    componentWillUnmount(){
+    componentDidUpdate(){
         this.props.resetMenu();
     }
 
@@ -602,7 +602,7 @@ class BusinessManagement extends Component{
                             <div class="slide__content-scroller-eventsdescription">
                                 <div class="slide__img-eventsdescription slide__img--large-eventsdescription">
                                 <p>
-                                Team of two<br />
+                                Team of two<br/><br/>
                                 <p>
                                     <p class="rounds">Round 1:&nbsp;&nbsp;Pen and paper</p>
                                     <p>The participants are given initial amount of virtual money. Using the money, they need to get a minimum number of items from a given list through an auction. Whoever doesn’t get the minimum number of items gets eliminated.</p>
@@ -695,7 +695,7 @@ class BusinessManagement extends Component{
                             <div class="slide__content-scroller-eventsdescription">
                                 <div class="slide__img-eventsdescription slide__img--large-eventsdescription">
                                 <p>
-                                An individual event, testing the participant’s communication skills.<br />
+                                An individual event, testing the participant’s communication skills.<br/><br/>
                                 <p>
                                     <p class="rounds">Round 1:&nbsp;&nbsp;Pen and Paper</p>
                                     <p>
@@ -707,7 +707,7 @@ class BusinessManagement extends Component{
                                     Save the company from the financial crisis.
                                     </p>
                                     <p>
-                                    <p class="rounds">Round 3:&nbsp;&nbsp;HUMAN RESOURCES</p>
+                                    <p class="rounds">Round 4:&nbsp;&nbsp;HUMAN RESOURCES</p>
                                     Simulations based on negotiations, recruitment and firing.
                                     </p>
                                 </p>

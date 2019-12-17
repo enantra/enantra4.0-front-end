@@ -30,6 +30,15 @@
 	--button-line: #222;
 }
 
+.js .demo-1.render {
+	opacity: 0;
+	transition: opacity 0.3s;		
+}
+
+.js .demo-1.render {
+	opacity: 1;
+}
+
 a.menu-anchor {
 	text-decoration: none;
 	outline: none;
@@ -71,11 +80,14 @@ a.menu-anchor:focus {
 	display: none;
 }
 
-.main-menu {
+.content-menu {
 	position: relative;
-	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	min-height: 100vh;
-	background-color: var(--color-main-bg);
+	margin: 0 auto;
+	pointer-events: none;
 }
 
 .content--fixed {
@@ -828,12 +840,6 @@ a.menu-anchor:focus {
 }
 
 @media screen and (max-width: 55em) {
-	html,
-	body {
-		overflow-x: hidden;
-		width: 100vw;
-		height: 100%;
-	}
 	.hamburger {
 		position: fixed;
 		top: 0.5em;
