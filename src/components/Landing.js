@@ -530,22 +530,22 @@ class Landing extends Component {
 							<canvas className="landscape"></canvas>
 							<div class="social">
 								<ul>
-									<a href="https://www.twitter.com/enantra/" target="_blank">
+									<a class="social-anchor" href="https://www.twitter.com/enantra/" target="_blank">
 									<li class="twitter">Twitter<i class="fab fa-twitter" aria-hidden="true"></i></li>
 									</a>
 								</ul>	
 								<ul>	
-									<a href="https://www.facebook.com/enantra/" target="_blank">
+									<a class="social-anchor" href="https://www.facebook.com/enantra/" target="_blank">
 									<li class="facebook">Facebook<i class="fab fa-facebook" aria-hidden="true"></i></li>
 									</a>
 								</ul>
 								<ul>
-									<a href="https://www.linkedin.com/company/enantra" target="_blank">
+									<a class="social-anchor" href="https://www.linkedin.com/company/enantra" target="_blank">
 									<li class="linkedin">Linkedin<i class="fab fa-linkedin" aria-hidden="true"></i></li>
 									</a>
 								</ul>
 								<ul>	
-									<a href="https://www.instagram.com/enantra.fest/" target="_blank">
+									<a class="social-anchor" href="https://www.instagram.com/enantra.fest/" target="_blank">
 									<li class="instagram">Instagram<i class="fab fa-instagram" aria-hidden="true"></i></li>
 									</a>
 								</ul>

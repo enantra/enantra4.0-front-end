@@ -577,13 +577,13 @@ class Btrivia extends Component{
         var slideshow = new CircleSlideshow(document.getElementById('slideshow'));
 }
     
-    componentWillUnmount(){
+    componentDidUpdate(){
         this.props.resetMenu();
     }
 
     render(){
 
-        return(
+        return( 
         <div class="eventsdescription">
 		<div class="container-eventsdescription">
 			<div class="deco-eventsdescription deco--title-eventsdescription"></div>
@@ -600,7 +600,7 @@ class Btrivia extends Component{
 						<div class="slide__content-scroller-eventsdescription">
 							<div class="slide__img-eventsdescription slide__img--large-eventsdescription">
                             <p>
-                            It’s a traditional business quiz conducted across 2 or 3 rounds<br />
+                            It’s a traditional business quiz conducted across 2 or 3 rounds<br/><br/>
                             <p>
                                 <p class="rounds">Round 1:&nbsp;&nbsp;Pen and paper</p>
                                 <p class="rounds">Round 2:&nbsp;&nbsp;PPT</p>
@@ -659,7 +659,7 @@ class Btrivia extends Component{
 						<div class="slide__content-scroller-eventsdescription">
 							<div class="slide__img-eventsdescription slide__img--large-eventsdescription">
                             <p>
-                            A team of 4<br />
+                            A team of 4<br/><br/>
                             <p>
                             <p class="rounds">Round 1:&nbsp;&nbsp;Pen and paper (logos and popular brands)</p>
                             <p class="rounds">Round 2:&nbsp;&nbsp;REBRANDING</p>
@@ -697,7 +697,7 @@ class Btrivia extends Component{
 						<div class="slide__content-scroller-eventsdescription">
 							<div class="slide__img-eventsdescription slide__img--large-eventsdescription">
                             <p>
-                            An individual event, testing the participant’s communication skills.<br />
+                            An individual event, testing the participant’s communication skills.<br/><br/>
                                 <p>
                                 <p class="rounds">Round 1:&nbsp;&nbsp;SHIPWRECK</p>
                                 1. The participant is given the role of a celebrity/ fictional character/ hypothetical character.<br />
@@ -734,7 +734,7 @@ class Btrivia extends Component{
         <section class="content-eventsdescription content--related-eventsdescription">
 		</section>
 	</div>
-    </div>
+    </div>  
      )
     }
 }

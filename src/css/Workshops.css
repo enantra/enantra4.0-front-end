@@ -5,12 +5,12 @@
 }
 
 .workshops {
-	--color-text: #4800d4;
-    --color-bg: #302f2f;
-	--color-link: #f0f878;
-    --color-link-hover: #db52fd;
+	--color-text: #f6f5f8;
+    --color-bg: #201b1b;
+	--color-link: #f01544;
+    --color-link-hover: #faeb66;
     --color-info: #272526;
-    --grid-item-bg: #f1f1f1;
+    --grid-item-bg: #2a2828;
     --color-close: #ec1752;
 	font-family: Futura, "futura-pt", sans-serif;
 	min-height: 100vh;
@@ -25,20 +25,20 @@
 }
 
 .workshop-fees {
-	font-size : 1.1vw;
-	color: #230029;
+	font-size : 1.5vw;
+	color: #eff163;
 	font-family: Barlow, Arial, sans-serif;
 	font-weight : 700;
 }
 .workshop-titles {
-	color: #aa0529;
+	color: #64faaf;
 	font-family: Barlow, Arial, sans-serif;
 	font-weight : 500;
 	font-size : 1.1vw;
 }
 
 .workshop-subtitles {
-	color: #030001;
+	color: #fc0658;
 	font-family: Barlow, Arial, sans-serif;
 	font-weight : 700;
 }
@@ -153,7 +153,14 @@ main {
 	position: relative;
 	max-width: 1000px;
 	margin: 0 auto;
-	padding: 6rem 1rem 0;
+	padding: 4rem 1rem 0;
+}
+
+.grid-wrap-attractions {
+	position: relative;
+	max-width: 1500px;
+	margin: 0 auto;
+	padding: 12rem 1rem 0;
 }
 
 .grid-wrap--hidden-workshops {
@@ -173,8 +180,8 @@ main {
 .grid__item-workshops {
 	width: 275px;
 	position: relative;
-	padding: 2.75rem;
-	margin-bottom: 5rem;
+	padding: 3rem;
+	margin-bottom: 4rem;
 }
 
 .grid__item-wrap-workshops {

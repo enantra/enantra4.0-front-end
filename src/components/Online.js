@@ -575,7 +575,7 @@ class Online extends Component{
         var slideshow = new CircleSlideshow(document.getElementById('slideshow'));
 }
     
-    componentWillUnmount(){
+    componentDidUpdate(){
         this.props.resetMenu();
     }
 

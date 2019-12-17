@@ -7,11 +7,10 @@ import Masonry from '../js//vendor/masonry.pkgd.min.js';
 import firstworkshop from '../img/btrivia.jpg';
 import secondworkshop from '../img/bm.jpg';
 import thirdworkshop from '../img/coding.jpg';
-import fourthworkshop from '../img/efac.jpg';
 
-class Workshops extends Component{
+
+class Attractions extends Component{
     componentDidMount(){
-
         {
             // Calculates the offsetTop or offsetLeft of an element relative to the viewport 
             // (not counting with any transforms the element might have)
@@ -547,48 +546,37 @@ class Workshops extends Component{
                 });
             });
         }
-
     }
-
     render(){
-
         var expandContent = '<use xlink:href="#icon-caret"></use>';
-        
+
         return(
             <div class="workshops">
-			<div class="grid-wrap-workshops">
+			<div class="grid-wrap-attractions">
 				<div class="grid-workshops">
 					<a href="#" class="workshops-anchor grid__item-workshops">
 						<div class="grid__item-bg-workshops"></div>
 						<div class="grid__item-wrap-workshops">
 							<img class="grid__item-img-workshops" src={firstworkshop} alt="Some image" />
 						</div>
-						<h3 class="grid__item-title-workshops">Workshops</h3>
-						<h4 class="grid__item-number-workshops">Machine Learning</h4>
+						<h3 class="grid__item-title-workshops">Attractions</h3>
+						<h4 class="grid__item-number-workshops">Food&nbsp;Street</h4>
 					</a>
 					<a href="#" class="workshops-anchor grid__item-workshops">
 						<div class="grid__item-bg-workshops"></div>
 						<div class="grid__item-wrap-workshops">
 							<img class="grid__item-img-workshops" src={secondworkshop} alt="Some image" />
 						</div>
-						<h3 class="grid__item-title-workshops">Workshops</h3>
-						<h4 class="grid__item-number-workshops">Digital Marketing</h4>
+						<h3 class="grid__item-title-workshops">Attractions</h3>
+						<h4 class="grid__item-number-workshops">Mini&nbsp;Bazaar</h4>
 					</a>
 					<a href="#" class="workshops-anchor grid__item-workshops">
 						<div class="grid__item-bg-workshops"></div>
 						<div class="grid__item-wrap-workshops">
 							<img class="grid__item-img-workshops" src={thirdworkshop} alt="Some image" />
 						</div>
-						<h3 class="grid__item-title-workshops">Workshops</h3>
-						<h4 class="grid__item-number-workshops">Critical Thinking and First Principles</h4>
-					</a>
-                    <a href="#" class="workshops-anchor grid__item-workshops">
-						<div class="grid__item-bg-workshops"></div>
-						<div class="grid__item-wrap-workshops">
-							<img class="grid__item-img-workshops" src={fourthworkshop} alt="Some image" />
-						</div>
-						<h3 class="grid__item-title-workshops">Workshops</h3>
-						<h4 class="grid__item-number-workshops">Entrepreneurship 101</h4>
+						<h3 class="grid__item-title-workshops">Attractions</h3>
+						<h4 class="grid__item-number-workshops">Carnivals</h4>
 					</a>
 				</div>
 			</div>
@@ -596,270 +584,42 @@ class Workshops extends Component{
 				<div class="content__item-workshops">
 					<div class="content__item-intro-workshops">
 						<img class="content__item-img-workshops" src={firstworkshop} alt="Some image" />
-						<h3 class="content__item-title-workshops">Innovians Technologies</h3>
+						<h3 class="content__item-title-workshops">Food Street</h3>
 					</div>
-					<h3 class="content__item-subtitle-workshops">Workshop on Machine Learning - A One Day Workshop on Machine Learning for Beginners</h3>
+					<h3 class="content__item-subtitle-workshops">A variety of food stalls, from across various cuisines - to satisfy your every craving, anytime of the day. Come with your friends to walk, talk and eat along the way in this unique experience.</h3>
 					<div class="content__item-text-workshops">
 						<p class="workshop-description">
-                        (20% Theory & 80% Hands-On Lab Session)<br/>
-                        <ul>
-                            <li>Introduction to Machine learning, Introduction to algorithm Design, algorithmic problem solving.</li>
-                            <li>Introduction to Python programming and Anaconda navigator.</li>
-                            <li>Python Crash course:
-                            <ol>
-                                <li>Data Types.</li>
-                                <li>Compression operators.</li>
-                                <li>If, elif and else statement.</li>
-                                <li>For, While Loops.</li>
-                                <li>Range()</li>
-                                <li>List Comprehension.</li>
-                                <li>Functions, Lambda Expressions.</li>
-                                <li>Map and Filter.</li>
-                            </ol>
-                            </li>
-                            <li>Numpy module for data analysis and Machine Learning.</li>
-                            <li>Data Visualization:
-                                <ol>
-                                    <li>2D plotting with Matplotlib</li>
-                                    <li>Advanced data visualization with Seaborn</li>
-                                </ol>
-                            </li>
-                            <li>Exploring Data with Pandas module for Machine learning.</li>
-                            <li>Introduction to essentials of Machine learning Algorithm.</li>
-                            <li>Project:
-                                <ol>
-                                    <li>Supervised learning</li>
-                                    <li>Unsupervised leaning.</li>
-                                </ol>
-                            </li>
-                        </ul>
                         </p>
-                        <p class="workshop-fees">FEES - 500 INR per student</p>
 					</div>
 				</div>
 				<div class="content__item-workshops">
 					<div class="content__item-intro-workshops">
 						<img class="content__item-img-workshops" src={secondworkshop} alt="Some image" />
-						<h2 class="content__item-title-workshops">Innovians Technologies</h2>
+						<h2 class="content__item-title-workshops">Mini Bazaar</h2>
 					</div>
-					<h3 class="content__item-subtitle-workshops">Workshop on Digital Marketing - One Day Workshop on Digital Marketing, SEO, SMO, SMM & Online Branding</h3>
+					<h3 class="content__item-subtitle-workshops">A shopping experience that'll be light on the pockets, but heavy in your bags. For a fun day out, to find what you've been meaning to buy at all time low prices!</h3>
 					<div class="content__item-text-workshops">
                     <p class="workshop-description">
-						<p class="workshop-titles">About Workshop</p><br/>
-						<p>Learn all about Latest web technologies and internet marketing aspects termed as Search Engine
-                        Optimization (SEO) or optimization of the Social Media termed as Social Media Optimization (SMO) and
-                        begin managing your own website promotion strategy like a professional at this seminar. Attendees will
-                        be provided with instructions to build and manage their own website campaigns. A proper session will
-                        also be given on the integration of Social Networking technologies in your website for better user
-                        penetration.</p><br/>
-                        <p class="workshop-titles">What You Will Learn</p><br/>
-                        <p>
-                            <ul>
-                                <li>Digital Marketing & how it is implemented in the corporate world in a systematic, professional and disciplined manner.</li>
-                                <li>Secrets and tested proven process in delivering ROI based Sales conversion, Lead enquiry campaigns based on our actual case studies.</li>
-                                <li>Importance of Social media contests, Online trends and their impact on your BRAND.</li>
-                                <li>Integrating multiple aspects of Social Media and Digital Marketing.</li>
-                                <li>ROI process - Guided - How to Convert prospects into leads to customers.</li>
-                                <li>Specific queries from your end will be discussed as part of this session too.</li>
-                                <li>Impact and power of integrating aspects like Google Adwords, Facebook Ads, LinkedIn Ads, Twitter Advertising, Email marketing, Social post, Blogging and SEO in the real world of Consumer and Brands.</li>
-                            </ul>
-                        </p>
-                        <p class="workshop-titles">Topics to be Covered in Workshop</p><br/>
-                        <p>
-                            <p class="workshop-subtitles">Session-I: Web Based Technologies</p>
-                            <p>
-                                <ul>
-                                    <li>Understanding different Web Technologies.</li>
-                                    <li>Understanding Web Layout.</li>
-                                    <li>Basic about HTML Programming.</li>
-                                    <li>Creating First Web Page</li>
-                                    <li>Type of Script Language</li>
-                                    <li>Difference between Server Side & Client Side Scripting</li>
-                                    <li>What is Web Server (Hosting) & Domain Name</li>
-                                    <li>How to Register Domain Name & buy hosting space.</li>
-                                    <li>How to Create Profession Professional Email-Ids like raj@abc.com</li>
-                                    <li>Basic about Database (MySQL)</li>
-                                </ul>
-                            </p>
-                        </p><br/>
-                        <p>  
-                            <p class="workshop-subtitles">Session II-SEO & Analytics Session</p>
-                            <p>
-                                <ul>
-                                    <li>WHOIS Lookup and Domain Name Forecasting</li>
-                                    <li>SEO Techniques</li>
-                                    <li>SEO Perception
-                                        <ol>
-                                            <li>User Perspective SEO</li>
-                                            <li>Machine Perspective SEO</li>
-                                        </ol>
-                                    </li>
-                                    <li> SEO Preferred URL Architecture</li>
-                                    <li>Metadata & SEO Preferred Coding</li>
-                                    <li>Website Analytics</li>
-                                    <li>Insights & Control of Websites</li>
-                                    <li>Website Analysis & Considerations</li>
-                                    <li>Tools for Search Engine Optimisation</li>
-                                    <li>Alerts</li>
-                                </ul>
-                            </p>
-                        </p>
-                        <p>
-                            <p class="workshop-subtitles">Session III- Google Apps</p>
-                            <p>
-                                <ul>
-                                    <li>Introduction about Google Apps</li>
-                                    <li>How to take benefits of other Google Apps.</li>
-                                    <li>Google Analytics</li>
-                                    <li>Google Webmaster Tools</li>
-                                    <li>Google Adwords</li>
-                                </ul>
-                            </p>
-                        </p>
-                        <p>
-                            <p class="workshop-subtitles">Session IV- Social Networking Technologies Session</p>
-                            <p>
-                                <ul>
-                                    <li>Facebook Specific Session</li>
-                                    <li>Facebook Adwords</li>
-                                    <li>LinkedIn Session</li>
-                                    <li>Other Emerging Social Networking Technologies</li>
-                                </ul>
-                            </p>
-                        </p>
-                        <p>
-                            <p class="workshop-subtitles">Session V- Digital Marketing Campaign</p>
-                            <p>
-                                <ul>
-                                    <li>How to design Digital Marketing Campaign</li>
-                                    <li>Analyzing Target Audience & Target Platform for Marketing</li>
-                                    <li>Social Media Marketing & Search Engine Marketing</li>
-                                    <li>How to run contest on Social Media like Facebook ?</li>
-                                </ul>
-                            </p>
-                        </p>
                     </p>
-                    <p class="workshop-fees">FEES - 500 INR per student</p>
 					</div>
 				</div>
 				<div class="content__item-workshops">
 					<div class="content__item-intro-workshops">
 						<img class="content__item-img-workshops" src={thirdworkshop} alt="Some image" />
-						<h2 class="content__item-title-workshops">Transform into a Thinker</h2>
+						<h2 class="content__item-title-workshops">Carnivals</h2>
 					</div>
-					<h3 class="content__item-subtitle-workshops">Workshop on Critical Thinking and First Principles</h3>
+					<h3 class="content__item-subtitle-workshops">A fun filled experience with games and prizes! Come and rediscover the child in you.</h3>
 					<div class="content__item-text-workshops">
-						<p class="workshop-titles">About Workshop</p><br/>
-						<p>
-                        The Critical Thinking and First Principles Workshop is designed to transform participants into Thinkers. They understand the key of problem solving, decision making and building a business.
-                        Taking our participants bock to 400 BC Greece to meet one of the most influential thinkers of all time, Socrates. Using him we understand the fundamental of Critical thinking and First Principles - asking questions. After understanding the cornerstone of critical thinking, participants are introduced to Arguments • their nature, structure and types • and their use in problem solving. The session ends with participants wrapping their head around the method that has lead to almost every modern invention - The Socratic Method. 
-                        This part provides the participants with the understanding of what critical thinking actually is. Going through learning how to question, understating the structure and nature of arguments. The session ends with us bringing the 2 ideas together • Questions and Arguments - to understand the basis of all human innovation • The Socratic Method 
-                        </p><br/>
-						<p class="workshop-titles">Program Structure</p><br/>
-                        <p>
-                            <p class="workshop-subtitles">1 : Introduction to Thinking</p>
-                            <p>
-                                <ul>
-                                    <li>Socrates and the thought revolution</li>
-                                    <li>Cornerstone of Critical Thinking - Questions</li>
-                                </ul>
-                            </p>
-                            <p class="workshop-subtitles">2 : Arguments</p>
-                            <p>
-                                <ul>
-                                    <li>What is an Argument - Nature, form and structure</li>
-                                    <li>Types of Arguments</li>
-                                </ul>
-                            </p>
-                            <p class="workshop-subtitles">3 : The Socratic Method</p>
-                            <p>Trolley problems and using critical thinking to make better decisions</p>
-                        </p><br/>
-                        <p class="workshop-fees">FEES - 400 INR per student</p>
-					</div>
-				</div>
-                <div class="content__item-workshops">
-					<div class="content__item-intro-workshops">
-						<img class="content__item-img-workshops" src={fourthworkshop} alt="Some image" />
-						<h2 class="content__item-title-workshops">Entrepreneurship 101</h2>
-					</div>
-					<h3 class="content__item-subtitle-workshops">Workshop on Entrepreneurship</h3>
-					<div class="content__item-text-workshops">
-						<p class="workshop-titles">About Workshop</p><br/>
-						<p>A 6 hour workshop to out participants on the journey of building a company. Participants would be taken through the fundamentals of building a company - from Product Development, Market Fit to taking it to Scale. Participants get their hands dirty with actually conceptualising a product, vetting it with customer feedback and then going through the steps of taking it to scale.</p><br/>
-						<p class="workshop-titles">Program Structure</p><br/>
-                        <p>
-                            <ol>
-                                <li>Who is an Entrepreneur
-                                    <ul>
-                                        <li>Personality</li>
-                                        <li>Traits</li>
-                                        <li>Skills</li>
-                                        <li>Entrepreneur vs Businessman</li>
-                                    </ul>
-                                </li>
-                                <li>The Lean Start up Model
-                                    <ul>
-                                        <li>Vision</li>
-                                        <li>Steer - Pivot </li>
-                                        <li>Accelerate </li>
-                                    </ul>
-                                </li>
-                                <li>Product Development and Market fit 
-                                    <ul>
-                                        <li>How to think of a product or service</li>
-                                        <li>Understanding customers and markets</li>
-                                        <li>Reworking to gain PMF</li>
-                                    </ul>
-                                </li>
-                                <li> Business Planning
-                                    <ul>
-                                        <li>Idea to Product to Business</li>
-                                        <li>Metrics and Numbers</li>
-                                        <li>Projections and P&L</li>
-                                    </ul>
-                                </li>
-                                <li>Organisation and Culture 
-                                    <ul>
-                                        <li>Structure and types</li>
-                                        <li>What kind of team to build</li>
-                                        <li>Culture creation</li>
-                                        <li>Brand Identity</li>
-                                    </ul>
-                                </li>
-                                <li>Marketing and Brand Building
-                                    <ul>
-                                        <li>Who to sell to</li>
-                                        <li>What to sell</li>
-                                        <li>How to sell</li>
-                                        <li>The feeling of an organisation</li>
-                                    </ul>
-                                </li>
-                                <li>Scale
-                                    <ul>
-                                        <li>What it means to scale</li>
-                                        <li>Vision decisions</li>
-                                        <li>Operations and challenges</li>
-                                    </ul>
-                                </li>
-                                <li>Funding and the process
-                                    <ul>
-                                        <li>Types</li>
-                                        <li>Which one to choose</li>
-                                        <li>Investors to choose</li>
-                                        <li>End game </li>
-                                    </ul>
-                                </li>
-                            </ol>
-                        </p>
-                        <p class="workshop-fees">FEES - 550 INR per student</p>
+                    <p class="workshop-description">
+                    </p>
 					</div>
 				</div>
 				<button class="content__close-workshops">Close</button>
 				<svg class="content__indicator-workshops icon-workshops icon--caret-workshops" dangerouslySetInnerHTML={{__html : expandContent}}></svg>
                 </div>
-		</div>
+                </div> 
         )
     }
 }
 
-export default Workshops;
+export default Attractions;

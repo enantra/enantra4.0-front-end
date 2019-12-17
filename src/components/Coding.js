@@ -575,7 +575,7 @@ class Coding extends Component{
         document.documentElement.className = 'js';
         var slideshow = new CircleSlideshow(document.getElementById('slideshow'));
 }
-    componentWillUnmount(){
+    componentDidUpdate(){
         this.props.resetMenu();
     }
 
@@ -597,7 +597,7 @@ class Coding extends Component{
                             <div class="slide__content-scroller-eventsdescription">
                                 <div class="slide__img-eventsdescription slide__img--large-eventsdescription">
                                 <p>
-                                Team of two<br />
+                                Team of two<br/><br/>
                                 <p>
                                     <p class="rounds">Round 1:&nbsp;&nbsp;Pen and paper</p>
                                     <p>Basic coding, debugging  and aptitude is tested. This round is a mixture of few events. Strictly five teams will be taken for the next round.</p>
@@ -664,7 +664,7 @@ class Coding extends Component{
                             <div class="slide__content-scroller-eventsdescription">
                                 <div class="slide__img-eventsdescription slide__img--large-eventsdescription">
                                 <p>
-                                <p>This event is exclusively for the people who passionately work in software like Adobe Photoshop and Illustrator. You can bring out all your creativity in the given topic on the spot.<br/>
+                                <p>This event is exclusively for the people who passionately work in software like Adobe Photoshop and Illustrator. You can bring out all your creativity in the given topic on the spot.<br/><br/>
                                 <p class="bold">Rules and Regulations:</p>
                                 <p class="bold">For the people who chooses Photoshop as mainstream:</p>
                                 <p>
