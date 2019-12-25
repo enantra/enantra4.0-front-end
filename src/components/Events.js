@@ -22,26 +22,8 @@ class Events extends Component {
         super(props);
         this.state = {redirect : false};
     }
-
-    /*loadScript(source,code){
-        var tag = document.createElement('script');
-        if(source){
-            tag.src = source;
-        }
-        if(code){
-            tag.appendChild(document.createTextNode(code));
-        }
-        return tag;
-    }*/
      
     componentDidMount(){
-
-        /*let eventsbody = document.querySelector('.eventsbody');
-        eventsbody.appendChild(this.loadScript("../js/vendor/imagesloaded.pkgd.min.js",""));
-        eventsbody.appendChild(this.loadScript("../js/vendor/masonry.pkgd.min.js",""));
-        eventsbody.appendChild(this.loadScript("",code));*/
-
-
         const getOffset = (elem, axis) => {
             let offset = 0;
             const type = axis === 'top' ? 'offsetTop' : 'offsetLeft';

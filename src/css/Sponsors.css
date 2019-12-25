@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: local('Poppins-SemiBold'), url('../fonts/Poppins-SemiBold.ttf');
+  }
+
 .sponsors-body{
     margin: 0;
     height: 100vh;
@@ -20,6 +25,9 @@
 .heading-sponsors{
     margin: 100px auto 50px auto;
     max-width: 50%;
+    font-family: Poppins-SemiBold;
+    font-size: 6vw;
+
 }
 
 .heading-sponsors img{

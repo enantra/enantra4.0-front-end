@@ -206,7 +206,7 @@ class Menu extends Component {
 						              <Link to='/accommodation' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Accommodation')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Accommodation</Link>
 						              <a class="menu-anchor global-menu__item global-menu__item--demo-1" href="#">The Team</a>
                           <Link to='/sponsors' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Sponsors')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Sponsors</Link>
-                          <a class="menu-anchor global-menu__item global-menu__item--demo-1" href="#">Contact Us</a>
+                          <Link to='/contactus' onClick={() => {this.closeMenu(); this.props.handleMenuClick('ContactUs')}} class="menu-anchor global-menu__item global-menu__item--demo-1" href="#">Contact Us</Link>
 			            </div>
 				        </div>
               </Router>

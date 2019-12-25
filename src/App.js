@@ -7,7 +7,6 @@ var supportsCssVars = function() { var e, t = document.createElement("style"); r
 supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");`;
 
 
-
 class App extends Component {
 
   loadScript(source,code){
@@ -30,12 +29,15 @@ class App extends Component {
     body.appendChild(this.loadScript("../js/vendor/imagesloaded.pkgd.min.js",""));
     body.appendChild(this.loadScript("../js/vendor/masonry.pkgd.min.js",""));
     body.appendChild(this.loadScript("../js/vendor/dynamics.min.js",""));
+    body.appendChild(this.loadScript("../js/vendor/main.min.js",""));
+    body.appendChild(this.loadScript("https://unpkg.com/animejs@3.0.1/lib/anime.min.js",""));
+    body.appendChild(this.loadScript("https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js",""));
 
   }
 
   render() {
     return(
-        <MenuUtil />
+        <MenuUtil/>
     )
   }
 }   

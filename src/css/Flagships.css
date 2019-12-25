@@ -13,13 +13,112 @@
 	--color-side: #353535;
 	font-family: Futura, "futura-pt", sans-serif;
 	width: 100%;
-	height: 100%;
 	color: #57585c;
 	color: var(--color-text);
 	background-color: var(--color-bg);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+
+.btn-company {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 15px 25px;
+	display: inline-block;
+	margin: 20px 0px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn-company:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn-company:focus{
+	outline: 0;
+}
+
+.btn-company:before{
+	font-family: 'icomoon';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+}
+
+.btn-2-company {
+	background: #b2f15e;
+	color: rgb(34, 33, 33);
+	box-shadow: 0 6px #71d104;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+}
+
+.btn-2g-company {
+	border-radius: 60px;
+}
+
+.btn-2g-company:hover {
+	box-shadow: 0 4px #71d104;
+	top: 2px;
+}
+
+.btn-2g-company:active {
+	box-shadow: 0 0 #71d104;
+	top: 6px;
+}
+
+.blink_effect {
+	animation: blinker 1s linear infinite;
+	color: rgb(248, 246, 126);
+}
+
+.flagship-links{
+	text-decoration: none;
+	outline: none;
+	color: yellowgreen;
+}
+
+button.flagship-button {
+    background-color: transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.flagship-links:hover{
+	text-decoration: none;
+	outline: none;
+	color: rgb(246, 248, 97);
+}
+  
+  @keyframes blinker {
+	50% {
+	  opacity: 0;
+	  color: #f60606;
+	}
+  }
 
 /* Page Loader */
 
@@ -254,7 +353,7 @@
 }
 
 .content__close {
-	position: absolute;
+	position: relative;
 	top: 1rem;
 	left: 1rem;
 	background: none;
@@ -301,7 +400,8 @@
 .js .content__subtitle-flagships,
 .js .content__number,
 .js .content__text,
-.js .content__close {
+.js .content__close,
+.js .content__button {
 	opacity: 0;
 }
 

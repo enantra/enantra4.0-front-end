@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: local('Poppins-SemiBold'), url('../fonts/Poppins-SemiBold.ttf');
+}
+
 *,
 *::after,
 *::before {
@@ -18,8 +23,10 @@
 }
 
 .heading-accommodation{
-    margin: 100px auto 50px auto;
-    max-width: 50%;
+    margin: 100px auto 40px auto;
+    max-width: 110%;
+    font-family: Poppins-SemiBold;
+    font-size: 5vw;
 }
 
 .heading-accommodation img{

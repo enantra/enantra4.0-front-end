@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Iframe from 'react-iframe';
 import '../css/Accommodation.css';
 import '../css/vendor/bootstrap.css';
-import accommodation from '../img/accomodation.png';
 
 class Accommodation extends Component{
     render(){
@@ -10,7 +9,7 @@ class Accommodation extends Component{
             <div class="accommodation-background">
             <div class="container">
                 <div class="centre-block">
-                    <h1 class="heading-accommodation heading-accommodation center-block text-center"><img src={accommodation} alt="terminator-font" border="0" /></h1>
+                    <h1 class="heading-accommodation heading-accommodation center-block text-center">ACCOMMODATION</h1>
                 </div>
                 <div class="rules-accommodation row justify-content-center">
                     <div class='col-10'>

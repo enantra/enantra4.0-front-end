@@ -1,13 +1,17 @@
 import React,{ Component } from 'react';
 import Particles from 'react-particles-js';
 import '../css/About.css';
+import annauniv from '../img/annauniv.png';
+import capitalizelogo from '../img/capitalizelogo.png';
+import ced from '../img/ced.png';
 
 class About extends Component{
     
     render(){
         return(
             <div class="aboutbackground">
-            <link href="https://fonts.googleapis.com/css?family=Rufina:400,700|Source+Sans+Pro:200,300,400,600,700" rel="stylesheet"></link>    
+            <link href="https://fonts.googleapis.com/css?family=Rufina:400,700|Source+Sans+Pro:200,300,400,600,700" rel="stylesheet"></link> 
+            <div class="main-about">
             <div id="site__bg">
             <Particles params={{
                     "particles": {
@@ -79,19 +83,36 @@ class About extends Component{
                       }
                     },
                     "retina_detect": true
-                  }}
-            />
-            </div>
-            <div class="main-about">
-                <section class="site-about">
+                  }}/> 
+                </div>  
+                <div class="site-about">
                 <h1 class="about-title site__title-about site__title--separator-about">Enantra</h1>
                 <p class="site__description-about">Entrepreneurship Mantra</p>
-                <p class="episode__description-about">
-                Enantra is an annual fest conducted by Capitalize, the entrepreneurship club of Anna University and is scheduled to take place from the 20th to the 23rd of February 2020.
-                This fest that actually was named as an acronym for &apos;Entrepreneurship Mantra&apos; is aimed to not only celebrate the spirit of entrepreneurship, but also to honor those who have tasted success and paved the way for upcoming entrepreneurs and to encourage students across the state to dream bigger. Every year Enantra takes pride in a plethora of flagship and mini events, along with workshops to provide a common platform for corporates, start-ups and the student community to interact and learn through discussion.
-                Enantra was created to encourage students to recognise and develop their entrepreneurial skills, since budding entrepreneurs are the nation's biggest hope in creating job opportunities, building economy and putting the nations foot forward in overall development. The team of Enantra 4.0 looks forward to hosting not just a fest, but a life changing experience for dreamers and upcoming entrepreneurs along with exciting incentives, events and a wide networking opportunity amongst students to create a brighter tomorrow.
+                <br/>
+                <p>
+                <h2>The Host: Anna University</h2>
+                <br/>
+                <img class="logo-about-annauniv" src={annauniv}/>
+                Anna University is the one of the most reputed institutions in India. Located at the heart of Chennai is the College of Engineering, the principal college of Anna University boasts of a magnificent campus at one of the most prominent locations in the city – Guindy. With a rich history spanning over 225 years, CEG is one of the oldest colleges in the world. Ranked amongst the top 10 institutions in the country, this prestigious institution has produced many budding engineers and successful businessmen over the years. True to its esteem, as an institution enriched with rich entrepreneurial culture, CEG even today stands as a beacon of light to students who wish to be entrepreneurs. The notable Alumni from this institution include Verghese Kurien (Amul), Venu Srinivisan(TVS), N Srinivasan (India Cements), M.Murugappa (Murugappa group) etc.
                 </p>
-                </section>
+                <br/>
+                <br/>
+                <p>
+                <h2>Centre of Entrepreneurship Development</h2>
+                <br/>
+                <img class="logo-about-ced" src={ced}/>
+                CED, Anna University provides one such platform that establishes links and interactions with industries belonging to several facets and educational institutions. With a view to inculcate entrepreneurial values among the student population, CED has been consistent in carrying out various programs for engineering students of the state by organizing in a diversified and eye-opening manner. Also, nurturing many budding and nascent startups under its banner, CED takes immense efforts in cultivating the spirit of entrepreneurship.
+                </p>
+                <br/>
+                <br/>
+                <br/>
+                <p>
+                <h2>The Organising Team: Capitalize</h2>
+                <br/>
+                <img class="logo-about-capitalize" src={capitalizelogo}/>
+                Capitalize is the student run entrepreneurship cell of Anna university that aims to nurture entrepreneurial culture with the judicious combination of start-ups, corporates and the student community into one common platform. Capitalize as a club, envisions to instill the perfect qualities in a leader, eventually enabling them to be the trailblazers of tomorrow. This club incubates ideas, no matter how miniscule or eccentric and extends immense support to equip these ideas with a successful front. Fortified with a core team of creative and bold minds, Capitalize challenges, tests and motivates its members to follow their goals and revolves around the ideals of innovation and leadership.
+                </p>
+                </div> 
             </div>
             </div>
         )
