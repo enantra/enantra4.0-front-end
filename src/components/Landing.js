@@ -392,7 +392,7 @@ class Landing extends Component {
 			  
 			  scene.add( sky );
 		  
-			  var sunSphere = new THREE.Mesh(
+			  /*var sunSphere = new THREE.Mesh(
 				new THREE.SphereBufferGeometry( 20000, 16, 8 ),
 				new THREE.MeshBasicMaterial( { color: 0xffffff } )
 			  );
@@ -406,7 +406,7 @@ class Landing extends Component {
 			  sunSphere.position.y = 400000 * Math.sin( phi ) * Math.sin( theta );
 			  sunSphere.position.z = 400000 * Math.sin( phi ) * Math.cos( theta );
 			  
-			  sky.material.uniforms.sunPosition.value.copy( sunSphere.position );
+			  sky.material.uniforms.sunPosition.value.copy( sunSphere.position );*/
 			}
 		  
 			function resize(){

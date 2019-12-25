@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link, Switch, Redirect } from "react-router-dom";
 import '../css/Flagships.css';
+import '../css/Speakers.css';
+import '../css/vendor/style.css';
+
 import mun from '../img/aumun.jpg';
 import entretainment from '../img/entretainment.jpg';
 import sixdt from '../img/6dt.jpg';
@@ -9,6 +11,14 @@ import startupweekend from '../img/sw.jpg';
 import startupstreet from '../img/ss.jpg';
 import TweenFlag from '../js/vendor/TweenMax.min.js';
 import charming from '../js/vendor/charming.min.js';
+
+import first from '../img/speakers/feature-icon-01.svg';
+import second from '../img/speakers/feature-icon-02.svg';
+import third from '../img/speakers/feature-icon-03.svg';
+import fourth from '../img/speakers/feature-icon-04.svg';
+import fifth from '../img/speakers/feature-icon-05.svg';
+import sixth from '../img/speakers/feature-icon-06.svg';
+import logo from '../img/speakers/logo.svg';
 
 const code = `document.documentElement.className = "js";
 var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
@@ -38,9 +48,43 @@ const startupstreetImage = {
     backgroundImage : 'url(' + startupstreet +')'
 }
 
+var speakers;
+var flagships;
+
 class Flagships extends Component {
+
+    constructor(){
+        super();
+        this.onAnchorClick = this.onAnchorClick.bind(this);
+        this.handleClose = this.handleClose.bind(this);
+        this.handleUpdate = this.handleUpdate.bind(this);
+    }
+
+    onAnchorClick = () => {
+        speakers.style.display = "block";
+        flagships.style.display = "none";
+    }
+
+    handleClose = () => {
+        flagships.style.display = "block";
+        speakers.style.display = "none";
+    }
+
+    handleUpdate = (e) => {
+        this.closebutton.click();
+        this.handleClose();
+    }
+
+    componentDidUpdate(){
+        this.handleUpdate();
+    }
         
     componentDidMount(){
+
+        speakers = document.querySelector('.speakers-body');
+        flagships = document.querySelector('.flagshipbody');
+        speakers.style.display = "none";
+
         
         const getMousePos = (e) => {
             let posx = 0;
@@ -408,6 +452,8 @@ class Flagships extends Component {
                     startAt: {y: 40},
                     y: 0
                 }, 0.05);
+
+                
             }
             hide() {
                 this.DOM.el.classList.remove('content__item--current-flagships');
@@ -427,6 +473,7 @@ class Flagships extends Component {
                 // The slides.
                 this.slides = [];
                 Array.from(this.DOM.el.querySelectorAll('.slide')).forEach(slideEl => this.slides.push(new Slide(slideEl)));
+            
                 // The total number of slides.
                 this.slidesTotal = this.slides.length;
                 // At least 4 slides to continue...
@@ -517,6 +564,7 @@ class Flagships extends Component {
                 this.DOM.el.classList.remove('slideshow--previewopen');
     
                 // Hide content.
+                //this.contents[this.current].hide();
                 this.contents[this.current].hide();
     
                 TweenFlag.TweenMax.to(this.DOM.deco, .8, {
@@ -628,8 +676,120 @@ class Flagships extends Component {
         var navigate = '<use xlink:href="#icon-navarrow"></use>';
         var closecontent = '<use xlink:href="#icon-longarrow"></use>';
 
-        return(     
-	    <div className="flagshipbody">
+        return(
+            <div>
+            <body class="speakers-body is-boxed has-animations">
+            <div class="body-wrap">
+                <header class="site-header">
+                    <div class="container">
+                        <div class="site-header-inner">
+                            <div class="brand header-brand">
+                                <h1 class="m-0">
+                                    <a href="#">
+                                        <img class="header-logo-image" src={logo} alt="Logo"/>
+                                    </a>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <main>
+                    <section class="hero">
+                        <div class="container">
+                            <div class="hero-inner">
+                                <div class="hero-figure anime-element">
+                                    <svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
+                                        <rect width="528" height="396" style={{fill: 'transparent'}} />
+                                    </svg>
+                                    <div class="hero-figure-box hero-figure-box-01" data-rotation="45deg"></div>
+                                    <div class="hero-figure-box hero-figure-box-02" data-rotation="-45deg"></div>
+                                    <div class="hero-figure-box hero-figure-box-03" data-rotation="0deg"></div>
+                                    <div class="hero-figure-box hero-figure-box-04" data-rotation="-135deg"></div>
+                                    <div class="hero-figure-box hero-figure-box-05"></div>
+                                    <div class="hero-figure-box hero-figure-box-06"></div>
+                                    <div class="hero-figure-box hero-figure-box-07"></div>
+                                    <div class="hero-figure-box hero-figure-box-08" data-rotation="-22deg"></div>
+                                    <div class="hero-figure-box hero-figure-box-09" data-rotation="-52deg"></div>
+                                    <div class="hero-figure-box hero-figure-box-10" data-rotation="-50deg"></div>
+                                </div>
+                                <p class="speakers-title">SPEAKERS</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="features section">
+                        <div class="container">
+                            <div class="features-inner section-inner has-bottom-divider">
+                                <p class="day-title">DAY 1</p>
+                                <br/>
+                                <div class="features-wrap">
+                                    <div class="feature text-center is-revealing">
+                                        <div class="feature-inner">
+                                            <div class="feature-icon">
+                                                <img class="speakers-image" src={first} alt="Speaker 01"/>
+                                            </div>
+                                            <h4 class="feature-title mt-24">TBA</h4>
+                                            <p class="text-sm mb-0">Stay tuned</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature text-center is-revealing">
+                                        <div class="feature-inner">
+                                            <div class="feature-icon">
+                                                <img src={second} alt="Speaker 02"/>
+                                            </div>
+                                            <h4 class="feature-title mt-24">TBA</h4>
+                                            <p class="text-sm mb-0">Stay tuned</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature text-center is-revealing">
+                                        <div class="feature-inner">
+                                            <div class="feature-icon">
+                                                <img src={third} alt="Speaker 03"/>
+                                            </div>
+                                            <h4 class="feature-title mt-24">TBA</h4>
+                                            <p class="text-sm mb-0">Stay tuned</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br/>
+                                <p class="day-title">DAY 2</p>
+                                <br/>
+                                <div class="features-wrap">
+                                    <div class="feature text-center is-revealing">
+                                        <div class="feature-inner">
+                                            <div class="feature-icon">
+                                                <img src={fourth} alt="Speaker 04"/>
+                                            </div>
+                                            <h4 class="feature-title mt-24">TBA</h4>
+                                            <p class="text-sm mb-0">Stay tuned</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature text-center is-revealing">
+                                        <div class="feature-inner">
+                                            <div class="feature-icon">
+                                                <img src={fifth} alt="Speaker 05"/>
+                                            </div>
+                                            <h4 class="feature-title mt-24">TBA</h4>
+                                            <p class="text-sm mb-0">Stay tuned</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature text-center is-revealing">
+                                        <div class="feature-inner">
+                                            <div class="feature-icon">
+                                                <img src={sixth} alt="Speaker 06"/>
+                                            </div>
+                                            <h4 class="feature-title mt-24">TBA</h4>
+                                            <p class="text-sm mb-0">Stay tuned</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <button onClick={this.handleClose} class="action--close" aria-label="Close"><i class="fa fa-times"></i></button>
+                </main>
+            </div>
+        </body>    
+        <div className="flagshipbody">
 		    <svg className="hidden-flagships">
                 <symbol id="icon-longarrow" viewBox="0 0 54 24">
 				    <path d="M.42 11.158L12.38.256c.333-.27.696-.322 1.09-.155.395.166.593.467.593.903v6.977h38.87c.29 0 .53.093.716.28.187.187.28.426.28.716v5.98c0 .29-.093.53-.28.716a.971.971 0 0 1-.716.28h-38.87v6.977c0 .416-.199.717-.592.903-.395.167-.759.104-1.09-.186L.42 12.62a1.018 1.018 0 0 1 0-1.462z" />
@@ -715,46 +875,58 @@ class Flagships extends Component {
 					    <h3 className="content__title-flagships">Model United Nations</h3>
 					    <h4 className="content__subtitle-flagships"></h4>
 					    <div className="content__text">The Capitalize team has deliberated on diversifying its activities for instilling leadership. Therefore, Capitalize is proposing an event based on the world renowned Model United Nations.The Model United Nations is inspired from the activities of the United Nations wherein delegates of various nations collaborate to solve existing issues through discussions,
-                        resolutions in the General Assembly and Security Council. The MUN held will act as a replacement in Enantra 2020.</div>
+                        resolutions in the General Assembly and Security Council. The MUN held will act as a replacement in Enantra 2020.<br/>
+                        Visit us on :&nbsp;<a class="flagship-links" href="https://aumun.org/" target="_blank">aumun.org</a>
+                        </div>
 				    </div>
 				    <div className="content__item-flagships">
 					    <span className="content__number">2</span>
 					    <h3 className="content__title-flagships">Entretainment</h3>
 					    <h4 className="content__subtitle-flagships"></h4>
-					    <div className="content__text">Entre-tainment is a high profile dinner setup for the sole purpose of providing a complacent atmosphere wherein interaction with top business personnel is provided. This session includes E-awards as well which involves awarding potential entrepreneurs across the country. It creates a casual ambulance where entrepreneurs from various fields can network informally. Innovative titles will be awarded to various executives based on market surveys.</div>
+					    <div className="content__text">Entretainment is a high profile dinner setup for the sole purpose of providing a complacent atmosphere wherein interaction with top business personnel is provided. This session includes E-awards as well which involves awarding potential entrepreneurs across the country. It creates a casual ambience where entrepreneurs from various fields can network informally. Innovative titles will be awarded to various executives based on market surveys.</div>
 				    </div>
 				    <div className="content__item-flagships">
 					    <span className="content__number">3</span>
 					    <h3 className="content__title-flagships">Startup Street</h3>
-					    <h4 className="content__subtitle-flagships"></h4>
+					    <h4 className="content__subtitle-flagships">
+                        <button class="btn-company btn-2-company btn-2g-company">Sponsor Registration</button>
+                        <h5 class="blink_effect"><em><br/>Registations free for students</em></h5>
+                        </h4>
 					    <div className="content__text">A platform for interaction between new startups and students. Entrepreneurs can talk about various
                         struggles they have been through and share their real life experiences. Students will be able to give their honest thoughts and ideas on how to improve their startups with possible suggestions. New startups will be able to meet new potential interns and employees. An event benefiting students who are looking for an insight into the functioning of a startup and for companies looking for intelligent students to strengthen them.</div>
 				    </div>
-				    <div className="content__item-flagships">
+                    <div className="content__item-flagships">
 					    <span className="content__number">4</span>
 					    <h3 className="content__title-flagships">6 Degree Talks</h3>
 					    <h4 className="content__subtitle-flagships"></h4>
-					    <div className="content__text">A professional interactive talk session in both physical and virtual levels. This will host prominent guests, mentors, and high level entrepreneurs in a closed arena to share and express their stories.</div>
+					    <div className="content__text">A professional talk session featuring famous personalities from all over India who will certainly leave an indelible mark with their stories on the student crowd. Hosting prominent guests, mentors, successful and emergent entrepreneurs, 6DT is an ideal chance for interaction at both a physical and virtual level. Here we witness speakers in a closed arena, expressing their unique trail. Our past speakers who have graced the event are well known figures such as Varun Agarwal, Put Chutney, Mafoy Pandiarajan, Sam Paul and so forth.<br/>
+                        <button onClick={this.onAnchorClick} class="flagship-button flagship-links">Show More</button>
+                        </div>
 				    </div>
 				    <div className="content__item-flagships">
 					    <span className="content__number">5</span>
 					    <h3 className="content__title-flagships">Startup Weekend</h3>
 					    <h4 className="content__subtitle-flagships"></h4>
-					    <div className="content__text">The right destination for aspiring startups, techies, developers and business managers to scale-up and improvise their ideas. Teams mentored by prominent entrepreneurs are expected to develop a working prototype to be displayed. The event is licensed by Google and it commences on a Friday evening and goes on for about 54 hours.</div>
+					    <div className="content__text">The right destination for aspiring startups, techies, developers and business managers to scale-up and improvise their ideas. Teams mentored by prominent entrepreneurs are expected to develop a working prototype to be displayed. The event is licensed by Google and it commences on a Friday evening and goes on for about 54 hours.<br/>
+                        Visit us on :&nbsp;<a class="flagship-links" href="http://communities.techstars.com/india/chennai-tamil-nadu-india/startup-weekend/15556" target="_blank">swchennai.in</a>
+                        </div>
                     </div>
-				    <div className="content__item-flagships">
+                    <div className="content__item-flagships">
 					    <span className="content__number">6</span>
 					    <h3 className="content__title-flagships">Startup Pitchfest</h3>
 					    <h4 className="content__subtitle-flagships"></h4>
-					    <div className="content__text">A one day event for innovators to pitch their big innovative startup ideas to the jury on the panel. The best pitch that has great potential to turn into the most viable startup receives a pre-seed grant to create a prototype from concept.</div>
+					    <div className="content__text">A one day event for innovators to pitch their winning startup ideas fo an experienced jury on the panel. This is an exemplary platform to receive guidance and requisite inputs that will cater to the development of your unique idea, into a nascent startup, finally leading you on to the footsteps of success. The best pitch that has potential to envision itself into a viable startup, receives a pre-seed grant to create a prototype from concept.
+                        <div class="blink_effect"><br/>A whopping prize money of 6.75 lakhs awaits to be bagged!</div><br/>
+                        <em>Registrations free for all</em></div>
 				    </div>
-				    <button className="content__close">
+				    <button ref={closebutton => this.closebutton = closebutton} className="content__close">
 					    <svg className="icon-flagships icon--longarrow" dangerouslySetInnerHTML={{__html : closecontent}}>
 					    </svg>
 				    </button>
 			    </div>
             </div>
-        )
+            </div>
+            )
     }
 
 }

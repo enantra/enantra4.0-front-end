@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { bounceIn } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
-import sponsors from '../img/sponsors.png';
 import '../css/Sponsors.css';
 import '../css/vendor/bootstrap.css';
 import '../css/vendor/base.min.css';
@@ -21,12 +20,12 @@ class Sponsors extends Component{
         <div class="sponsors-body">
             <div class="container">
                 <div class="centre-block">
-                    <h1 class="heading-sponsors center-block text-center"><img src={sponsors} alt="terminator-font" border="0" /></h1>
+            <h1 class="heading-sponsors center-block text-center">SPONSORS</h1>
                 </div>
                 <div class="content-sponsors row justify-content-center align-items-center text-center inner-data">
                     <StyleRoot>
                     <div  style={styles.bounceIn}>
-                        <h1 class="sponsors-buffer">STAY TUNED...</h1>
+                        <h1 class="sponsors-buffer">STAY TUNED</h1>
                     </div>
                     </StyleRoot>
                 </div> 

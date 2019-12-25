@@ -29,21 +29,23 @@
     box-sizing: border-box; 
   }
   
-  body {
+  body .aboutbackground{
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; 
     min-height: 100%;
-    font-size: 62.5%;
+    width: 100%;
+    font-size: 1.8vw;
+    font-weight: 100;
     background-color: #141720;
     font-family: 'Source Sans Pro', sans-serif;
     color: #F7F7F6;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
   }
   
-  body.page--detail .site__title {
+  .aboutbackground.page--detail .site__title {
       margin-top: 0; 
   }
   
@@ -82,19 +84,42 @@
     padding-top: 1rem;
     z-index: 1; 
   }
+
+  .logo-about-annauniv {
+    width: 16vw;
+    height: 16vw;
+    float: left;
+    margin: 3.5rem;
+  }
+
+  .logo-about-ced {
+    width: 17vw;
+    height: 22vw;
+    float: left;
+    margin: 0rem 3rem 0rem 3rem;
+  }
+
+  .logo-about-capitalize {
+    width: 17vw;
+    height: 17vw;
+    float: left;
+    margin: 2rem;
+  }
+
+  #site__bg canvas{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
   
-  #site__bg {
-    display: none; 
-    background-color: #141720;
+  .main-about{
+    position: absolute;
   }
   
   
   .episode__description-about {
-    margin-top: 0;
-    font-size: 2rem;
-    font-weight: 100;
-    color: #F7F7F6;
-    font-family: 'Source Sans Pro', sans-serif;
+    display: block;
+    padding: 2rem auto;
   }
   
   /* mobile first*/
@@ -119,7 +144,8 @@
   
     .main-about {
       display: flex;
-      padding-left: 60px; }
+      padding-left: 60px; 
+    }
   
     #site__bg {
       position: absolute;
@@ -138,9 +164,11 @@
     }
   
     .episode__description-about {
+      margin-top: 0;
       font-size: 2rem;
-      align-content: center;
-      font-weight: 300;
+      font-weight: 100;
+      color: #F7F7F6;
+      font-family: 'Source Sans Pro', sans-serif;
     }
   
   
