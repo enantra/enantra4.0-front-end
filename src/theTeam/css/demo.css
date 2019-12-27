@@ -200,13 +200,14 @@ a:hover, a:focus {
 /* Content */
 .content {
 	padding: 0 0 4em;
-	height: 800px;
+	height: 100%;
 	min-height: 100vh;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 	position: relative;
+	margin: 10px;
 }
 
 .content:not(:first-child) {
