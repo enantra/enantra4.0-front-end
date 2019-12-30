@@ -200,7 +200,7 @@ a:hover, a:focus {
 /* Content */
 .content {
 	padding: 0 0 4em;
-	height: 100%;
+	height: 70%;
 	min-height: 100vh;
 	display: flex;
 	flex-wrap: wrap;
