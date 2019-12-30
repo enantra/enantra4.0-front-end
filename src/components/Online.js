@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import '../css/EventsDescription.css';
 import '../css/EventsDescriptionComponent.css';
-import firstevent from '../img/firstevent.png';
-import secondevent from '../img/secondevent.png';
+import olpc from '../img/online/olpc.png';
+import enstragram from '../img/online/en.png';
 import dynamics from '../js/vendor/dynamics.min.js';
 import define from "../js/vendor/dynamics.min.js";
 
@@ -590,7 +590,7 @@ class Online extends Component{
 					<h2 class="slide__title-eventsdescription slide__title--preview-eventsdescription">OLPC</h2>
 					<div class="slide__item-eventsdescription">
 						<div class="slide__inner-eventsdescription">
-							<img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={firstevent} alt="Some image" />
+							<img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={olpc} alt="OLPC" />
 							<button class="action-eventsdescription action--open-eventsdescription" aria-label="View details"><i class="fa fa-plus"></i></button>
 						</div>
 					</div>
@@ -621,7 +621,7 @@ class Online extends Component{
 					<h2 class="slide__title-eventsdescription slide__title--preview-eventsdescription">ENSTAGRAM</h2>
 					<div class="slide__item-eventsdescription">
 						<div class="slide__inner-eventsdescription">
-							<img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={secondevent} alt="Some image" />
+							<img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={enstragram} alt="Enstagram" />
 							<button class="action-eventsdescription action--open-eventsdescription" aria-label="View details"><i class="fa fa-plus"></i></button>
 						</div>
 					</div>

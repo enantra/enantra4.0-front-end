@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import '../css/EventsDescription.css';
 import '../css/EventsDescriptionComponent.css';
-import firstevent from '../img/firstevent.png';
-import secondevent from '../img/secondevent.png';
-import thirdevent from '../img/thirdevent.png';
-import fourthevent from '../img/fourthevent.png';
+import bquiz from '../img/btrivia/bquiz.png';
+import brandrace from '../img/btrivia/brandrace.png';
+import hearmyvoice from '../img/btrivia/hearmyvoice.png';
+import stressinterview from '../img/btrivia/stressinterview.png';
 import dynamics from '../js/vendor/dynamics.min.js';
 import define from "../js/vendor/dynamics.min.js";
 
@@ -592,7 +592,7 @@ class Btrivia extends Component{
 					<h2 class="slide__title-eventsdescription slide__title--preview-eventsdescription">B-Quiz</h2>
 					<div class="slide__item-eventsdescription">
 						<div class="slide__inner-eventsdescription">
-							<img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={firstevent} alt="Some image" />
+							<img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={bquiz} alt="Bquiz" />
 							<button class="action-eventsdescription action--open-eventsdescription" aria-label="View details"><i class="fa fa-plus"></i></button>
 						</div>
 					</div>
@@ -623,7 +623,7 @@ class Btrivia extends Component{
 					<h2 class="slide__title-eventsdescription slide__title--preview-eventsdescription">Stress Interview</h2>
 					<div class="slide__item-eventsdescription">
 						<div class="slide__inner-eventsdescription">
-							<img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={secondevent} alt="Some image" />
+							<img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={stressinterview} alt="Stress Interview" />
 							<button class="action-eventsdescription action--open-eventsdescription" aria-label="View details"><i class="fa fa-plus"></i></button>
 						</div>
 					</div>
@@ -651,7 +651,7 @@ class Btrivia extends Component{
 					<h2 class="slide__title-eventsdescription slide__title--preview-eventsdescription">Brand Race</h2>
 					<div class="slide__item-eventsdescription">
 						<div class="slide__inner-eventsdescription">
-							<img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={thirdevent} alt="Some image" />
+							<img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={brandrace} alt="Brand Race" />
 							<button class="action-eventsdescription action--open-eventsdescription" aria-label="View details"><i class="fa fa-plus"></i></button>
 						</div>
 					</div>
@@ -689,7 +689,7 @@ class Btrivia extends Component{
 					<h2 class="slide__title-eventsdescription slide__title--preview-eventsdescription">Hear My Voice</h2>
 					<div class="slide__item-eventsdescription">
 						<div class="slide__inner-eventsdescription">
-							<img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={fourthevent} alt="Some image" />
+							<img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={hearmyvoice} alt="Hear My Voice" />
 							<button class="action-eventsdescription action--open-eventsdescription" aria-label="View details"><i class="fa fa-plus"></i></button>
 						</div>
 					</div>

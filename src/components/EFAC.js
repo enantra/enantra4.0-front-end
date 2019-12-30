@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import '../css/EventsDescription.css';
 import '../css/EventsDescriptionComponent.css';
-import firstevent from '../img/firstevent.png';
-import secondevent from '../img/secondevent.png';
-import thirdevent from '../img/thirdevent.png';
+import enviropreneur from '../img/efac/enviropreneur.png';
+import marketingmarathon from '../img/efac/marketingmarathon.png';
+import rpd from '../img/efac/rpd.png';
 import dynamics from '../js/vendor/dynamics.min.js';
 import define from "../js/vendor/dynamics.min.js";
 
@@ -588,10 +588,10 @@ class EFAC extends Component{
                 <div class="deco-eventsdescription deco--title-eventsdescription"></div>
                 <div id="slideshow" class="slideshow-eventsdescription">
                     <div class="slide-eventsdescription">
-                        <h2 class="slide__title-eventsdescription slide__title--preview-eventsdescription">Enviro-preneur</h2>
+                        <h2 class="slide__title-eventsdescription slide__title--preview-eventsdescription">Enviropreneur</h2>
                         <div class="slide__item-eventsdescription">
                             <div class="slide__inner-eventsdescription">
-                                <img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={firstevent} alt="Some image" />
+                                <img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={enviropreneur} alt="Enviropreneur" />
                                 <button class="action-eventsdescription action--open-eventsdescription" aria-label="View details"><i class="fa fa-plus"></i></button>
                             </div>
                         </div>
@@ -621,7 +621,7 @@ class EFAC extends Component{
                         <h2 class="slide__title-eventsdescription slide__title--preview-eventsdescription">Rural&nbsp;Product&nbsp;Development</h2>
                         <div class="slide__item-eventsdescription">
                             <div class="slide__inner-eventsdescription">
-                                <img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={secondevent} alt="Some image" />
+                                <img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={rpd} alt="Rural Product Development" />
                                 <button class="action-eventsdescription action--open-eventsdescription" aria-label="View details"><i class="fa fa-plus"></i></button>
                             </div>
                         </div>
@@ -653,7 +653,7 @@ class EFAC extends Component{
                         <h2 class="slide__title-eventsdescription slide__title--preview-eventsdescription">Marketing&nbsp;Marathon</h2>
                         <div class="slide__item-eventsdescription">
                             <div class="slide__inner-eventsdescription">
-                                <img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={thirdevent} alt="Some image" />
+                                <img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={marketingmarathon} alt="Marketing Marathon" />
                                 <button class="action-eventsdescription action--open-eventsdescription" aria-label="View details"><i class="fa fa-plus"></i></button>
                             </div>
                         </div>

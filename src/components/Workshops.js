@@ -580,7 +580,7 @@ class Workshops extends Component{
 							<img class="grid__item-img-workshops" src={thirdworkshop} alt="Some image" />
 						</div>
 						<h3 class="grid__item-title-workshops">Workshops</h3>
-						<h4 class="grid__item-number-workshops">Critical Thinking and First Principles</h4>
+						<h4 class="grid__item-number-workshops">Art of Argumentation</h4>
 					</a>
                     <a href="#" class="workshops-anchor grid__item-workshops">
 						<div class="grid__item-bg-workshops"></div>
