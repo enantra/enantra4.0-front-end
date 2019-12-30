@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import '../css/EventsDescription.css';
 import '../css/EventsDescriptionComponent.css';
-import firstevent from '../img/firstevent.png';
-import secondevent from '../img/secondevent.png';
-import thirdevent from '../img/thirdevent.png';
+import adope from '../img/coding/adope.png';
+import codeforfun from '../img/coding/codeforfun.png';
+import codefiesta from '../img/coding/codefiesta.png';
 import dynamics from '../js/vendor/dynamics.min.js';
 import define from "../js/vendor/dynamics.min.js";
 
@@ -589,7 +589,7 @@ class Coding extends Component{
                         <h2 class="slide__title-eventsdescription slide__title--preview-eventsdescription">Code&nbsp;for&nbsp;FUN</h2>
                         <div class="slide__item-eventsdescription">
                             <div class="slide__inner-eventsdescription">
-                                <img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={firstevent} alt="Some image" />
+                                <img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={codeforfun} alt="Code for Fun" />
                                 <button class="action-eventsdescription action--open-eventsdescription" aria-label="View details"><i class="fa fa-plus"></i></button>
                             </div>
                         </div>
@@ -620,10 +620,10 @@ class Coding extends Component{
                         </div>
                     </div>
                     <div class="slide-eventsdescription">
-                        <h2 class="slide__title-eventsdescription slide__title--preview-eventsdescription">Coder’s&nbsp;Border</h2>
+                        <h2 class="slide__title-eventsdescription slide__title--preview-eventsdescription">Code&nbsp;Fiesta</h2>
                         <div class="slide__item-eventsdescription">
                             <div class="slide__inner-eventsdescription">
-                                <img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={secondevent} alt="Some image" />
+                                <img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={codefiesta} alt="Code Fiesta" />
                                 <button class="action-eventsdescription action--open-eventsdescription" aria-label="View details"><i class="fa fa-plus"></i></button>
                             </div>
                         </div>
@@ -656,7 +656,7 @@ class Coding extends Component{
                         <h2 class="slide__title-eventsdescription slide__title--preview-eventsdescription">A(DOPE)</h2>
                         <div class="slide__item-eventsdescription">
                             <div class="slide__inner-eventsdescription">
-                                <img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={thirdevent} alt="Some image" />
+                                <img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={adope} alt="A(DOPE)" />
                                 <button class="action-eventsdescription action--open-eventsdescription" aria-label="View details"><i class="fa fa-plus"></i></button>
                             </div>
                         </div>

@@ -65,9 +65,9 @@
 }
 
 .btn-2-company {
-	background: #b2f15e;
+	background: #f882c7;
 	color: rgb(34, 33, 33);
-	box-shadow: 0 6px #71d104;
+	box-shadow: 0 6px #bb046f;
 	-webkit-transition: none;
 	-moz-transition: none;
 	transition: none;
@@ -78,12 +78,12 @@
 }
 
 .btn-2g-company:hover {
-	box-shadow: 0 4px #71d104;
+	box-shadow: 0 4px #bb046f;
 	top: 2px;
 }
 
 .btn-2g-company:active {
-	box-shadow: 0 0 #71d104;
+	box-shadow: 0 0 #bb046f;
 	top: 6px;
 }
 

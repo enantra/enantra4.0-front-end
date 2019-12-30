@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import '../css/EventsDescription.css';
 import '../css/EventsDescriptionComponent.css';
-import firstevent from '../img/firstevent.png';
-import secondevent from '../img/secondevent.png';
-import thirdevent from '../img/thirdevent.png';
-import fourthevent from '../img/fourthevent.png';
+import junkitup from '../img/bm/junkitup.png';
+import entreplanning101 from '../img/bm/entreplanning101.png';
+import valuesinbusiness from '../img/bm/valuesinbusiness.png';
+import ceointhehouse from '../img/bm/ceointhehouse.png';
 import dynamics from '../js/vendor/dynamics.min.js';
 import define from "../js/vendor/dynamics.min.js";
 
@@ -594,7 +594,7 @@ class BusinessManagement extends Component{
                         <h2 class="slide__title-eventsdescription slide__title--preview-eventsdescription">Junk&nbsp;it&nbsp;up</h2>
                         <div class="slide__item-eventsdescription">
                             <div class="slide__inner-eventsdescription">
-                                <img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={firstevent} alt="Some image" />
+                                <img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={junkitup} alt="Junk it up" />
                                 <button class="action-eventsdescription action--open-eventsdescription" aria-label="View details"><i class="fa fa-plus"></i></button>
                             </div>
                         </div>
@@ -623,10 +623,10 @@ class BusinessManagement extends Component{
                         </div>
                     </div>
                     <div class="slide-eventsdescription">
-                        <h2 class="slide__title-eventsdescription slide__title--preview-eventsdescription">Value&nbsp;Business</h2>
+                        <h2 class="slide__title-eventsdescription slide__title--preview-eventsdescription">Values&nbsp;in&nbsp;Business</h2>
                         <div class="slide__item-eventsdescription">
                             <div class="slide__inner-eventsdescription">
-                                <img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={secondevent} alt="Some image" />
+                                <img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={valuesinbusiness} alt="Values in Business" />
                                 <button class="action-eventsdescription action--open-eventsdescription" aria-label="View details"><i class="fa fa-plus"></i></button>
                             </div>
                         </div>
@@ -653,10 +653,10 @@ class BusinessManagement extends Component{
                         </div>
                     </div>
                     <div class="slide-eventsdescription">
-                        <h2 class="slide__title-eventsdescription slide__title--preview-eventsdescription">Business&nbsp;Plan&nbsp;Generation</h2>
+                        <h2 class="slide__title-eventsdescription slide__title--preview-eventsdescription">Entreplanning&nbsp;101</h2>
                         <div class="slide__item-eventsdescription">
                             <div class="slide__inner-eventsdescription">
-                                <img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={thirdevent} alt="Some image" />
+                                <img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={entreplanning101} alt="Entreplanning 101" />
                                 <button class="action-eventsdescription action--open-eventsdescription" aria-label="View details"><i class="fa fa-plus"></i></button>
                             </div>
                         </div>
@@ -684,10 +684,10 @@ class BusinessManagement extends Component{
                         </div>
                     </div>
                     <div class="slide-eventsdescription">
-                        <h2 class="slide__title-eventsdescription slide__title--preview-eventsdescription">Best&nbsp;CEO</h2>
+                        <h2 class="slide__title-eventsdescription slide__title--preview-eventsdescription">CEO&nbsp;in&nbsp;the&nbsp;House</h2>
                         <div class="slide__item-eventsdescription">
                             <div class="slide__inner-eventsdescription">
-                                <img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={fourthevent} alt="Some image" />
+                                <img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={ceointhehouse} alt="CEO in the House" />
                                 <button class="action-eventsdescription action--open-eventsdescription" aria-label="View details"><i class="fa fa-plus"></i></button>
                             </div>
                         </div>

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import '../css/EventsDescription.css';
 import '../css/EventsDescriptionComponent.css';
-import firstevent from '../img/firstevent.png';
-import secondevent from '../img/secondevent.png';
-import thirdevent from '../img/thirdevent.png';
-import fourthevent from '../img/fourthevent.png';
+import devilfollows from '../img/fun/devilfollows.png';
+import iplauction from '../img/fun/iplauction.jpg';
+import filmcontest from '../img/fun/filmcontest.png';
+import vaangapazhagalam from '../img/fun/vaangapazhagalam.png';
 import dynamics from '../js/vendor/dynamics.min.js';
 import define from "../js/vendor/dynamics.min.js";
 
@@ -597,7 +597,7 @@ class Extravaganza extends Component{
 					<h2 class="slide__title-eventsdescription slide__title--preview-eventsdescription">Devil&nbsp;Follows</h2>
 					<div class="slide__item-eventsdescription">
 						<div class="slide__inner-eventsdescription">
-							<img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={firstevent} alt="Some image" />
+							<img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={devilfollows} alt="Devil Follows" />
 							<button class="action-eventsdescription action--open-eventsdescription" aria-label="View details"><i class="fa fa-plus"></i></button>
 						</div>
 					</div>
@@ -643,7 +643,7 @@ class Extravaganza extends Component{
 					<h2 class="slide__title-eventsdescription slide__title--preview-eventsdescription">Vaanga&nbsp;Pazhagalam</h2>
 					<div class="slide__item-eventsdescription">
 						<div class="slide__inner-eventsdescription">
-							<img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={secondevent} alt="Some image" />
+							<img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={vaangapazhagalam} alt="Vaanga Pazhagalam" />
 							<button class="action-eventsdescription action--open-eventsdescription" aria-label="View details"><i class="fa fa-plus"></i></button>
 						</div>
 					</div>
@@ -675,7 +675,7 @@ class Extravaganza extends Component{
 					<h2 class="slide__title-eventsdescription slide__title--preview-eventsdescription">IPL&nbsp;Auction</h2>
 					<div class="slide__item-eventsdescription">
 						<div class="slide__inner-eventsdescription">
-							<img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={thirdevent} alt="Some image" />
+							<img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={iplauction} alt="IPL Auction" />
 							<button class="action-eventsdescription action--open-eventsdescription" aria-label="View details"><i class="fa fa-plus"></i></button>
 						</div>
 					</div>
@@ -704,7 +704,7 @@ class Extravaganza extends Component{
 					<h2 class="slide__title-eventsdescription slide__title--preview-eventsdescription">48&nbsp;hour&nbsp;Film&nbsp;Contest</h2>
 					<div class="slide__item-eventsdescription">
 						<div class="slide__inner-eventsdescription">
-							<img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={fourthevent} alt="Some image" />
+							<img class="slide__img-eventsdescription slide__img--small-eventsdescription" src={filmcontest} alt="Film Contest" />
 							<button class="action-eventsdescription action--open-eventsdescription" aria-label="View details"><i class="fa fa-plus"></i></button>
 						</div>
 					</div>
