@@ -98,6 +98,16 @@
 	color: yellowgreen;
 }
 
+.flagship-links:focus{
+	outline: none;
+	background-color: transparent !important;
+	color: yellowgreen;
+}
+
+.flagship-links:active{
+	outline: 0;
+}
+
 button.flagship-button {
     background-color: transparent;
     background-repeat:no-repeat;

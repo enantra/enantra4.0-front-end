@@ -86,7 +86,7 @@ class About extends Component{
                   }}/> 
                 </div>  
                 <div class="site-about">
-                <h1 class="about-title site__title-about site__title--separator-about">Enantra</h1>
+                <h1 class="about-title site__title-about site__title--separator-about">ENANTRA</h1>
                 <p class="site__description-about">Entrepreneurship Mantra</p>
                 <br/>
                 <p>

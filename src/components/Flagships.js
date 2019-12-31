@@ -889,7 +889,8 @@ class Flagships extends Component {
 					    <span className="content__number">3</span>
 					    <h3 className="content__title-flagships">Startup Street</h3>
 					    <h4 className="content__subtitle-flagships">
-                        <button class="btn-company btn-2-company btn-2g-company">Sponsors Registration</button>
+                        <h5><em><br/>If you're interested in setting up a stall, click the button below</em></h5>
+                        <button class="btn-company btn-2-company btn-2g-company">Register here</button>
                         <h5 class="blink_effect"><em><br/>Registations free for students</em></h5>
                         </h4>
 					    <div className="content__text">A platform for interaction between new startups and students. Entrepreneurs can talk about various
