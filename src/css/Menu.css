@@ -487,7 +487,7 @@ a.menu-anchor:focus {
 
 .shape-overlays {
 	width: 100vw;
-	height: 100vh;
+	height: 100%;
 	pointer-events: none;
 	position: fixed;
 	top: 0;
