@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../css/EventsDescription.css';
 import '../css/EventsDescriptionComponent.css';
 import devilfollows from '../img/fun/devilfollows.png';
-import iplauction from '../img/fun/iplauction.jpg';
+import iplauction from '../img/fun/iplauction.png';
 import filmcontest from '../img/fun/filmcontest.png';
 import vaangapazhagalam from '../img/fun/vaangapazhagalam.png';
 import dynamics from '../js/vendor/dynamics.min.js';
@@ -582,7 +582,7 @@ class Extravaganza extends Component{
         var slideshow = new CircleSlideshow(document.getElementById('slideshow'));
 }
     
-    componentDidUpdate(){
+    componentWillUnmount(){
         this.props.resetMenu();
     }
 

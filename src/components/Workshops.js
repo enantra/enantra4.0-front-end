@@ -590,6 +590,30 @@ class Workshops extends Component{
 						<h3 class="grid__item-title-workshops">Workshops</h3>
 						<h4 class="grid__item-number-workshops">Entrepreneurship 101</h4>
 					</a>
+                    <a href="#" class="workshops-anchor grid__item-workshops">
+						<div class="grid__item-bg-workshops"></div>
+						<div class="grid__item-wrap-workshops">
+							<img class="grid__item-img-workshops" src={firstworkshop} alt="Some image" />
+						</div>
+						<h3 class="grid__item-title-workshops">Workshops</h3>
+						<h4 class="grid__item-number-workshops">Art of money making online</h4>
+					</a>
+                    <a href="#" class="workshops-anchor grid__item-workshops">
+						<div class="grid__item-bg-workshops"></div>
+						<div class="grid__item-wrap-workshops">
+							<img class="grid__item-img-workshops" src={secondworkshop} alt="Some image" />
+						</div>
+						<h3 class="grid__item-title-workshops">Workshops</h3>
+						<h4 class="grid__item-number-workshops">Bootcamp for Entrepreneurs</h4>
+					</a>
+                    <a href="#" class="workshops-anchor grid__item-workshops">
+						<div class="grid__item-bg-workshops"></div>
+						<div class="grid__item-wrap-workshops">
+							<img class="grid__item-img-workshops" src={thirdworkshop} alt="Some image" />
+						</div>
+						<h3 class="grid__item-title-workshops">Workshops</h3>
+						<h4 class="grid__item-number-workshops">Internet of Things (IoT)</h4>
+					</a>
 				</div>
 			</div>
 			<div class="content-workshops">
@@ -601,7 +625,9 @@ class Workshops extends Component{
 					<h3 class="content__item-subtitle-workshops">Workshop on Machine Learning - A One Day Workshop on Machine Learning for Beginners</h3>
 					<div class="content__item-text-workshops">
 						<p class="workshop-description">
-                        (20% Theory & 80% Hands-On Lab Session)<br/>
+                        Machine learning is a type of artificial intelligence (AI) that provides computers with the ability to learn without being explicitly programmed. Machine learning focuses on the development of computer programs that can change when exposed to new data.<br/><br/>
+                        <p class="workshop-titles">Topics to be Covered in Workshop (20% Theory & 80% Hands-On Lab Session)</p>
+                        <br/>
                         <ul>
                             <li>Introduction to Machine learning, Introduction to algorithm Design, algorithmic problem solving.</li>
                             <li>Introduction to Python programming and Anaconda navigator.</li>
@@ -634,7 +660,7 @@ class Workshops extends Component{
                             </li>
                         </ul>
                         </p>
-                        <p class="workshop-fees">FEES - 500 INR per student</p>
+                        <p class="workshop-fees">FEES - 500 INR per student - 150 in a batch</p>
 					</div>
 				</div>
 				<div class="content__item-workshops">
@@ -646,12 +672,7 @@ class Workshops extends Component{
 					<div class="content__item-text-workshops">
                     <p class="workshop-description">
 						<p class="workshop-titles">About Workshop</p><br/>
-						<p>Learn all about Latest web technologies and internet marketing aspects termed as Search Engine
-                        Optimization (SEO) or optimization of the Social Media termed as Social Media Optimization (SMO) and
-                        begin managing your own website promotion strategy like a professional at this seminar. Attendees will
-                        be provided with instructions to build and manage their own website campaigns. A proper session will
-                        also be given on the integration of Social Networking technologies in your website for better user
-                        penetration.</p><br/>
+						<p>Digital marketing (also known as data-driven marketing) is an umbrella term for the marketing of products or services using digital technologies, mainly on the Internet, but also including mobile phones, display advertising, and any other digital medium. A social networking service is an online service, platform, or site that focuses on facilitating the building of social networks or social relations among people who, for example, share interests, activities, backgrounds, or real-life connections.</p><br/>
                         <p class="workshop-titles">What You Will Learn</p><br/>
                         <p>
                             <ul>
@@ -739,7 +760,7 @@ class Workshops extends Component{
                             </p>
                         </p>
                     </p>
-                    <p class="workshop-fees">FEES - 500 INR per student</p>
+                    <p class="workshop-fees">FEES - 500 INR per student - 150 in a batch</p>
 					</div>
 				</div>
 				<div class="content__item-workshops">
@@ -774,7 +795,7 @@ class Workshops extends Component{
                             <p class="workshop-subtitles">3 : The Socratic Method</p>
                             <p>Trolley problems and using critical thinking to make better decisions</p>
                         </p><br/>
-                        <p class="workshop-fees">FEES - 400 INR per student</p>
+                        <p class="workshop-fees">FEES - 500 INR per student - 60 in a batch</p>
 					</div>
 				</div>
                 <div class="content__item-workshops">
@@ -851,7 +872,214 @@ class Workshops extends Component{
                                 </li>
                             </ol>
                         </p>
-                        <p class="workshop-fees">FEES - 550 INR per student</p>
+                        <p class="workshop-fees">FEES - 500 INR per student - 60 in a batch</p>
+					</div>
+				</div>
+                <div class="content__item-workshops">
+					<div class="content__item-intro-workshops">
+						<img class="content__item-img-workshops" src={firstworkshop} alt="Some image" />
+						<h2 class="content__item-title-workshops">Art of money making online</h2>
+					</div>
+					<h3 class="content__item-subtitle-workshops"></h3>
+					<div class="content__item-text-workshops">
+						<p class="workshop-titles">About Workshop</p><br/>
+						<p>
+                        This workshop is an exclusive workshop from participants who wants to explore the field of Webreneurship and explore unlimited opportunities. In this era of Internet every business is up and running on Digital Platforms. There are tons of opportunities on the Internet which helps Webreneurs to make an outstanding career. In this workshop participants will be completely trained on the aspects, channels and ways of how Webreneurship happens.<br/>
+                        This Workshop helps participants to establish a career in Webreneurship in different channels. Participants do not need to have any technical knowledge. This workshop is designed for basic beginner in this field and we will show you the path of exploration. This workshop is hands-on and practical with real time cases and examples from thousands of other Webreneurs. 
+                        </p><br/>
+						<p class="workshop-titles">Workshop Benefits</p><br/>
+                        <p>
+                            <ol>
+                                <li>Participant will be internet entrepreneur</li>
+                                <li>Participants will be able to earn from your hobbies</li>
+                                <li>Participants will be learning the key ways of earning online</li>
+                                <li>Participant will have your own blog and will be blogger</li>
+                                <li>Participant will start earning from YouTube</li>
+                                <li>Participants will be able to sell products on your blog</li>
+                                <li>Participant will be a skilled professional in freelancing with number of skills</li>
+                                <li> Learn amazing tools of earning online</li>
+                            </ol>
+                        </p>
+                        <p class="workshop-titles">Pre-requisites</p><br/>
+                        <p>Anyone interested to become an Webprenuer can attend this workshop. Participant should know the basic usage of computers and internet.</p>
+                        <p class="workshop-titles">Topics to be covered</p><br/>
+                        <p>
+                            <p class="workshop-subtitles">Introduction</p>
+                            <p>
+                                <ul>
+                                    <li>Introduction to Webreneurship</li>
+                                    <li>How Webreneurship works</li>
+                                    <li>How to start as Webreneur </li>
+                                    <li>Webreneurship Channels and Secrets</li>
+                                    <li>Webreneurship Road Map Creation</li>
+                                    <li>Introduction to successful ways of earning</li>
+                                    <li>How making money works on Internet</li>
+                                    <li>Real time examples of successful people</li>
+                                </ul>
+                            </p>
+                            <p class="workshop-subtitles">Basics</p>
+                            <p>
+                                <ul>
+                                    <li>Do people really make money blogging</li>
+                                    <li>How a blogger makes 1 lakh per month</li>
+                                    <li>Blogging tools and platforms</li>
+                                    <li>Interesting case studies & secrets</li>
+                                    <li>Setup your blog & related information</li>
+                                    <li>How to setup a website</li>
+                                    <li>How blog and blogging works</li>
+                                    <li>How to do blogging and techniques</li>
+                                    <li>Basics of SEO & Killer SEO techniques</li>
+                                    <li>Driving traffic to your blog</li>
+                                    <li>How to increase Social Media Presence</li>
+                                    <li> Setup your Youtube Channel</li>
+                                    <li>How to handle Youtube Channel</li>
+                                    <li>How Youtube channel works and making money</li>
+                                    <li>How to earn from Facebook without any investment</li>
+                                    <li>Important tools for blogging and Youtube channel</li>
+                                    <li>Introduction to most effective freelance platforms</li>
+                                    <li>How to earn from Freelancing platforms</li>
+                                </ul>
+                            </p>
+                            <p class="workshop-subtitles">Advanced</p>
+                            <p>
+                                <ul>
+                                    <li>Setup Google ad-sense</li>
+                                    <li>Introduction to Affiliate Marketing</li>
+                                    <li>Selling products on your blog</li>
+                                    <li>Making money from Amazon and Ebooks</li>
+                                    <li>Basic Introduction to Digital Marketing</li>
+                                    <li>Difference between Affiliate & Adsense</li>
+                                    <li>Secrets behind zero investment ecommerce business</li>
+                                </ul>
+                            </p>
+                            <p class="workshop-subtitles">After Workshop</p>
+                            <p>
+                                <ul>
+                                    <li>Q&A Session</li>
+                                    <li>Guidance on further steps</li>
+                                </ul>
+                            </p>
+                            <p class="workshop-titles">Takeaways</p><br/>
+                            <p>Official Certification from Digitalshala with partnerships</p>
+                        </p><br/>
+                        <p class="workshop-fees">FEES - 500 INR per student - 60 in a batch</p>
+					</div>
+				</div>
+                <div class="content__item-workshops">
+					<div class="content__item-intro-workshops">
+						<img class="content__item-img-workshops" src={secondworkshop} alt="Some image" />
+						<h2 class="content__item-title-workshops">Bootcamp for Entrepreneurs</h2>
+					</div>
+					<h3 class="content__item-subtitle-workshops"></h3>
+					<div class="content__item-text-workshops">
+						<p class="workshop-titles">About Workshop</p><br/>
+						<p>
+                        A one of a kind masterclass which makes the participants to get trained on complete Road Map on being an Entrepreneur. This Workshop Covers everything which an Entrepreneur needs to be successful. By end of the workshop the participant will have a clear Road Map on where to start and how to plan the entire Entrepreneurial journey.
+                        </p><br/>
+						<p class="workshop-titles">Workshop Benefits</p><br/>
+                        <p>
+                            <ul>
+                                <li>Understanding Startup work Environment</li>
+                                <li>Know and Intact Entrepreneurial mindset</li>
+                                <li>Techniques and worksheets on the Ideation - Planning - Execution - Control & Monitoring - Closing Up With Profits - Customer Engagement - Handling Continuous Sales & Marketing Workflow</li>
+                                <li>To bring a certain level of clarity in thoughts, concepts & ideas</li>
+                                <li>To structure & give shape to the business model</li>
+                                <li>To place an effective benchmark & draw tracking mechanisms of progress vs. business plan.</li>
+                                <li>To provide methods & models for Proof of Concept</li>
+                            </ul>
+                        </p><br/>
+                        <p class="workshop-titles">Topics to be covered</p><br/>
+                        <p>
+                            <p class="workshop-subtitles">Introduction</p>
+                            <p>
+                                <ul>
+                                    <li>Startup life-cycle</li>
+                                    <li>Mindset needed for an Entrepreneur to be Successful</li>
+                                    <li>Importance of Lean & Agile Development in a startup</li>
+                                    <li>How Startups Differ from MNCs</li>
+                                    <li>Startup Success Mindset Test + Evaluation</li>
+                                </ul>
+                            </p>
+                            <p class="workshop-subtitles">Ideation & Productisation</p>
+                            <p>
+                                <ul>
+                                    <li>Get Ready be an Entrepreneur </li>
+                                    <li>Good Idea! How to find one for your Business</li>
+                                    <li>Good Time to Launch your Business as Part/Full-time</li>
+                                    <li>What to Build and What to Buy? Starting a Business vs. Buying one</li>
+                                </ul>
+                            </p>
+                            <p class="workshop-subtitles">Planning</p>
+                            <p>
+                                <ul>
+                                    <li>Choose your Market, Know your TAM</li>
+                                    <li>Doing Market Research + Surveys</li>
+                                    <li>Knowing your USP</li>
+                                    <li>Naming your business</li>
+                                    <li>Make your Business Legal: Choosing Business Structure</li>
+                                    <li>Plan of Strategical Success: Creating a Business Model to win</li>
+                                    <li>Hiring right Professionals: Key People for the organisational structural foundation.</li>
+                                </ul>
+                            </p>
+                            <p class="workshop-subtitles">Funding</p>
+                            <p>
+                                <ul>
+                                    <li>Family First! friends, relatives, family, yourself and initial fundraising from known sources</li>
+                                    <li>Bootstrapping your business, advantages of it.</li>
+                                    <li>Nothing ventured is nothing gained! Finding the right investors and how to attract them.</li>
+                                    <li>Looking for Loans: The In's and Out's of Debt Financing and to get loans from Government.</li>
+                                </ul>
+                            </p>
+                            <p class="workshop-subtitles">Preparation with Available Resources</p>
+                            <p>
+                                <ul>
+                                    <li>Negotiating successfully</li>
+                                    <li>Creating best MVP Possible by MUR</li>
+                                    <li>Choosing Location for your business. Is it really Necessary! or any hacks!</li>
+                                    <li>Key takes on Professional Image</li>
+                                    <li>A lowdown on personal inventory</li>
+                                    <li>Setting up a mailing system and automating key processes.</li>
+                                    <li>Special offers for your customers, giving credit and other leverages.</li>
+                                    <li>Hiring Employees. Key to Business sustainability.</li>
+                                    <li>Using Technology to boost your productivity</li>
+                                    <li>Building a company website</li>
+                                    <li>Using Technology to Stay Connected with team+ Customers.</li>
+                                </ul>
+                            </p>
+                            <p class="workshop-subtitles">Branding, Marketing & Customer Service</p>
+                            <p>
+                                <ul>
+                                    <li>Building your brand.</li>
+                                    <li>Techniques to Advertise and Marketing Your Business</li>
+                                    <li>Psychology of Marketing, 5 secrets.</li>
+                                    <li>Promoting Business</li>
+                                    <li>Effective Selling Techniques</li>
+                                    <li>Offering Superior Customer Service.</li>
+                                </ul>
+                            </p>
+                            <p class="workshop-subtitles">Engaging your Customers</p>
+                            <p>
+                                <ul>
+                                    <li>Online Advertising and Marketing</li>
+                                    <li>Social Media Marketing and Digital Growth</li>
+                                    <li>Social Media Networking</li>
+                                </ul>
+                            </p>
+                            <p class="workshop-titles">Takeaways</p><br/>
+                            <p>Official Certification from Digitalshala with partnerships</p>
+                        </p><br/>
+                        <p class="workshop-fees">FEES - 500 INR per student - 60 in a batch</p>
+					</div>
+				</div>
+                <div class="content__item-workshops">
+					<div class="content__item-intro-workshops">
+						<img class="content__item-img-workshops" src={thirdworkshop} alt="Some image" />
+						<h2 class="content__item-title-workshops">Internet of Things IoT</h2>
+					</div>
+					<h3 class="content__item-subtitle-workshops"></h3>
+					<div class="content__item-text-workshops">
+                    <p class="workshop-titles">About Workshop</p><br/>
+                    <p>IoT systems allow users to achieve deeper automation, analysis, and integration within a system. They improve the reach of these areas and their accuracy. IoT utilizes existing and emerging technology for sensing, networking and robotics. IoT exploits recent advances in software, falling hardware prices and modern attitudes towards technology.</p>
 					</div>
 				</div>
 				<button class="content__close-workshops">Close</button>

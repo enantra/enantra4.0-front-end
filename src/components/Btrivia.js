@@ -576,8 +576,7 @@ class Btrivia extends Component{
         document.documentElement.className = 'js';
         var slideshow = new CircleSlideshow(document.getElementById('slideshow'));
 }
-    
-    componentDidUpdate(){
+    componentWillUnmount(){
         this.props.resetMenu();
     }
 
