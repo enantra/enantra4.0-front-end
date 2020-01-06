@@ -12,8 +12,9 @@ import Sponsors from './Sponsors';
 import Attractions from './Attractions';
 import Contact from './Contact';
 import Team from './Team';
+import Profile from './Profile';
 
-const pages = ['Home','Flagships','Events','Signup','Login','Workshops','About','Accommodation','Sponsors','Attractions','ContactUs','Team'];
+const pages = ['Home','Flagships','Events','Signup','Login','Workshops','About','Accommodation','Sponsors','Attractions','ContactUs','Team','Profile'];
 
 class ChooseComponent extends Component {
     constructor(props){
@@ -56,6 +57,7 @@ class ChooseComponent extends Component {
                   case pages[9] : return <Attractions />
                   case pages[10]: return <Contact/>
                   case pages[11]: return <Team />
+                  case pages[12]: return <Profile/>
                   default: return null;
                 }
             })()}
