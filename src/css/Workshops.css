@@ -6,15 +6,15 @@
 
 .workshops {
 	--color-text: #f6f5f8;
-    --color-bg: #201b1b;
-	--color-link: #f01544;
+    --color-bg: #141414;
+	--color-link: #fdebeb;
     --color-link-hover: #faeb66;
     --color-info: #272526;
-    --grid-item-bg: #2a2828;
+    --grid-item-bg: #2c2a2a;
     --color-close: #ec1752;
 	font-family: Futura, "futura-pt", sans-serif;
 	min-height: 100vh;
-	color: #57585c;
+	color: #cacfd1;
 	color: var(--color-text);
 	background-color: #fff;
 	background-color: var(--color-bg);
@@ -151,7 +151,7 @@ main {
 
 .grid-wrap-workshops {
 	position: relative;
-	max-width: 1000px;
+	max-width: 1100px;
 	margin: 0 auto;
 	padding: 4rem 1rem 0;
 }

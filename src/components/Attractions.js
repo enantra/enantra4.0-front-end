@@ -4,9 +4,9 @@ import Tween from '../js/vendor/TweenMax.min.js';
 import charming from '../js/vendor/charming.min.js';
 import imagesLoaded from '../js/vendor/imagesloaded.pkgd.min.js';
 import Masonry from '../js//vendor/masonry.pkgd.min.js';
-import firstworkshop from '../img/btrivia.jpg';
-import secondworkshop from '../img/bm.jpg';
-import thirdworkshop from '../img/coding.jpg';
+import carnival from '../img/attractions/carnival.jpg';
+import foodstreet from '../img/attractions/foodstreet.jpg';
+import minibazaar from '../img/attractions/minibazaar.jpg';
 
 
 class Attractions extends Component{
@@ -557,7 +557,7 @@ class Attractions extends Component{
 					<a href="#" class="workshops-anchor grid__item-workshops">
 						<div class="grid__item-bg-workshops"></div>
 						<div class="grid__item-wrap-workshops">
-							<img class="grid__item-img-workshops" src={firstworkshop} alt="Some image" />
+							<img class="grid__item-img-workshops" src={foodstreet} alt="Food Street" />
 						</div>
 						<h3 class="grid__item-title-workshops">Attractions</h3>
 						<h4 class="grid__item-number-workshops">Food&nbsp;Street</h4>
@@ -565,7 +565,7 @@ class Attractions extends Component{
 					<a href="#" class="workshops-anchor grid__item-workshops">
 						<div class="grid__item-bg-workshops"></div>
 						<div class="grid__item-wrap-workshops">
-							<img class="grid__item-img-workshops" src={secondworkshop} alt="Some image" />
+							<img class="grid__item-img-workshops" src={minibazaar} alt="Mini Bazaar" />
 						</div>
 						<h3 class="grid__item-title-workshops">Attractions</h3>
 						<h4 class="grid__item-number-workshops">Mini&nbsp;Bazaar</h4>
@@ -573,7 +573,7 @@ class Attractions extends Component{
 					<a href="#" class="workshops-anchor grid__item-workshops">
 						<div class="grid__item-bg-workshops"></div>
 						<div class="grid__item-wrap-workshops">
-							<img class="grid__item-img-workshops" src={thirdworkshop} alt="Some image" />
+							<img class="grid__item-img-workshops" src={carnival} alt="Carnivals" />
 						</div>
 						<h3 class="grid__item-title-workshops">Attractions</h3>
 						<h4 class="grid__item-number-workshops">Carnivals</h4>
@@ -583,8 +583,8 @@ class Attractions extends Component{
 			<div class="content-workshops">
 				<div class="content__item-workshops">
 					<div class="content__item-intro-workshops">
-						<img class="content__item-img-workshops" src={firstworkshop} alt="Some image" />
-						<h3 class="content__item-title-workshops">Food Street</h3>
+						<img class="content__item-img-workshops" src={foodstreet} alt="Food Street" />
+						<h3 class="content__item-title-workshops"></h3>
 					</div>
 					<h3 class="content__item-subtitle-workshops">A variety of food stalls, from across various cuisines - to satisfy your every craving, anytime of the day. Come with your friends to walk, talk and eat along the way in this unique experience.</h3>
 					<div class="content__item-text-workshops">
@@ -594,8 +594,8 @@ class Attractions extends Component{
 				</div>
 				<div class="content__item-workshops">
 					<div class="content__item-intro-workshops">
-						<img class="content__item-img-workshops" src={secondworkshop} alt="Some image" />
-						<h2 class="content__item-title-workshops">Mini Bazaar</h2>
+						<img class="content__item-img-workshops" src={minibazaar} alt="Mini Bazaar" />
+						<h2 class="content__item-title-workshops"></h2>
 					</div>
 					<h3 class="content__item-subtitle-workshops">A shopping experience that'll be light on the pockets, but heavy in your bags. For a fun day out, to find what you've been meaning to buy at all time low prices!</h3>
 					<div class="content__item-text-workshops">
@@ -605,8 +605,8 @@ class Attractions extends Component{
 				</div>
 				<div class="content__item-workshops">
 					<div class="content__item-intro-workshops">
-						<img class="content__item-img-workshops" src={thirdworkshop} alt="Some image" />
-						<h2 class="content__item-title-workshops">Carnivals</h2>
+						<img class="content__item-img-workshops" src={carnival} alt="Carnivals" />
+						<h2 class="content__item-title-workshops"></h2>
 					</div>
 					<h3 class="content__item-subtitle-workshops">A fun filled experience with games and prizes! Come and rediscover the child in you.</h3>
 					<div class="content__item-text-workshops">

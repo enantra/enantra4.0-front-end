@@ -4,10 +4,13 @@ import Tween from '../js/vendor/TweenMax.min.js';
 import charming from '../js/vendor/charming.min.js';
 import imagesLoaded from '../js/vendor/imagesloaded.pkgd.min.js';
 import Masonry from '../js//vendor/masonry.pkgd.min.js';
-import firstworkshop from '../img/btrivia.jpg';
-import secondworkshop from '../img/bm.jpg';
-import thirdworkshop from '../img/coding.jpg';
-import fourthworkshop from '../img/efac.jpg';
+import machinelearning from '../img/workshops/machinelearning.jpg';
+import artofmoneymaking from '../img/workshops/artofmoneymaking.jpg';
+import bootcamp from '../img/workshops/bootcamp.jpg';
+import criticalthinking from '../img/workshops/criticalthinking.jpg';
+import entrepreneurship101 from '../img/workshops/entrepreneurship101.jpg';
+import iot from '../img/workshops/iot.jpg';
+import digitalmarketing from '../img/workshops/digitalmarketing.jpg';
 
 class Workshops extends Component{
     componentDidMount(){
@@ -561,66 +564,66 @@ class Workshops extends Component{
 					<a href="#" class="workshops-anchor grid__item-workshops">
 						<div class="grid__item-bg-workshops"></div>
 						<div class="grid__item-wrap-workshops">
-							<img class="grid__item-img-workshops" src={firstworkshop} alt="Some image" />
+							<img class="grid__item-img-workshops" src={machinelearning} alt="Machine Learning" />
 						</div>
 						<h3 class="grid__item-title-workshops">Workshops</h3>
-						<h4 class="grid__item-number-workshops">Machine Learning</h4>
+						<h4 class="grid__item-number-workshops">Machine&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learning</h4>
 					</a>
 					<a href="#" class="workshops-anchor grid__item-workshops">
 						<div class="grid__item-bg-workshops"></div>
 						<div class="grid__item-wrap-workshops">
-							<img class="grid__item-img-workshops" src={secondworkshop} alt="Some image" />
+							<img class="grid__item-img-workshops" src={digitalmarketing} alt="Digital Marketing" />
 						</div>
 						<h3 class="grid__item-title-workshops">Workshops</h3>
-						<h4 class="grid__item-number-workshops">Digital Marketing</h4>
+						<h4 class="grid__item-number-workshops">Digital&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Marketing</h4>
 					</a>
 					<a href="#" class="workshops-anchor grid__item-workshops">
 						<div class="grid__item-bg-workshops"></div>
 						<div class="grid__item-wrap-workshops">
-							<img class="grid__item-img-workshops" src={thirdworkshop} alt="Some image" />
+							<img class="grid__item-img-workshops" src={criticalthinking} alt="Critical Thinking" />
 						</div>
 						<h3 class="grid__item-title-workshops">Workshops</h3>
-						<h4 class="grid__item-number-workshops">Art of Argumentation</h4>
+						<h4 class="grid__item-number-workshops">Art&nbsp;of&nbsp;Argumentation</h4>
 					</a>
                     <a href="#" class="workshops-anchor grid__item-workshops">
 						<div class="grid__item-bg-workshops"></div>
 						<div class="grid__item-wrap-workshops">
-							<img class="grid__item-img-workshops" src={fourthworkshop} alt="Some image" />
+							<img class="grid__item-img-workshops" src={entrepreneurship101} alt="Entrepreneurship 101" />
 						</div>
 						<h3 class="grid__item-title-workshops">Workshops</h3>
-						<h4 class="grid__item-number-workshops">Entrepreneurship 101</h4>
+						<h4 class="grid__item-number-workshops">Entrepreneurship&nbsp;101</h4>
 					</a>
                     <a href="#" class="workshops-anchor grid__item-workshops">
 						<div class="grid__item-bg-workshops"></div>
 						<div class="grid__item-wrap-workshops">
-							<img class="grid__item-img-workshops" src={firstworkshop} alt="Some image" />
+							<img class="grid__item-img-workshops" src={artofmoneymaking} alt="Art of Money Making Online" />
 						</div>
 						<h3 class="grid__item-title-workshops">Workshops</h3>
-						<h4 class="grid__item-number-workshops">Art of money making online</h4>
+						<h4 class="grid__item-number-workshops">Art&nbsp;of&nbsp;money making&nbsp;online</h4>
 					</a>
                     <a href="#" class="workshops-anchor grid__item-workshops">
 						<div class="grid__item-bg-workshops"></div>
 						<div class="grid__item-wrap-workshops">
-							<img class="grid__item-img-workshops" src={secondworkshop} alt="Some image" />
+							<img class="grid__item-img-workshops" src={bootcamp} alt="Bootcamp for Entrepreneurs" />
 						</div>
 						<h3 class="grid__item-title-workshops">Workshops</h3>
-						<h4 class="grid__item-number-workshops">Bootcamp for Entrepreneurs</h4>
+						<h4 class="grid__item-number-workshops">Bootcamp&nbsp;for Entrepreneurs</h4>
 					</a>
                     <a href="#" class="workshops-anchor grid__item-workshops">
 						<div class="grid__item-bg-workshops"></div>
 						<div class="grid__item-wrap-workshops">
-							<img class="grid__item-img-workshops" src={thirdworkshop} alt="Some image" />
+							<img class="grid__item-img-workshops" src={iot} alt="IoT" />
 						</div>
 						<h3 class="grid__item-title-workshops">Workshops</h3>
-						<h4 class="grid__item-number-workshops">Internet of Things (IoT)</h4>
+						<h4 class="grid__item-number-workshops">Internet&nbsp;of&nbsp;Things(IoT)</h4>
 					</a>
 				</div>
 			</div>
 			<div class="content-workshops">
 				<div class="content__item-workshops">
 					<div class="content__item-intro-workshops">
-						<img class="content__item-img-workshops" src={firstworkshop} alt="Some image" />
-						<h3 class="content__item-title-workshops">Innovians Technologies</h3>
+						<img class="content__item-img-workshops" src={machinelearning} alt="Machine Learning" />
+						<h3 class="content__item-title-workshops"></h3>
 					</div>
 					<h3 class="content__item-subtitle-workshops">Workshop on Machine Learning - A One Day Workshop on Machine Learning for Beginners</h3>
 					<div class="content__item-text-workshops">
@@ -665,8 +668,8 @@ class Workshops extends Component{
 				</div>
 				<div class="content__item-workshops">
 					<div class="content__item-intro-workshops">
-						<img class="content__item-img-workshops" src={secondworkshop} alt="Some image" />
-						<h2 class="content__item-title-workshops">Innovians Technologies</h2>
+						<img class="content__item-img-workshops" src={digitalmarketing} alt="Digital Marketing" />
+						<h2 class="content__item-title-workshops"></h2>
 					</div>
 					<h3 class="content__item-subtitle-workshops">Workshop on Digital Marketing - One Day Workshop on Digital Marketing, SEO, SMO, SMM & Online Branding</h3>
 					<div class="content__item-text-workshops">
@@ -765,8 +768,8 @@ class Workshops extends Component{
 				</div>
 				<div class="content__item-workshops">
 					<div class="content__item-intro-workshops">
-						<img class="content__item-img-workshops" src={thirdworkshop} alt="Some image" />
-						<h2 class="content__item-title-workshops">Transform into a Thinker</h2>
+						<img class="content__item-img-workshops" src={criticalthinking} alt="Art of Argumentation" />
+						<h2 class="content__item-title-workshops"></h2>
 					</div>
 					<h3 class="content__item-subtitle-workshops">Workshop on Critical Thinking and First Principles</h3>
 					<div class="content__item-text-workshops">
@@ -800,8 +803,8 @@ class Workshops extends Component{
 				</div>
                 <div class="content__item-workshops">
 					<div class="content__item-intro-workshops">
-						<img class="content__item-img-workshops" src={fourthworkshop} alt="Some image" />
-						<h2 class="content__item-title-workshops">Entrepreneurship 101</h2>
+						<img class="content__item-img-workshops" src={entrepreneurship101} alt="Entrepreneurship 101" />
+						<h2 class="content__item-title-workshops"></h2>
 					</div>
 					<h3 class="content__item-subtitle-workshops">Workshop on Entrepreneurship</h3>
 					<div class="content__item-text-workshops">
@@ -877,8 +880,8 @@ class Workshops extends Component{
 				</div>
                 <div class="content__item-workshops">
 					<div class="content__item-intro-workshops">
-						<img class="content__item-img-workshops" src={firstworkshop} alt="Some image" />
-						<h2 class="content__item-title-workshops">Art of money making online</h2>
+						<img class="content__item-img-workshops" src={artofmoneymaking} alt="Art of Money Making Online" />
+						<h2 class="content__item-title-workshops"></h2>
 					</div>
 					<h3 class="content__item-subtitle-workshops"></h3>
 					<div class="content__item-text-workshops">
@@ -967,8 +970,8 @@ class Workshops extends Component{
 				</div>
                 <div class="content__item-workshops">
 					<div class="content__item-intro-workshops">
-						<img class="content__item-img-workshops" src={secondworkshop} alt="Some image" />
-						<h2 class="content__item-title-workshops">Bootcamp for Entrepreneurs</h2>
+						<img class="content__item-img-workshops" src={bootcamp} alt="Bootcamp for Entrepreneurs" />
+						<h2 class="content__item-title-workshops"></h2>
 					</div>
 					<h3 class="content__item-subtitle-workshops"></h3>
 					<div class="content__item-text-workshops">
@@ -1073,8 +1076,8 @@ class Workshops extends Component{
 				</div>
                 <div class="content__item-workshops">
 					<div class="content__item-intro-workshops">
-						<img class="content__item-img-workshops" src={thirdworkshop} alt="Some image" />
-						<h2 class="content__item-title-workshops">Internet of Things IoT</h2>
+						<img class="content__item-img-workshops" src={iot} alt="Internet of Things" />
+						<h2 class="content__item-title-workshops"></h2>
 					</div>
 					<h3 class="content__item-subtitle-workshops"></h3>
 					<div class="content__item-text-workshops">
