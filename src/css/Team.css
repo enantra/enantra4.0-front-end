@@ -6,7 +6,7 @@
 .team-background {
 	font-family: 'Roboto','Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif;
 	color: #463f51;
-	background: #222127;
+	background: #01003b;
 	overflow-x: hidden;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -37,7 +37,7 @@ h1.codrops-header__title {
 	font-size: 3em;
 	margin: 0;
 	padding: 0;
-	color: #7d5fb5;
+	color: #f5f377;
 }
 
 .content-theteam {
