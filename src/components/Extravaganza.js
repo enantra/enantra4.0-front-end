@@ -651,7 +651,7 @@ class Extravaganza extends Component{
 						<div class="slide__content-scroller-eventsdescription">
 							<div class="slide__img-eventsdescription slide__img--large-eventsdescription">
                             <p>
-                            <p class="rounds">Round 1:&nbsp;&nbsp;Vaanga pazhagalam!</p>
+                            <p class="rounds">Vaanga pazhagalam!</p>
                             <p>Tests the students’ networking skills and how well they can coordinate and execute strategies with people they meet then.<br/>
                             Individuals split into teams (on-spot).<br/>
                             1. Collectively called into a hall and allowed to network.<br/>
@@ -683,9 +683,12 @@ class Extravaganza extends Component{
 						<div class="slide__content-scroller-eventsdescription">
 							<div class="slide__img-eventsdescription slide__img--large-eventsdescription">
                             <p class="product__description">
+                            <p>This is a miniature model of a typical auction that teaches you the flow involved. A team can have a maximum of two members and the competition will be conducted in two rounds.</p>
                             <p>
-                            <p class="rounds">Round 1:&nbsp;&nbsp;Pen and paper</p>
-                            <p class="rounds">Round 2:&nbsp;&nbsp;Auction</p>
+                            <p class="rounds">Round 1:&nbsp;&nbsp;Pen and paper (Prelimnary round)<br/>
+                            It will be a simulation round. In this round, teams would be given a list of players with their IPL stats and price value. They will be required to form the teams within the allocated budgets. The top 8 teams with the best selected players, based on their stats will advance to the next round.</p>
+                            <p class="rounds">Round 2:&nbsp;&nbsp;Auction (Final)<br/>
+                            This includes the real bidding mechanisms. This round will contain 8 teams where each team will be given an equal amount of money for the bidding. Each time will have to bid for a franchise and the team has to be assembled with a mix of batsmen, bowlers, all-rounders and wicket-keepers from the poll of players being auctioned. A list of all players along with their base price and value points is given to the teams at the beginning. Bidding will begin at the player's base price. Team with the highest value point at the end of the auction will be declared as the winner.</p>
                             </p>
                             </p>
                             </div>
@@ -712,7 +715,8 @@ class Extravaganza extends Component{
 						<div class="slide__content-scroller-eventsdescription">
 							<div class="slide__img-eventsdescription slide__img--large-eventsdescription">
                             <p>
-                            Teams registering for the event will be given a title. They have to develop a short film of max 10min and present it within 48hrs.
+                            Teams registering for the event will be given a title. They have to develop a short film of max 10min and present it within 48hrs.<br/>
+                            Note : It should be filmed within the college campus.
                             </p>
                             </div>
 							<div class="slide__details-eventsdescription">

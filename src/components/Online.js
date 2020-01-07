@@ -597,6 +597,7 @@ class Online extends Component{
 					<div class="slide__content-eventsdescription">
 						<div class="slide__content-scroller-eventsdescription">
 							<div class="slide__img-eventsdescription slide__img--large-eventsdescription">
+                            <p>It is high time you take your amateur coding to the next level. Participate in OLPC to prove your coding skills. Get ready for a brain workout session!</p>
                             <p>
                             1. There will be 6 problems.<br/>
                             2. Time limit – 150 minutes.<br/>
@@ -629,6 +630,7 @@ class Online extends Component{
 						<div class="slide__content-scroller-eventsdescription">
 							<div class="slide__img-eventsdescription slide__img--large-eventsdescription">
                             <p>
+                            <p>If you love taking photographs that invlove not just the eye but also the brain and your creative skills, this is the event for you! There are a total of 3 rounds, each different in challenging to put your skills to the test.</p>
                             <p class="rounds">Round 1:&nbsp;&nbsp;PRODUCT PHOTOGRAPHY</p>
                             <p>Participants must pick a photo with a tagline of the product from the list. Maximum likes and judges score will be moving to next round.</p>
                             <p class="rounds">Round 2:&nbsp;&nbsp;DEPICTING THE NAME</p>

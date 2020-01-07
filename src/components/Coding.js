@@ -597,6 +597,7 @@ class Coding extends Component{
                             <div class="slide__content-scroller-eventsdescription">
                                 <div class="slide__img-eventsdescription slide__img--large-eventsdescription">
                                 <p>
+                                Every coder from total beginners to seasoned experts will have to deal with basic aptitude to get the logic right, coding it the right way and ofcourse detecting the bugs. This event just tests these skills<br/>
                                 Team of two<br/><br/>
                                 <p>
                                     <p class="rounds">Round 1:&nbsp;&nbsp;Pen and paper</p>
@@ -630,6 +631,7 @@ class Coding extends Component{
                         <div class="slide__content-eventsdescription">
                             <div class="slide__content-scroller-eventsdescription">
                                 <div class="slide__img-eventsdescription slide__img--large-eventsdescription">
+                                <p>Is coding fun? Yes ofcourse it is, if you come and get a completely new perspective of the different aspects of coding. Not just that, you'll also be tested on the basics of different computer related subjects.</p>
                                 <p>
                                 <p class="rounds">Round 1:&nbsp;&nbsp;Pen and Paper</p>
                                 <p>Skills on oops, DBMS, OS and networking is tested.</p>
@@ -664,7 +666,7 @@ class Coding extends Component{
                             <div class="slide__content-scroller-eventsdescription">
                                 <div class="slide__img-eventsdescription slide__img--large-eventsdescription">
                                 <p>
-                                <p>This event is exclusively for the people who passionately work in software like Adobe Photoshop and Illustrator. You can bring out all your creativity in the given topic on the spot.<br/><br/>
+                                <p>Are you the one who can express better visually? Then this event is just for you, to put in all your creativity and imagination to produce the best of it through different softwares like Photoshop/Illustrator.<br/><br/>
                                 <p class="bold">Rules and Regulations:</p>
                                 <p class="bold">For the people who chooses Photoshop as mainstream:</p>
                                 <p>

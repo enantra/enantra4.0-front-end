@@ -5,12 +5,12 @@
 }
 
 .workshops {
-	--color-text: #f6f5f8;
+	--color-text: #fdfdff;
     --color-bg: #141414;
 	--color-link: #fdebeb;
     --color-link-hover: #faeb66;
     --color-info: #272526;
-    --grid-item-bg: #2c2a2a;
+    --grid-item-bg: #39c4c8;
     --color-close: #ec1752;
 	font-family: Futura, "futura-pt", sans-serif;
 	min-height: 100vh;

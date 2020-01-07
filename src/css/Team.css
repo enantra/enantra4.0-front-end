@@ -3,10 +3,14 @@
 	box-sizing: border-box; 
 }
 
+@font-face {
+	font-family: Poppins-Regular;
+	src: local('Poppins-Regular'), url('../fonts/Poppins-Regular.ttf');
+  }
+
 .team-background {
-	font-family: 'Roboto','Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif;
-	color: #463f51;
-	background: #01003b;
+	font-family: Poppins-Regular;
+	background: rgb(70, 68, 68);
 	overflow-x: hidden;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -34,7 +38,7 @@
 }
 
 h1.codrops-header__title {
-	font-size: 3em;
+	font-size: 5vw;
 	margin: 0;
 	padding: 0;
 	color: #f5f377;

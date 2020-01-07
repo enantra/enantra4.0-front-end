@@ -423,7 +423,7 @@ class Team extends Component{
         <main>
         <section class="content-theteam content--c1">
             <header class="codrops-header">
-                <h1 class="codrops-header__title">Board of Directors</h1>
+                <h1 class="codrops-header__title">President</h1>
             </header>
             <a class="tilter tilter--1">
                 <figure class="tilter__figure">
@@ -440,6 +440,11 @@ class Team extends Component{
                     </svg>
                 </figure>
             </a>
+        </section> 
+        <section class="content-theteam content--c1">
+            <header class="codrops-header">
+                <h1 class="codrops-header__title">Vice President</h1>
+            </header>
             <a class="tilter tilter--1">
                 <figure class="tilter__figure">
                     <img class="tilter__image" src={two} alt="img02" />
@@ -470,6 +475,11 @@ class Team extends Component{
                     </svg>
                 </figure>
             </a>
+        </section>       
+        <section class="content-theteam content--c1">
+            <header class="codrops-header">
+                <h1 class="codrops-header__title">Board of Directors</h1>
+            </header>
             <a class="tilter tilter--1">
                 <figure class="tilter__figure">
                     <img class="tilter__image" src={four} alt="img01" />
@@ -577,7 +587,6 @@ class Team extends Component{
             </a>
         </section>
         <section class="content-theteam content--c1">
-
             <header class="codrops-header">
                 <h1 class="codrops-header__title">Flagships </h1>
             </header>
@@ -636,36 +645,6 @@ class Team extends Component{
                     <figcaption class="tilter__caption">
                         <h3 class="tilter__title">Vishwak</h3>
                         <p class="tilter__description"> Startup Street <br /> 9884790009</p>
-                    </figcaption>
-                    <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
-                        <path d="M20.5,20.5h260v375h-260V20.5z" />
-                    </svg>
-                </figure>
-            </a>
-            <a  class="tilter tilter--1">
-                <figure class="tilter__figure">
-                    <img class="tilter__image" src={twentyfive} alt="img01" />
-                    <div class="tilter__deco tilter__deco--shine">
-                        <div></div>
-                    </div>
-                    <figcaption class="tilter__caption">
-                        <h3 class="tilter__title">Gokul P</h3>
-                        <p class="tilter__description">Startup street <br /> 9841300281</p>
-                    </figcaption>
-                    <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
-                        <path d="M20.5,20.5h260v375h-260V20.5z" />
-                    </svg>
-                </figure>
-            </a>
-            <a  class="tilter tilter--1">
-                <figure class="tilter__figure">
-                    <img class="tilter__image" src="img/26.jpg" alt="img01" />
-                    <div class="tilter__deco tilter__deco--shine">
-                        <div></div>
-                    </div>
-                    <figcaption class="tilter__caption">
-                        <h3 class="tilter__title">Subha</h3>
-                        <p class="tilter__description">Entretainment <br /> 9123599505</p>
                     </figcaption>
                     <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
                         <path d="M20.5,20.5h260v375h-260V20.5z" />
@@ -921,13 +900,13 @@ class Team extends Component{
 
             <a  class="tilter tilter--1">
                 <figure class="tilter__figure">
-                    <img class="tilter__image" src={seventyone} alt="img01" />
+                    <img class="tilter__image" alt="img01" />
                     <div class="tilter__deco tilter__deco--shine">
                         <div></div>
                     </div>
                     <figcaption class="tilter__caption">
-                        <h3 class="tilter__title">Habeebha</h3>
-                        <p class="tilter__description">8220551531</p>
+                        <h3 class="tilter__title">Tarun</h3>
+                        <p class="tilter__description"></p>
                     </figcaption>
                     <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
                         <path d="M20.5,20.5h260v375h-260V20.5z" />
