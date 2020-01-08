@@ -1069,7 +1069,7 @@ class Team extends Component{
                         <div></div>
                     </div>
                     <figcaption class="tilter__caption">
-                        <h3 class="tilter__title"> Tejashwini</h3>
+                        <h3 class="tilter__title">Priyadarshini</h3>
                         <p class="tilter__description">7401814999</p>
                     </figcaption>
                     <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
@@ -1084,7 +1084,7 @@ class Team extends Component{
                         <div></div>
                     </div>
                     <figcaption class="tilter__caption">
-                        <h3 class="tilter__title"> Priyadarshini</h3>
+                        <h3 class="tilter__title"> Tejashwini </h3>
                         <p class="tilter__description">7358243126</p>
                     </figcaption>
                     <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
