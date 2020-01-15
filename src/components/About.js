@@ -6,6 +6,10 @@ import capitalizelogo from '../img/capitalizelogo.png';
 import ced from '../img/ced.png';
 
 class About extends Component{
+
+  componentDidMount(){
+    this.props.renderEvent(true);
+  }
     
     render(){
         return(

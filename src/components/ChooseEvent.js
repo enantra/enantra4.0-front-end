@@ -16,12 +16,12 @@ class ChooseEvent extends Component {
             <div>
             {(() => {
                 switch(event) {
-                  case categories[0] : return <Btrivia resetMenu={this.props.resetMenu} /> 
-                  case categories[1] : return <BusinessManagement resetMenu={this.props.resetMenu} /> 
-                  case categories[2] : return <Coding resetMenu={this.props.resetMenu} />
-                  case categories[3] : return <Extravaganza resetMenu={this.props.resetMenu} />
-                  case categories[4] : return <EFAC resetMenu={this.props.resetMenu} />
-                  case categories[5] : return <Online resetMenu={this.props.resetMenu} />
+                  case categories[0] : return <Btrivia renderEvent={this.props.renderEvent} resetMenu={this.props.resetMenu} /> 
+                  case categories[1] : return <BusinessManagement renderEvent={this.props.renderEvent} resetMenu={this.props.resetMenu} /> 
+                  case categories[2] : return <Coding renderEvent={this.props.renderEvent} resetMenu={this.props.resetMenu} />
+                  case categories[3] : return <Extravaganza renderEvent={this.props.renderEvent} resetMenu={this.props.resetMenu} />
+                  case categories[4] : return <EFAC renderEvent={this.props.renderEvent} resetMenu={this.props.resetMenu} />
+                  case categories[5] : return <Online renderEvent={this.props.renderEvent} resetMenu={this.props.resetMenu} />
                   default: return null;
                 }
             })()}

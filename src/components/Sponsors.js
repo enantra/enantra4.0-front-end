@@ -15,6 +15,9 @@ const styles = {
   }
 
 class Sponsors extends Component{
+    componentDidMount(){
+        this.props.renderEvent(true);
+    }
     render(){
         return(
         <div class="sponsors-body">

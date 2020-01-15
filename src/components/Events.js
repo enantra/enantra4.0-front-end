@@ -24,6 +24,9 @@ class Events extends Component {
     }
      
     componentDidMount(){
+
+        this.props.renderEvent(true);
+
         const getOffset = (elem, axis) => {
             let offset = 0;
             const type = axis === 'top' ? 'offsetTop' : 'offsetLeft';
@@ -407,8 +410,6 @@ class Events extends Component {
                 fitWidth: true
             });
         });
-
-
     }
 
     render(){

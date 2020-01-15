@@ -573,16 +573,15 @@ class Online extends Component{
         window.CircleSlideshow = CircleSlideshow;
         document.documentElement.className = 'js';
         var slideshow = new CircleSlideshow(document.getElementById('slideshow'));
+
+        this.props.renderEvent(false);
 }
-    
-    componentWillUnmount(){
-        this.props.resetMenu();
-    }
 
     render(){
         
         return(
         <div class="eventsdescription">
+        <button onClick={() => {this.props.resetMenu();}} class="backButton"><i class="fas fa-window-close"></i></button>
 		<div class="container-eventsdescription">
 			<div class="deco-eventsdescription deco--title-eventsdescription"></div>
 			<div id="slideshow" class="slideshow-eventsdescription">

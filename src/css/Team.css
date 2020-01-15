@@ -32,7 +32,7 @@
 	-ms-flex-align: center;
 	align-items: center;
 	width: 100%;
-	padding: 3em 1em 4em;
+	padding: 1em 0em 2em;
 	position: relative;
 	z-index: 0;
 }
@@ -45,7 +45,7 @@ h1.codrops-header__title {
 }
 
 .content-theteam {
-	padding: 0 0 4em;
+	padding: 0 0 3em;
 	height: 70%;
 	min-height: 100vh;
 	display: flex;

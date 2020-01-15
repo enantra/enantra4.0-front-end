@@ -16,6 +16,8 @@ class Workshops extends Component{
     componentDidMount(){
 
         {
+
+            this.props.renderEvent(true);
             // Calculates the offsetTop or offsetLeft of an element relative to the viewport 
             // (not counting with any transforms the element might have)
             const getOffset = (elem, axis) => {

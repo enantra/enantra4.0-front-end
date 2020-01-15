@@ -52,6 +52,9 @@ import twohundredten from '../img/team/210.jpg';
 
 class Team extends Component{
     componentDidMount(){
+
+        this.props.renderEvent(true);
+        
         function extend( a, b ) {
             for( var key in b ) { 
                 if( b.hasOwnProperty( key ) ) {
@@ -423,7 +426,7 @@ class Team extends Component{
         <main>
         <section class="content-theteam content--c1">
             <header class="codrops-header">
-                <h1 class="codrops-header__title">President</h1>
+                <h1 class="codrops-header__title"><br/>President</h1>
             </header>
             <a class="tilter tilter--1">
                 <figure class="tilter__figure">
@@ -715,7 +718,7 @@ class Team extends Component{
         <section class="content-theteam content--c1">
             <header class="codrops-header">
 
-                <h1 class="codrops-header__title">Events </h1>
+                <h1 class="codrops-header__title">Events</h1>
             </header>
 
             <a  class="tilter tilter--1">
@@ -783,7 +786,7 @@ class Team extends Component{
         <section class="content-theteam content--c1">
             <header class="codrops-header">
 
-                <h1 class="codrops-header__title">Human Resources </h1>
+                <h1 class="codrops-header__title">Human Resources</h1>
             </header>
 
             <a  class="tilter tilter--1">
@@ -819,7 +822,7 @@ class Team extends Component{
         </section>
         <section class="content-theteam content--c1">
             <header class="codrops-header">
-                <h1 class="codrops-header__title"> Logistics </h1>
+                <h1 class="codrops-header__title">Logistics</h1>
             </header>
             <a  class="tilter tilter--1">
                 <figure class="tilter__figure">
@@ -841,7 +844,7 @@ class Team extends Component{
         <section class="content-theteam content--c1">
             <header class="codrops-header">
 
-                <h1 class="codrops-header__title">Hospitality </h1>
+                <h1 class="codrops-header__title">Hospitality</h1>
             </header>
 
             <a  class="tilter tilter--1">
@@ -889,15 +892,11 @@ class Team extends Component{
                     </svg>
                 </figure>
             </a>
-
-
         </section>
         <section class="content-theteam content--c1">
             <header class="codrops-header">
-
-                <h1 class="codrops-header__title">Marketing </h1>
+                <h1 class="codrops-header__title">Marketing</h1>
             </header>
-
             <a  class="tilter tilter--1">
                 <figure class="tilter__figure">
                     <img class="tilter__image" alt="img01" />
@@ -932,9 +931,8 @@ class Team extends Component{
         <section class="content-theteam content--c1">
             <header class="codrops-header">
 
-                <h1 class="codrops-header__title">Workshops </h1>
+                <h1 class="codrops-header__title">Workshops</h1>
             </header>
-
             <a  class="tilter tilter--1">
                 <figure class="tilter__figure">
                     <img class="tilter__image" src={eightyone} alt="img01" />
