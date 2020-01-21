@@ -43,9 +43,20 @@
 .logo_corner {
 	perspective: 1000px;
 	width: 100px;
-	height: 130px;
+	margin:5px;
+	height: 150px;
 	position: absolute;
-	top: 0.5em;
+	top: 1em;
+	left: 1em;
+}
+.social{
+	perspective: 1000px;
+	width: 150px;
+	margin:0.5px;
+	height: 100px;
+	opacity:100;
+	position: absolute;
+	top: 1em;
 	left: 1em;
 }
 
@@ -56,8 +67,8 @@
 	justify-self: end;
 	text-align: center;
 	color: #fff;
-	font-weight: 700;
-	font-size: 32px;
+	font-weight: 900;
+	font-size:40px;
 }
 
 .frame {
@@ -100,12 +111,12 @@
 
 .content__title {
 	position: relative;
-	height: 14.5vw;
-	width: 53vw;
+	height: 15vw;
+	width: 60vw;
 	color: var(--color-title);
-	font-size: 10vw;
+	font-size: 20vw;
 	text-transform: uppercase;
-	margin: 0;
+	margin:;
 	perspective: 1000px;
 }
 
@@ -117,7 +128,7 @@
 
 .content__subtitle {
 	position: relative;
-	font-size : 3.8vw;
+	font-size : 3.68vw;
 	margin: 0;
 	color: var(--color-subtitle);
 	font-weight: 700;
@@ -128,7 +139,7 @@
 	font-size : 2.7vw;
 	margin: 0;
 	color: var(--color-subtitle);
-	font-weight: 700;
+	font-weight: 900;
 }
 
 .landscape {
@@ -217,11 +228,44 @@ sup{
 @media screen and (max-width: 55em) {
 	.logo_corner {
 		position: fixed;
-		top: 0.5em;
-		left: 0.5em;
+		top: -1em;
+		left: 0em;
 		transform: scale(0.75);
 	}
 	.dates{
 		position: fixed;
+		font-weight: 900;
+		font-size:15px;
+		top: 8.5em;
+		left: 3.4em;
+		transform: scale(0.75);
 	}
-}	
+	.content__title {
+		position: fixed;
+		top:  3.0em;
+		left: 1.15em;
+		transform: scale(0.75);
+	}
+	
+	.content__subtitle {
+		position: fixed;
+		align:"center";
+		top:  20.5em;
+		left: 11.3em;
+		transform: scale(0.75);
+	}
+	.content__tagline {
+		position: fixed;
+		top:  30.9em;
+		left: 5.4em;
+		transform: scale(0.75);
+	}
+	.social{
+		opacity:-1;
+		position:absolute;
+		top:3.5em;
+		right :1em;
+		transform: scale(1);
+	}
+	
+}
