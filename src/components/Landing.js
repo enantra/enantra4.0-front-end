@@ -8,6 +8,7 @@ import charming from '../js/vendor/charming.min.js';
 import Sky from '../js/vendor/Sky.js';
 import Tween from '../js/vendor/TweenMax.min.js';
 import * as THREE from '../../node_modules/threejs-full-es6/builds/Three.es';
+import Avatar from './Avatar';
 
 
 const LandingBackground = `
@@ -270,6 +271,8 @@ class Landing extends Component {
 	}
 	componentDidMount()
 	{
+		this.props.renderEvent(true);
+
 		let body = document.getElementsByTagName('div')[0];
 
 		let background = this.loadScript("","custom-vertex","x-shader/x-vertex");
@@ -551,6 +554,7 @@ class Landing extends Component {
 								</ul>
 							</div>
 							<p className="dates">20 &mdash; 23 Feb 2020 &middot; Anna University &middot; Chennai</p>
+							<Avatar/>
 							<img className="logo_corner" src={toplogo} alt="Top Logo" />
 							<img className="content__title" src={enantralogo} alt="Logo" />
 							<p className="content__subtitle">4<sup>TH</sup> EDITION</p>

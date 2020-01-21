@@ -4,6 +4,9 @@ import '../css/vendor/bootstrap.css';
 import '../css/Contact.css';
 
 class Contact extends Component {
+	componentDidMount(){
+		this.props.renderEvent(true);
+	}
     render(){
         return(	
         <div class="container-contact100">

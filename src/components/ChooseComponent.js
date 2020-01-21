@@ -11,8 +11,9 @@ import Accommodation from './Accommodation';
 import Sponsors from './Sponsors';
 import Attractions from './Attractions';
 import Contact from './Contact';
+import Team from './Team';
 
-const pages = ['Home','Flagships','Events','Signup','Login','Workshops','About','Accommodation','Sponsors','Attractions','ContactUs'];
+const pages = ['Home','Flagships','Events','Signup','Login','Workshops','About','Accommodation','Sponsors','Attractions','ContactUs','Team'];
 
 class ChooseComponent extends Component {
     constructor(props){
@@ -43,17 +44,18 @@ class ChooseComponent extends Component {
             {(() => {
                 console.log(component);
                 switch(component) {
-                  case pages[0] : return <Landing />
-                  case pages[1] : return <Flagships />
-                  case pages[2] : return (!(this.state.showEvent)? <ChooseEvent resetMenu={this.resetMenu} selectedEvent={this.state.eventChosen} /> : <Events handleEventClick={this.handleEventClick} />)
-                  case pages[3] : return <Signup />
-                  case pages[4] : return <Login />
-                  case pages[5] : return <Workshops />
-                  case pages[6] : return <About />
-                  case pages[7] : return <Accommodation />
-                  case pages[8] : return <Sponsors />
-                  case pages[9] : return <Attractions />
-                  case pages[10]: return <Contact/>
+                  case pages[0] : return <Landing renderEvent={this.props.renderEvent} />
+                  case pages[1] : return <Flagships renderEvent={this.props.renderEvent} />
+                  case pages[2] : return (!(this.state.showEvent)? <ChooseEvent renderEvent={this.props.renderEvent} resetMenu={this.resetMenu} selectedEvent={this.state.eventChosen} /> : <Events renderEvent={this.props.renderEvent} handleEventClick={this.handleEventClick} />)
+                  case pages[3] : return <Signup renderEvent={this.props.renderEvent} />
+                  case pages[4] : return <Login renderEvent={this.props.renderEvent} />
+                  case pages[5] : return <Workshops renderEvent={this.props.renderEvent} />
+                  case pages[6] : return <About renderEvent={this.props.renderEvent} />
+                  case pages[7] : return <Accommodation renderEvent={this.props.renderEvent} />
+                  case pages[8] : return <Sponsors renderEvent={this.props.renderEvent} />
+                  case pages[9] : return <Attractions renderEvent={this.props.renderEvent} />
+                  case pages[10]: return <Contact renderEvent={this.props.renderEvent} />
+                  case pages[11]: return <Team renderEvent={this.props.renderEvent} />
                   default: return null;
                 }
             })()}

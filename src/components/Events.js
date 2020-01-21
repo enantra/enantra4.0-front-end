@@ -5,12 +5,12 @@ import TweenBuckets from '../js/vendor/TweenMax.min.js';
 import charming from '../js/vendor/charming.min.js';
 import imagesLoaded from '../js/vendor/imagesloaded.pkgd.min.js';
 import Masonry from '../js//vendor/masonry.pkgd.min.js';
-import btrivia from '../img/btrivia.jpg';
-import bm from '../img/bm.jpg';
-import efac from '../img/efac.jpg';
-import online from '../img/online.jpg';
-import fun from '../img/fun.jpg';
-import coding from '../img/coding.jpg';
+import btrivia from '../img/events/btrivia.jpg';
+import bm from '../img/events/bm.jpg';
+import efac from '../img/events/efac.jpg';
+import online from '../img/events/online.jpg';
+import fun from '../img/events/fun.jpg';
+import coding from '../img/events/coding.jpg';
 
 const code = `document.documentElement.className = "js";
 var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
@@ -24,6 +24,9 @@ class Events extends Component {
     }
      
     componentDidMount(){
+
+        this.props.renderEvent(true);
+
         const getOffset = (elem, axis) => {
             let offset = 0;
             const type = axis === 'top' ? 'offsetTop' : 'offsetLeft';
@@ -407,8 +410,6 @@ class Events extends Component {
                 fitWidth: true
             });
         });
-
-
     }
 
     render(){

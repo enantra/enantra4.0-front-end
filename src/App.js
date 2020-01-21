@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import MenuUtil from './components/MenuUtil';
+import Avatar from './components/Avatar';
 
 const code = `document.documentElement.className = "js";
 var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
@@ -37,7 +38,7 @@ class App extends Component {
 
   render() {
     return(
-        <MenuUtil/>
+       <MenuUtil/>
     )
   }
 }   

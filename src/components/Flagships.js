@@ -81,6 +81,8 @@ class Flagships extends Component {
         
     componentDidMount(){
 
+        this.props.renderEvent(true);
+
         speakers = document.querySelector('.speakers-body');
         flagships = document.querySelector('.flagshipbody');
         speakers.style.display = "none";

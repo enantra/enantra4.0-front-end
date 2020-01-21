@@ -7,6 +7,8 @@ import Tween from '../js/vendor/TweenMax.min.js';
 class Signup extends Component {
 
     componentDidMount(){
+
+        this.props.renderEvent(true);
         
         const lineEq = (y2, y1, x2, x1, currentVal) => {
             var m = (y2 - y1) / (x2 - x1), b = y1 - m * x1;

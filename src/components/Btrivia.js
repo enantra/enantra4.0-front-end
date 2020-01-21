@@ -575,16 +575,14 @@ class Btrivia extends Component{
         window.CircleSlideshow = CircleSlideshow;
         document.documentElement.className = 'js';
         var slideshow = new CircleSlideshow(document.getElementById('slideshow'));
+
+        this.props.renderEvent(false);
 }
-    
-    componentDidUpdate(){
-        this.props.resetMenu();
-    }
 
     render(){
-
         return( 
         <div class="eventsdescription">
+        <button onClick={() => {this.props.resetMenu();}} class="backButton"><i class="fas fa-window-close"></i></button>
 		<div class="container-eventsdescription">
 			<div class="deco-eventsdescription deco--title-eventsdescription"></div>
 			<div id="slideshow" class="slideshow-eventsdescription">
@@ -600,8 +598,11 @@ class Btrivia extends Component{
 						<div class="slide__content-scroller-eventsdescription">
 							<div class="slide__img-eventsdescription slide__img--large-eventsdescription">
                             <p>
-                            It’s a traditional business quiz conducted across 2 or 3 rounds<br/><br/>
+                            Got fast reflex skills, trained brain and knowledge you’re ready to put to the test?
+                            Whether you love the latest biz news, or the hottest stock market gossip, we’ve got questions lined up just for you. 
+                            Gear up for our entrepreneurship quiz, where every question isn’t just a drop of information, but an ocean of inspiration.<br/><br/>
                             <p>
+                                <p>Structure</p>
                                 <p class="rounds">Round 1:&nbsp;&nbsp;Pen and paper</p>
                                 <p class="rounds">Round 2:&nbsp;&nbsp;PPT</p>
                                 <p class="rounds">Round 3:&nbsp;&nbsp;Traditonal quizmaster round</p>
@@ -630,7 +631,9 @@ class Btrivia extends Component{
 					<div class="slide__content-eventsdescription">
 						<div class="slide__content-scroller-eventsdescription">
 							<div class="slide__img-eventsdescription slide__img--large-eventsdescription">
+                            <p>This event gives you a first-hand exposure as to how the corporate culture functions during their recruitement process. A generic management event, the stress interview is open for all segments of the student crowd.</p>
                             <p>
+                            <p>Structure</p>
                             <p class="rounds">Round 1:&nbsp;&nbsp;Group discussion</p>
                             <p class="rounds">Round 2:&nbsp;&nbsp;Group dynamics and problem solving</p>
                             <p class="rounds">Round 3:&nbsp;&nbsp;Stress Interview</p>
@@ -658,6 +661,7 @@ class Btrivia extends Component{
 					<div class="slide__content-eventsdescription">
 						<div class="slide__content-scroller-eventsdescription">
 							<div class="slide__img-eventsdescription slide__img--large-eventsdescription">
+                            <p>Put your marketing skills to the test in this event and redefine the brands you love the way you would like them, to make a better pitch for their products. Not only will you have to reimagine an entire brand but you will have the opportunity to advertise for them.</p>
                             <p>
                             A team of 4<br/><br/>
                             <p>
@@ -697,7 +701,8 @@ class Btrivia extends Component{
 						<div class="slide__content-scroller-eventsdescription">
 							<div class="slide__img-eventsdescription slide__img--large-eventsdescription">
                             <p>
-                            An individual event, testing the participant’s communication skills.<br/><br/>
+                            Do you often find yourself rambling on about ideas and thoughts or anything on your mind, sometimes even if no one is listening?
+                            We’ve got an event you’ll love! Come and put your communication skills to full use as we try to discover the voices that definitely deserved to be heard. From the idle thoughts in your head to pushing to see how far your imagination can go, we can’t wait to hear it all.<br/><br/>
                                 <p>
                                 <p class="rounds">Round 1:&nbsp;&nbsp;SHIPWRECK</p>
                                 1. The participant is given the role of a celebrity/ fictional character/ hypothetical character.<br />
@@ -711,7 +716,7 @@ class Btrivia extends Component{
                                 3. The best participants from each team will be selected for the next round.
                                 </p>
                                 <p>
-                                <p class="rounds">Round 3:&nbsp;&nbsp;SWITCH BLOCK TACKLE</p>
+                                <p class="rounds">Round 3:&nbsp;&nbsp;FILL THE BOTTLE</p>
                                 1. The participants are given a topic<br />
                                 2. They are asked switch block tackle the topic according to the moderator’s instruction<br />
                                 3. The participant with the most creative and convincing skills wins the event.

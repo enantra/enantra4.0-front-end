@@ -577,16 +577,15 @@ class BusinessManagement extends Component{
         window.CircleSlideshow = CircleSlideshow;
         document.documentElement.className = 'js';
         var slideshow = new CircleSlideshow(document.getElementById('slideshow'));
+
+        this.props.renderEvent(false);
 }
-    
-    componentDidUpdate(){
-        this.props.resetMenu();
-    }
 
     render(){
 
         return(
             <div class="eventsdescription">
+             <button onClick={() => {this.props.resetMenu();}} class="backButton"><i class="fas fa-window-close"></i></button>
             <div class="container-eventsdescription">
                 <div class="deco-eventsdescription deco--title-eventsdescription"></div>
                 <div id="slideshow" class="slideshow-eventsdescription">
@@ -601,6 +600,7 @@ class BusinessManagement extends Component{
                         <div class="slide__content-eventsdescription">
                             <div class="slide__content-scroller-eventsdescription">
                                 <div class="slide__img-eventsdescription slide__img--large-eventsdescription">
+                                <p>An event set to test your creativity and marketing skills in all faceats.</p>
                                 <p>
                                 Team of two<br/><br/>
                                 <p>
@@ -633,6 +633,7 @@ class BusinessManagement extends Component{
                         <div class="slide__content-eventsdescription">
                             <div class="slide__content-scroller-eventsdescription">
                                 <div class="slide__img-eventsdescription slide__img--large-eventsdescription">
+                                <p>What matters to you the most about a company? Is it their integrity? Or passion? Or customer satisfaction? What if you were running the company, what would matter to you then? Pick the values that matter the most and analyse how you would react in a situation that challenged those values to win this event.</p>
                                 <p>
                                 <p class="rounds">Round 1:&nbsp;&nbsp;Pen and Paper</p>
                                 <p class="rounds">Round 2:&nbsp;&nbsp;Case study – descriptive pen and paper</p>
@@ -664,6 +665,7 @@ class BusinessManagement extends Component{
                             <div class="slide__content-scroller-eventsdescription">
                                 <div class="slide__img-eventsdescription slide__img--large-eventsdescription">
                                 <p>
+                                <p>Structure</p>
                                 <p class="rounds">Round 1:</p>
                                 <p>It’s a small-scale model, where each team will be given a specific amount of money, and a list of items you can buy from a garage sale. They should buy whatever they want with the required money, and should save money for marketing, ads etc. In the list, they will be given choices for marketing and ads too, and they should come up with an efficient way of reselling their items, and write it down/explain it. The most innovative ones will go to the next round.</p>
                                 <p class="rounds">Round 2:</p>

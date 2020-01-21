@@ -11,23 +11,34 @@ class MenuUtil extends Component {
     constructor(props){
       super(props);
       this.state = {
-        componentChosen : 'Home'
+        componentChosen : 'Home',
+        ifEvent : false,
+        hideMenu : ''
       };
       this.handleMenuClick = this.handleMenuClick.bind(this);
+      this.renderEvent = this.renderEvent.bind(this);
     }
     
     handleMenuClick = (path) => {
       this.setState({
           componentChosen : path
       });
+    }
+
+  renderEvent = (event) => {
+    this.setState({
+      ifEvent : event
+    })
   }
 
 
     render(){
         return(
           <div>
-          <ChooseComponent selectComponent={this.state.componentChosen} />
-          <Menu handleMenuClick={this.handleMenuClick}/>
+          <ChooseComponent renderEvent={this.renderEvent} selectComponent={this.state.componentChosen} />
+          {(() => {
+          return ((this.state.ifEvent)? <Menu handleMenuClick={this.handleMenuClick}/> : null)
+          })()}
           </div>  
         )
     }

@@ -4,6 +4,10 @@ import '../css/Accommodation.css';
 import '../css/vendor/bootstrap.css';
 
 class Accommodation extends Component{
+
+    componentDidMount(){
+        this.props.renderEvent(true);
+    }
     render(){
         return(
             <div class="accommodation-background">

@@ -574,16 +574,15 @@ class EFAC extends Component{
         window.CircleSlideshow = CircleSlideshow;
         document.documentElement.className = 'js';
         var slideshow = new CircleSlideshow(document.getElementById('slideshow'));
+
+        this.props.renderEvent(false);
 }
-    
-    componentDidUpdate(){
-        this.props.resetMenu();
-    }
 
     render(){
 
         return(
             <div class="eventsdescription">
+            <button onClick={() => {this.props.resetMenu();}} class="backButton"><i class="fas fa-window-close"></i></button>
             <div class="container-eventsdescription">
                 <div class="deco-eventsdescription deco--title-eventsdescription"></div>
                 <div id="slideshow" class="slideshow-eventsdescription">
@@ -598,6 +597,7 @@ class EFAC extends Component{
                         <div class="slide__content-eventsdescription">
                             <div class="slide__content-scroller-eventsdescription">
                                 <div class="slide__img-eventsdescription slide__img--large-eventsdescription">
+                                <p>An event that puts into limelight on how to achieve sustainable development practically.</p>
                                 <p>
                                     <p class="rounds">Round 1:&nbsp;&nbsp;Screening Pen and Paper Round</p>
                                     <p>Trivia on sustainable technology/businesses</p>
@@ -629,12 +629,13 @@ class EFAC extends Component{
                             <div class="slide__content-scroller-eventsdescription">
                                 <div class="slide__img-eventsdescription slide__img--large-eventsdescription">
                                 <p>
-                                <p class="rounds">Round 1:&nbsp;&nbsp;Pen and Paper</p>
-                                <p class="rounds">Round 2:&nbsp;&nbsp;Group discussion/debate on rural crisis</p>
-                                <p class="rounds">Round 3:&nbsp;&nbsp;</p>
+                                <p class="rounds">Round 1:&nbsp;&nbsp;Pen and Paper - Create an ad or poster which attracts rural people and the sponsors who are willing to help and invest in such product development schemes.</p>
+                                <p class="rounds">Round 2:&nbsp;&nbsp;Operational and logistics control management</p>
+                                <p>The participants will be put in the shoes of a Logistics Manager, and asked to take over the operations of an existing supply chain. The participants have to optimize their production according to demand. In subsequent rounds, A company and industry profile will be given along with the working capital. The participants will have to manage their cash, production, and inventory, keeping in mind the various constraints that will be provided. They have to plan the production based on the constraints imposed. Basically overcome all the legal and financial constraints faced by rural product developers every day.</p>
+                                <p class="rounds">Round 3:&nbsp;&nbsp;Rural product development/sales</p>
                                 <p>
                                 Rural India has a huge potential which is untapped, and if we want to make India a super power we need to integrate rural India with technology. So this event - It is an initiative to provide students an opportunity to apply their marketing concepts into earnings.<br/><br/>
-                                The participating teams would select a bouquet of products from a list provided by the event organisers which are coming from rural areas for which they need to prepare a marketing plan, including the branding and sales promotion strategies.
+                                The participating teams should select a bouquet of products from a list provided by the event organisers which are coming from rural areas for which they need to prepare a marketing plan, including the branding and sales promotion strategies.
                                 </p>
                                 </p>
                                 </div>
@@ -660,6 +661,8 @@ class EFAC extends Component{
                         <div class="slide__content-eventsdescription">
                             <div class="slide__content-scroller-eventsdescription">
                                 <div class="slide__img-eventsdescription slide__img--large-eventsdescription">
+                                <p>Is it easier for you to convince someone else to run a marathon than run it yourself?
+                                Well, we’ve got the right marathon for you. From thinking of taglines for unconventional products to envisaging advertisements to convince the crowd, this event will have your imagination running wild. So, put your thinking cap on, ready, set, CONVINCE!</p>
                                 <p>
                                 <p class="rounds">Round 1:&nbsp;&nbsp;Pen and Paper</p>
                                 <p class="rounds">Round 2:&nbsp;&nbsp;Business plan</p>
