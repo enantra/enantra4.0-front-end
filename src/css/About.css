@@ -141,6 +141,10 @@
     body {
       position: relative; 
     }
+
+    body .aboutbackground{
+      background-color: #141720;
+    }
   
     .main-about {
       display: flex;
@@ -193,6 +197,10 @@
     
     }
   @media only screen and (min-width: 1400px) {
+    body .aboutbackground{
+      background-color: #141720;
+    }
+    
     .right .site__description-about {
       column-count: 2; 
     } 

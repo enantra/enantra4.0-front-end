@@ -116,7 +116,6 @@
 	color: var(--color-title);
 	font-size: 20vw;
 	text-transform: uppercase;
-	margin:;
 	perspective: 1000px;
 }
 
@@ -249,7 +248,7 @@ sup{
 	
 	.content__subtitle {
 		position: fixed;
-		align:"center";
+		text-align:"center";
 		top:  20.5em;
 		left: 11.3em;
 		transform: scale(0.75);
