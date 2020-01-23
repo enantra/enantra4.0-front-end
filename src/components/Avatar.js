@@ -38,6 +38,15 @@ const useStyles = makeStyles(theme => ({
     width: '32%',
     padding: '1%'
   },
+  root: {
+    top: 25,
+    right: 160,
+    position: 'absolute',
+    display: 'block',
+    zIndex: 110,
+    outline: 'none !important',
+    color: 'white',
+  },
   button: {
       outline: 'none !important',
   },
@@ -45,15 +54,7 @@ const useStyles = makeStyles(theme => ({
     marginLeft: theme.spacing(2),
     flex: 1,
   },
-  root: {
-    top: 25,
-    right: 130,
-    position: 'absolute',
-    display: 'block',
-    zIndex: 110,
-    outline: 'none !important',
-    color: 'white',
-  },
+  
   sectionDesktop: {
     display: 'none',
     [theme.breakpoints.up('md')]: {
