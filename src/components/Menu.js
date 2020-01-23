@@ -190,7 +190,7 @@ class Menu extends Component {
 						    <div className="hamburger__line-in hamburger__line-in--cross02"></div>
 					    </div>
 				    </div>
-              <Router>
+              <Router> 
                 <div class="global-menu">
 					        <div class="global-menu__wrap">
 						              <Link to='/' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Home');}} class="menu-anchor global-menu__item global-menu__item--demo-1">Home</Link>
@@ -200,8 +200,8 @@ class Menu extends Component {
 						              <Link to='/workshops' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Workshops')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Workshops</Link>
                           <Link to='/attractions' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Attractions')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Attractions</Link>
 					       
-						              <Link to='/login' class="menu-anchor global-menu__item global-menu__item--demo-1">Login</Link>
-						              <Link to='/signup' class="menu-anchor global-menu__item global-menu__item--demo-1">Sign Up</Link>
+						              <Link to='/login' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Login')}}class="menu-anchor global-menu__item global-menu__item--demo-1">Login</Link>
+						              <Link to='/signup' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Signup')}}class="menu-anchor global-menu__item global-menu__item--demo-1">Sign Up</Link>
 						              <Link to='/accommodation' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Accommodation')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Accommodation</Link>
 						              <Link to='/team' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Team')}} class="menu-anchor global-menu__item global-menu__item--demo-1">The Team</Link>
                           <Link to='/sponsors' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Sponsors')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Sponsors</Link>
