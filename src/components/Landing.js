@@ -9,6 +9,7 @@ import Sky from '../js/vendor/Sky.js';
 import Tween from '../js/vendor/TweenMax.min.js';
 import * as THREE from '../../node_modules/threejs-full-es6/builds/Three.es';
 import Avatar from './Avatar';
+import sign from './Signup';
 
 
 const LandingBackground = `
@@ -559,6 +560,9 @@ class Landing extends Component {
 							<img className="content__title" src={enantralogo} alt="Logo" />
 							<p className="content__subtitle">4<sup>TH</sup> EDITION</p>
 							<p className="content__tagline">South India's biggest Entrepreneurship and Management fest</p>
+							<button class="button"><span class="button">Sign Up</span></button>
+							
+							
 						</div>
 						<div className="overlay"></div>
 				</div>
