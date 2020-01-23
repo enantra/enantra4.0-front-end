@@ -137,8 +137,8 @@ class Signup extends Component {
 						<div class="form__error"></div>
 					</div>
 					<div class="form__item">
-						<label class="form__label" for="phone">College</label>
-						<input class="form__input" type="tel" name="college" id="college" required />
+						<label class="form__label" for="college">College</label>
+						<input class="form__input" type="text" name="college" id="college" required />
 						<div class="form__error"></div>
 					</div>
 					<div class="form__item">
