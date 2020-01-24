@@ -107,7 +107,6 @@ a.menu-anchor:focus {
 	max-width: none;
 	min-height: 0;
 	height: 100vh;
-	padding: 1.5em;
 	grid-template-columns: 50% 50%;
 	grid-template-rows: auto auto 4em;
 	grid-template-areas: 'header ...'
@@ -568,6 +567,23 @@ a.menu-anchor:focus {
 	background-color: var(--button-bg);
 	pointer-events: auto;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.root {
+	position: absolute;
+    display: block;
+    z-index: 110;
+    outline: none !important;
+    color: white;
+    width: 64px;
+    height: 64px;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 1em;
+    right: 4.50em;
+    border-radius: 50%;
+    pointer-events: auto;
 }
 
 .hamburger::after {

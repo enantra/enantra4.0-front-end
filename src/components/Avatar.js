@@ -25,6 +25,7 @@ import AccountDetails from './AccountDetails';
 import WorkIcon from '@material-ui/icons/Work';
 import EmojiFlagsIcon from '@material-ui/icons/EmojiFlags';
 import EmojiEventsIcon from '@material-ui/icons/EmojiEvents';
+import '../css/Menu.css';
 
 
 const useStyles = makeStyles(theme => ({
@@ -39,13 +40,20 @@ const useStyles = makeStyles(theme => ({
     padding: '1%'
   },
   root: {
-    top: 25,
-    right: 160,
     position: 'absolute',
     display: 'block',
     zIndex: 110,
     outline: 'none !important',
     color: 'white',
+    width: '64px',
+    height: '64px',
+    display: 'block',
+    cursor: 'pointer',
+    position: 'absolute',
+    top: '1em',
+    right: '4.50em',
+    borderRadius: '50%',
+    pointerEvents: 'auto',
   },
   button: {
       outline: 'none !important',

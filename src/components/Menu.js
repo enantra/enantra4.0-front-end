@@ -2,6 +2,7 @@ import React,{ Component } from 'react';
 import { BrowserRouter as Router, Route, Link, Switch,Redirect } from "react-router-dom";
 import '../css/Menu.css';
 import '../css/NormalizeMenu.css';
+import Avatar from './Avatar';
 
 
 var elmHamburger;
@@ -172,7 +173,9 @@ class Menu extends Component {
     render(){
             return (
             <div className="demo-1">
+              
             <div class="main-menu">
+            <Avatar/>
 				    <div className="hamburger js-hover">
 					    <div className="hamburger__line hamburger__line--01">
 						    <div className="hamburger__line-in hamburger__line-in--01"></div>
