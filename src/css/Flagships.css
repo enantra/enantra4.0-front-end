@@ -241,7 +241,7 @@ button.flagship-button {
 
 .nav {
 	position: absolute;
-	background: none;
+	background: black;
 	width: 3rem;
 	height: 3rem;
 	border: 0;
