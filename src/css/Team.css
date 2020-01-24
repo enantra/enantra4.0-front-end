@@ -38,7 +38,7 @@
 }
 
 h1.codrops-header__title {
-	font-size: 5vw;
+	font-size: 3em;
 	margin: 0;
 	padding: 0;
 	color: #f5f377;
@@ -314,5 +314,8 @@ h1.codrops-header__title {
 @media screen and (max-width: 55.625em) {
 	.content-theteam {
 		height: auto;
+	}
+	.codrops-header {
+		padding: 5em 0em 2em;
 	}
 }
