@@ -554,7 +554,7 @@ class Landing extends Component {
 									</a>
 								</ul>
 							</div>
-							<p className="dates">20 &mdash; 23 Feb 2020 &middot; Anna University &middot; Chennai</p>
+							<p className="dates">20 &mdash; 23 Feb 2020 <br/> Anna University &middot; Chennai</p>
 							
 							<img className="logo_corner" src={toplogo} alt="Top Logo" />
 							<img className="content__title" src={enantralogo} alt="Logo" />
