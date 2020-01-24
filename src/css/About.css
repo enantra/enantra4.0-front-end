@@ -121,6 +121,16 @@
     display: block;
     padding: 2rem auto;
   }
+
+  #site__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    display: block; 
+    background-color: #141720;}
   
   /* mobile first*/
   /* Custom, iPhone Retina */
@@ -136,75 +146,11 @@
     }
   /* Extra Small Devices, Phones */
   /* Small Devices, Tablets */
-  @media only screen and (min-width: 1000px) {
-    /* main page */
-    body {
-      position: relative; 
+  @media only screen and (max-width: 475px) {
+      .site__title-about {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        position: relative; 
+      }
     }
-
-    body .aboutbackground{
-      background-color: #141720;
-    }
-  
-    .main-about {
-      display: flex;
-      padding-left: 60px; 
-    }
-  
-    #site__bg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: -1;
-      display: block; 
-      background-color: #141720;}
-  
-    .site-about {
-      padding-top: 4rem;
-      padding-left: 4rem;
-      flex: 1; 
-    }
-  
-    .episode__description-about {
-      margin-top: 0;
-      font-size: 2rem;
-      font-weight: 100;
-      color: #F7F7F6;
-      font-family: 'Source Sans Pro', sans-serif;
-    }
-  
-  
-    .page--detail .site-about {
-        display: flex;
-        padding: 0 0 0 60px; 
-    }
-  
-    
-    .left .site__title-about.site__title--separator-about:after {
-        display: block;
-        width: 100px; 
-    }
-   
-  
-    .right .site__description-about {
-        color: #1C1F2A;
-        font-weight: 500;
-        font-size: 1rem;
-        margin: 0 5rem auto 5rem;
-    }
-    
-    }
-  @media only screen and (min-width: 1400px) {
-    body .aboutbackground{
-      background-color: #141720;
-    }
-    
-    .right .site__description-about {
-      column-count: 2; 
-    } 
-  }
-  
-  /*# sourceMappingURL=dropcast.css.map */
   
