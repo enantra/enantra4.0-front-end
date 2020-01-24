@@ -48,6 +48,7 @@
 	margin: 0 auto;
 	min-height: 100vh;
 	flex-wrap: wrap;
+	padding: 30% 5% 5% 5%;
 }
 
 .content--narrow {
