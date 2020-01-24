@@ -20,6 +20,9 @@
 	font-family: Barlow, Arial, sans-serif;
 	overflow: hidden;
 	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0; left: 0;
 }
 .button {
   border-radius: 3px;
@@ -83,11 +86,10 @@
 	}
 }
 
-.logo_corner {
-	
+.logo_corner {	
 	margin:5px;
-	max-width:15%;
-  	max-height:15%;
+	max-width:25%;
+  	max-height:25%;
 	width: auto;
 	height: auto;
 	position: absolute;
@@ -106,11 +108,11 @@
 }
 
 .dates {
-	position: absolute;
-	top: 5vh;
+	position: relative;
+	top: 25vh;
 	text-align: center;
 	color: #fff;
-	font-weight: 900;
+	font-weight: 700;
 	font-size: calc(2vw + 1vh + .5vmin);
 }
 
@@ -143,13 +145,13 @@
 }
 
 .content {
-	display: flex;
-	flex-direction: column;
+	display: block;
 	width: 100vw;
 	height: 100vh;
 	position: absolute;
 	justify-content: center;
 	align-items: center;
+	text-align: center
 }
 
 .content__title {
@@ -157,10 +159,8 @@
 	width: 70vw;
 	color: var(--color-title);
 	text-transform: uppercase;
-
-
-	top: 0vh;
-	text-align: center;
+	top: 25vh;
+	display: inline-block;
 	color: #fff;
 	font-weight: 900;
 	font-size: calc(2vw + 1vh + .5vmin);
@@ -179,17 +179,16 @@
 	margin: 0;
 	color: var(--color-subtitle);
 	font-weight: 700;
-
 	margin: 0;
-	top: 25vh;
+	top: 40vh;
 	text-align: center;
 	font-size: calc(2vw + 1vh + .5vmin);
 }
 
 .content__tagline {
-	position: absolute;
+	position: relative;
 	margin: 0;
-	bottom: 15vh;
+	top: 40vh;
 	text-align: center;
 	color: #fff;
 	font-weight: 900;

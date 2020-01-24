@@ -50,7 +50,7 @@ const useStyles = makeStyles(theme => ({
     display: 'block',
     cursor: 'pointer',
     position: 'absolute',
-    top: '1em',
+    top: '0.8em',
     right: '4.50em',
     borderRadius: '50%',
     pointerEvents: 'auto',

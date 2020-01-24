@@ -559,8 +559,8 @@ a.menu-anchor:focus {
 	display: block;
 	cursor: pointer;
 	position: absolute;
-	top: 2.25em;
-	right: 2.25em;
+	top: 2em;
+    right: 2em;
 	z-index: 110;
 	border-radius: 50%;
 	background-color: var(--button-bg);
