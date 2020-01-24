@@ -569,7 +569,7 @@ class Workshops extends Component{
 							<img class="grid__item-img-workshops" src={machinelearning} alt="Machine Learning" />
 						</div>
 						<h3 class="grid__item-title-workshops">Workshops</h3>
-						<h4 class="grid__item-number-workshops">Machine&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learning</h4>
+						<h4 class="grid__item-number-workshops">Machine<br/>Learning</h4>
 					</a>
 					<a href="#" class="workshops-anchor grid__item-workshops">
 						<div class="grid__item-bg-workshops"></div>
@@ -577,7 +577,7 @@ class Workshops extends Component{
 							<img class="grid__item-img-workshops" src={digitalmarketing} alt="Digital Marketing" />
 						</div>
 						<h3 class="grid__item-title-workshops">Workshops</h3>
-						<h4 class="grid__item-number-workshops">Digital&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Marketing</h4>
+						<h4 class="grid__item-number-workshops">Digital<br/>Marketing</h4>
 					</a>
 					<a href="#" class="workshops-anchor grid__item-workshops">
 						<div class="grid__item-bg-workshops"></div>
@@ -585,7 +585,7 @@ class Workshops extends Component{
 							<img class="grid__item-img-workshops" src={criticalthinking} alt="Critical Thinking" />
 						</div>
 						<h3 class="grid__item-title-workshops">Workshops</h3>
-						<h4 class="grid__item-number-workshops">Art&nbsp;of&nbsp;Argumentation</h4>
+						<h4 class="grid__item-number-workshops">Art&nbsp;of<br/>Argumentation</h4>
 					</a>
                     <a href="#" class="workshops-anchor grid__item-workshops">
 						<div class="grid__item-bg-workshops"></div>
@@ -593,7 +593,7 @@ class Workshops extends Component{
 							<img class="grid__item-img-workshops" src={entrepreneurship101} alt="Entrepreneurship 101" />
 						</div>
 						<h3 class="grid__item-title-workshops">Workshops</h3>
-						<h4 class="grid__item-number-workshops">Entrepreneurship&nbsp;101</h4>
+						<h4 class="grid__item-number-workshops">Entrepreneurship<br/>101</h4>
 					</a>
                     <a href="#" class="workshops-anchor grid__item-workshops">
 						<div class="grid__item-bg-workshops"></div>
@@ -601,7 +601,7 @@ class Workshops extends Component{
 							<img class="grid__item-img-workshops" src={artofmoneymaking} alt="Art of Money Making Online" />
 						</div>
 						<h3 class="grid__item-title-workshops">Workshops</h3>
-						<h4 class="grid__item-number-workshops">Art&nbsp;of&nbsp;money making&nbsp;online</h4>
+						<h4 class="grid__item-number-workshops">Art&nbsp;of<br/>money making<br/>online</h4>
 					</a>
                     <a href="#" class="workshops-anchor grid__item-workshops">
 						<div class="grid__item-bg-workshops"></div>
@@ -609,7 +609,7 @@ class Workshops extends Component{
 							<img class="grid__item-img-workshops" src={bootcamp} alt="Bootcamp for Entrepreneurs" />
 						</div>
 						<h3 class="grid__item-title-workshops">Workshops</h3>
-						<h4 class="grid__item-number-workshops">Bootcamp&nbsp;for Entrepreneurs</h4>
+						<h4 class="grid__item-number-workshops">Bootcamp&nbsp;for<br/>Entrepreneurs</h4>
 					</a>
                     <a href="#" class="workshops-anchor grid__item-workshops">
 						<div class="grid__item-bg-workshops"></div>
@@ -617,7 +617,7 @@ class Workshops extends Component{
 							<img class="grid__item-img-workshops" src={iot} alt="IoT" />
 						</div>
 						<h3 class="grid__item-title-workshops">Workshops</h3>
-						<h4 class="grid__item-number-workshops">Internet&nbsp;of&nbsp;Things(IoT)</h4>
+						<h4 class="grid__item-number-workshops">Internet&nbsp;of<br/>Things(IoT)</h4>
 					</a>
 				</div>
 			</div>

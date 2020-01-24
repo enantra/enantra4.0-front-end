@@ -21,24 +21,24 @@
 }
 
 .workshop-description {
-	font-size : 1.2vw;
+	font-size : 2.4vw;
 }
 
 .workshop-fees {
-	font-size : 1.5vw;
+	font-size : 2.5vw;
 	color: #eff163;
 	font-family: Barlow, Arial, sans-serif;
 	font-weight : 700;
 }
 .workshop-titles {
-	color: #64faaf;
+	color: #09044a;
 	font-family: Barlow, Arial, sans-serif;
 	font-weight : 500;
-	font-size : 1.1vw;
+	font-size : 2.5vw;
 }
 
 .workshop-subtitles {
-	color: #fc0658;
+	color: #8a143b;
 	font-family: Barlow, Arial, sans-serif;
 	font-weight : 700;
 }
@@ -231,7 +231,7 @@ main {
 	position: absolute;
 	right: 0;
 	bottom: 0;
-	font-size: 2.65rem;
+	font-size: 1.8rem;
 	margin: 0 0 0.15rem;
 }
 
@@ -315,7 +315,7 @@ main {
 	text-align: center;
 	font-size: 1.25rem;
 	font-weight: normal;
-	margin: 3rem auto;
+	margin: 4rem auto;
 }
 
 .content__item-text-workshops {
@@ -363,71 +363,4 @@ main {
 .content__close-workshops,
 .content__indicator-workshops {
 	opacity: 0;
-}
-
-@media screen and (min-width: 55em) {
-	.frame {
-		display: grid;
-		align-items: start;
-		justify-items: start;
-		grid-template-columns: 40% 60%;
-		grid-template-areas: 'title header';
-	}
-	.codrops-header {
-		grid-area: header;
-		justify-self: end;
-		display: flex;
-		flex-direction: row;
-		align-items: flex-start;
-		align-items: center;
-		text-align: left;
-	}
-	.codrops-links {
-		margin: 0 0 0 1.5rem;
-	}
-	.title {
-		grid-area: title;
-		display: flex;
-		text-align: left;
-	}
-	.title__sub {
-		position: relative;
-		padding: 0 0 0 5rem;
-		margin: 0 0 0 1rem;
-	}
-	.title__sub::before {
-		content: '';
-		height: 1px;
-		width: 4rem;
-		background: currentColor;
-		position: absolute;
-		top: 0.65rem;
-		left: 0;
-	}
-	.title__sub-works {
-		display: block;
-	}
-	.grid__item-number-workshops {
-		right: -2.45rem;
-	}
-	.grid__item-title-workshops {
-		margin-left: -0.25rem;
-	}
-	.content__item-subtitle-workshops {
-		font-size: 3vw;
-	}
-	.content__item-text-workshops {
-  		column-count: 1;
-  		column-gap: 20px;
-  	}
-	.content__item-img-workshops {
-		max-width: none;
-		height: calc(100vh - 6rem);
-	}
-	.content__item-subtitle-workshops {
-		max-width: 50%;
-	}
-	.content__indicator-workshops {
-		display: block;
-	}
 }
