@@ -344,7 +344,7 @@ button.flagship-button {
 	width: 100%;
 	height: calc(100% - 10rem);
 	pointer-events: none;
-	perspective: 1000px;
+	
 }
 
 .content__item-flagships {

@@ -477,7 +477,8 @@ class Landing extends Component {
 		  
 			Tween.TweenMax.to(overlay, 2, {
 			  ease: Tween.Quad.easeOut,
-			  opacity: 0
+			  opacity: 0,
+			  zIndex: -1
 			});
 		  
 			Tween.TweenMax.set(titleLetters, {opacity: 0});

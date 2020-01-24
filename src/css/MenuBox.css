@@ -82,10 +82,6 @@ main {
 	z-index: 199;
 }
 
-.background {
-	perspective: 1000px;
-}
-
 /* Header */
 
 .info {
