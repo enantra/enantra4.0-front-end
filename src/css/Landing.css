@@ -85,9 +85,11 @@
 
 .logo_corner {
 	perspective: 1000px;
-	width: 100px;
 	margin:5px;
-	height: 150px;
+	max-width:15%;
+  	max-height:15%;
+	width: auto;
+	height: auto;
 	position: absolute;
 	top: 1em;
 	left: 1em;
@@ -272,8 +274,10 @@ sup{
 		position: fixed;
 		top: 0em;
 		left: 0em;
-		width:80px;
-		height:80px;
+		max-width:100px;
+		max-height:100px;
+		width: auto;
+		height: auto;
 		transform: scale(0.75);
 	}
 	.dates{
