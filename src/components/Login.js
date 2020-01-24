@@ -113,23 +113,23 @@ class Login extends Component{
         return(
             <div class="signup signupbackground">    
             <div class="content-signup">    
-               <form class="form-login" action="" method="">
-                       <div class="form__item form__item--full">
-                           <label class="form__label" for="email">Email Address</label>
-                           <input class="form__input" type="email" name="email" id="email" required />
-                           <div class="form__error"></div>
-                       </div>
-                       <div class="form__item form__item--full">
-                           <label class="form__label" for="location">Password</label>
-                           <input class="form__input" type="password" name="password" id="password" required />
-                           <div class="form__error"></div>
-                       </div>
-                       <div class="form__item form__item--full form__item--actions">
-                           <input class="form__button" type="submit" name="login" value="Login" />
-                       </div>
-                   </form>
-               </div>
-           </div>    
+            <form class="form-login form" action="" method="">
+                        <div class="form__item form__item--full">
+                            <label class="form__label" for="email">Email Address</label>
+                            <input class="form__input" type="email" name="email" id="email" required />
+                            <div class="form__error"></div>
+                        </div>
+                        <div class="form__item form__item--full">
+                            <label class="form__label" for="location">Password</label>
+                            <input class="form__input" type="password" name="password" id="password" required />
+                            <div class="form__error"></div>
+                        </div>
+                        <div class="form__item form__item--full form__item--actions">
+                            <input class="form__button" type="submit" name="login" value="Login" />
+                        </div>
+                    </form>
+                </div>
+            </div>   
         )
     }
 }
