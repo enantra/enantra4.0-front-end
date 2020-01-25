@@ -22,10 +22,10 @@ class Sponsors extends Component{
         return(
         <div class="sponsors-body">
             <div class="container">
-                <div class="centre-block">
-            <h1 class="heading-sponsors center-block text-center">SPONSORS</h1>
-                </div>
-                <div class="content-sponsors row justify-content-center align-items-center text-center inner-data">
+                <div class="heading-sponsors d-flex justify-content-center">
+                        <h1 class="heading-buffer">SPONSORS</h1>
+                </div> 
+                <div class="content-sponsors d-flex justify-content-center">
                     <StyleRoot>
                     <div  style={styles.bounceIn}>
                         <h1 class="sponsors-buffer">STAY TUNED</h1>
