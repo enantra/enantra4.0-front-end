@@ -60,7 +60,7 @@
   
   .site-about {
     padding: 8rem 3rem; 
-    font-size: 1.5em;
+    font-size: calc(1.5vw + 1vh);
   }
   
   .site__title-about {
