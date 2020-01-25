@@ -179,11 +179,11 @@ export default function FullScreenDialog() {
               Welcome Ambika
             </Typography>
             <div className={classes.sectionDesktop}>
-            <IconButton className={classes.button} aria-label="show 4 new items in cart" color="inherit">
+            {/*<IconButton className={classes.button} aria-label="show 4 new items in cart" color="inherit">
               <Badge badgeContent={4} color="secondary">
                 <ShoppingCartIcon />
               </Badge>
-            </IconButton>
+            </IconButton>*/}
             <IconButton
               edge="end"
               aria-label="manage account settings"
