@@ -379,6 +379,7 @@
 
 .scrollable-eventsdescription .slide__content-scroller-eventsdescription {
 	position: relative;
+	padding-top: 8em;
 }
 
 @media screen and (max-width: 50em) {
