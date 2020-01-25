@@ -59,7 +59,8 @@
   }
   
   .site-about {
-    padding: 2rem 3rem; 
+    padding: 8rem 3rem; 
+    font-size: 1.5em;
   }
   
   .site__title-about {
@@ -89,21 +90,21 @@
     width: 16vw;
     height: 16vw;
     float: left;
-    margin: 3.5rem;
+    margin: 2vh;
   }
 
   .logo-about-ced {
     width: 17vw;
     height: 22vw;
     float: left;
-    margin: 0rem 3rem 0rem 3rem;
+    margin: 0rem 2vh 0rem 2vh;
   }
 
   .logo-about-capitalize {
     width: 17vw;
     height: 17vw;
     float: left;
-    margin: 2rem;
+    margin: 2vh;
   }
 
   #site__bg canvas{
@@ -137,7 +138,7 @@
   @media only screen and (min-width: 320px) {
     .page--detail .site-about {
       padding-bottom: 5rem;
-      padding-top: 5rem; }
+      padding-top: 25rem; }
   
     .left .site__title-about.site__title--separator-about:after {
       display: none; 
