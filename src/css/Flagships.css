@@ -297,14 +297,15 @@ button.flagship-button {
 	height: 100%;
 	left: 0;
 	top: 0;
-	background-size: 100%;
-	/*background-size: contain;
-	background-repeat: no-repeat;*/
+	/*background-size: 100%;*/
+	background-size: contain;
+	background-repeat: no-repeat;
 	object-fit: scale-down;
 	background-position: 50% 50%;
 	position: relative;
 	pointer-events: none;
 	transform: scale3d(1.01,1.01,1);
+	filter: alpha(opacity=50);
 }
 
 .js .slide__img-wrap, 
@@ -369,8 +370,9 @@ button.flagship-button {
 }
 
 .content__item--current-flagships,
-.content__item--current-flagships ~ .content__close {
+.content__close {
 	pointer-events: auto;
+	padding-left: 40%;
 }
 
 .content__close {
@@ -404,7 +406,7 @@ button.flagship-button {
 
 .content__title-flagships {
 	margin: 0.5rem 0;
-	font-size: 2rem;
+	font-size: 1.8rem;
 }
 
 .content__subtitle-flagships {
