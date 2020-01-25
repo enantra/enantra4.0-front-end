@@ -21,11 +21,11 @@
 }
 
 .workshop-description {
-	font-size : 2.4vw;
+	font-size: 1.1em;
 }
 
 .workshop-fees {
-	font-size : 2.5vw;
+	font-size: 1.1em;
 	color: #eff163;
 	font-family: Barlow, Arial, sans-serif;
 	font-weight : 700;
@@ -34,7 +34,7 @@
 	color: #09044a;
 	font-family: Barlow, Arial, sans-serif;
 	font-weight : 500;
-	font-size : 2.5vw;
+	font-size: 1.1em;
 }
 
 .workshop-subtitles {
@@ -313,7 +313,7 @@ main {
 
 .content__item-subtitle-workshops {
 	text-align: center;
-	font-size: 1.25rem;
+	font-size: 2.1em;
 	font-weight: normal;
 	margin: 4rem auto;
 }
