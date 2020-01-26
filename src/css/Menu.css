@@ -203,7 +203,7 @@ a.menu-anchor:focus {
 }
 
 .global-menu__wrap {
-	padding: 0em;
+	padding: 0.5em;
 }
 
 .global-menu__item {

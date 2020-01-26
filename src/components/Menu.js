@@ -209,7 +209,8 @@ class Menu extends Component {
 						              <Link to='/flagships' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Flagships')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Flagships</Link>
 						              <Link to='/workshops' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Workshops')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Workshops</Link>
                           <Link to='/attractions' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Attractions')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Attractions</Link>
-					       
+                  </div>
+                  <div class="global-menu__wrap">
 						              <Link to='/login' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Login')}}class="menu-anchor global-menu__item global-menu__item--demo-1">Login</Link>
 						              <Link to='/signup' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Signup')}}class="menu-anchor global-menu__item global-menu__item--demo-1">Sign Up</Link>
 						              <Link to='/accommodation' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Accommodation')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Accommodation</Link>
