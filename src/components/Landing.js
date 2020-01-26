@@ -564,7 +564,6 @@ class Landing extends Component {
 							<img className="logo_corner" src={toplogo} alt="Top Logo" />
 							<div>
 								<center>
-								<p className="dates">20 &mdash; 23 Feb 2020 &middot; Anna University &middot; Chennai</p>
 								<Avatar/>
 								<img className="content__title" src={enantralogo} alt="Logo" />
 								<p className="content__subtitle">4<sup>TH</sup> EDITION</p>

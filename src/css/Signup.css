@@ -13,7 +13,6 @@
 	background: var(--color-bg);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	padding: 20px;
 }
 
 @keyframes loaderAnim {
@@ -153,4 +152,3 @@ a.demo--current {
 .content__link:hover .content__link-border {
 	transform: scaleX(1);
 }
-
