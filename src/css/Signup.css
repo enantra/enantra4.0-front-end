@@ -48,7 +48,17 @@
 	margin: 0 auto;
 	min-height: 100vh;
 	flex-wrap: wrap;
-	padding: 30% 5% 5% 5%;
+	padding: 100px 5% 5% 5%;
+}
+
+.login-content-signup {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	min-height: 100vh;
+	flex-wrap: wrap;
 }
 
 .content--narrow {

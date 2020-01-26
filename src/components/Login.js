@@ -112,7 +112,7 @@ class Login extends Component{
     render(){
         return(
             <div class="signup signupbackground">    
-            <div class="content-signup">    
+            <div class="login-content-signup">    
             <form class="form-login form" action="" method="">
                         <div class="form__item form__item--full">
                             <label class="form__label" for="email">Email Address</label>
