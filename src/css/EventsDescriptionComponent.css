@@ -33,8 +33,8 @@
 .slideshow-eventsdescription {
 	position: relative;
 	width: 100vw;
-	margin-top: 5vh;
-	height: 95vh;
+	margin-top: 10vh;
+	height: 95%;
 }
 
 .slide-eventsdescription {
@@ -317,12 +317,11 @@
 .navbutton-eventsdescription {
 	position: absolute;
 	perspective: 1;
-	top: 50%;
+	top: 50vh;
 	left: 50%;
 	width: 100px;
 	height: 30px;
-	margin: 0;
-	margin: -50px 0 0 0;
+	margin: -13% 0 0 0;
 	padding: 0;
 	border: none;
 	background: none;
