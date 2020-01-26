@@ -4,7 +4,6 @@ import '../css/Menu.css';
 import '../css/NormalizeMenu.css';
 import Avatar from './Avatar';
 
-
 var elmHamburger;
 var gNavItems;
 var elmOverlay;
@@ -160,6 +159,14 @@ class Menu extends Component {
         }
         }
       });
+
+      if(sessionStorage.getItem("auth") != undefined){
+        document.getElementById("loginItem").style.display = "none";
+        document.getElementById("signupItem").style.display = "none";
+
+        document.getElementById("logoutItem").style.display = "block";
+      }
+
     }
 
     closeMenu = () => {

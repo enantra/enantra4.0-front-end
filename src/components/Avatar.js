@@ -31,8 +31,8 @@ import '../css/Menu.css';
 const useStyles = makeStyles(theme => ({
   appBar: {
     position: 'relative',
-    backgroundColor: '#ffff4d',
-    color: '#4d4d4d',
+    backgroundColor: '#55276d',
+    color: '#FFFFFF',
   },
   payment: {
     margin: theme.spacing(1),
@@ -166,7 +166,7 @@ export default function FullScreenDialog() {
   return (
     <div>
       <ThemeProvider theme={darkTheme}> 
-      <IconButton className={classes.root} onClick={handleClickOpen} aria-label="profile">
+      <IconButton className={classes.root} onClick={handleClickOpen} aria-label="profile" id="iconButton" style={{display: "none"}}>
         <AccountCircleIcon style={{ fontSize: 70}}/>
       </IconButton>
       <Dialog fullScreen open={open} onClose={handleClose} TransitionComponent={Transition}>
@@ -175,57 +175,13 @@ export default function FullScreenDialog() {
             <IconButton className={classes.button} edge="start" color="inherit" onClick={handleClose} aria-label="close">
               <CloseIcon />
             </IconButton>
-            <Typography variant="h6" className={classes.title}>
-              Welcome Ambika
-            </Typography>
-            <div className={classes.sectionDesktop}>
-            {/*<IconButton className={classes.button} aria-label="show 4 new items in cart" color="inherit">
-              <Badge badgeContent={4} color="secondary">
-                <ShoppingCartIcon />
-              </Badge>
-            </IconButton>*/}
-            <IconButton
-              edge="end"
-              aria-label="manage account settings"
-              aria-controls={menuId}
-              aria-haspopup="true"
-              color="inherit"
-              onClick={handleProfileMenuOpen}
-              className={classes.button}
-            >
-              <SettingsIcon />
-            </IconButton>
-            </div>
           </Toolbar>
         </AppBar>
         {renderMobileMenu}
         {renderMenu}
         <AccountDetails />
         <div>
-        <Button
-        variant="contained"
-        color="secondary"
-        className={classes.payment}
-        startIcon={<WorkIcon />}
-      >
-      Workshops payment
-      </Button>
-      <Button
-        variant="contained"
-        color="secondary"
-        className={classes.payment}
-        startIcon={<EmojiFlagsIcon />}
-      >
-      Flagships payment
-      </Button>
-      <Button
-        variant="contained"
-        color="secondary"
-        className={classes.payment}
-        startIcon={<EmojiEventsIcon />}
-      >
-      Mini-events payment
-      </Button>
+        
       </div>
         <RegisterationTab />
         {/*<List>
@@ -241,4 +197,5 @@ export default function FullScreenDialog() {
       </ThemeProvider>
     </div>
   );
+
 }

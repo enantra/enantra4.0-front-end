@@ -8,6 +8,8 @@ class Login extends Component{
     componentDidMount(){
 
         this.props.renderEvent(true);
+
+        var context = this.props;
         
         const lineEq = (y2, y1, x2, x1, currentVal) => {
             var m = (y2 - y1) / (x2 - x1), b = y1 - m * x1;
@@ -90,6 +92,59 @@ class Login extends Component{
                 });
             }
         });
+
+        submitBttn.onclick = () => {
+
+            var validate = 0;
+            requiredElems.forEach((el) => {
+                if ( !el.value || el.type === 'email' && !validateEmail(el.value) ) {
+                    validate = 0;
+                }else{
+                    validate = 1;
+                }
+             } );
+
+             if(validate==1){
+                loginUser({email: requiredElems[0].value,
+                    password: requiredElems[1].value,
+                });  
+             }else{
+                 alert("Fill all Fields to Continue!");
+             }
+        }
+
+        function loginUser({email, password}){
+            var xmlhttp = new XMLHttpRequest();   // new HttpRequest instance 
+            var theUrl = "http://localhost:4000/api/login";
+            xmlhttp.open("POST", theUrl, true);
+            xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+
+            xmlhttp.onreadystatechange = function() { // Call a function when the state changes.
+                if(this.readyState === XMLHttpRequest.DONE && (this.status === 421 || this.status === 420)){
+                    //alert(JSON.parse(this.responseText).message);
+                    document.getElementById("error").innerHTML = JSON.parse(this.responseText).message
+                }
+                else if(this.readyState === XMLHttpRequest.DONE && this.status === 500){
+                    var responseJSON = JSON.parse(this.responseText);
+                    alert(responseJSON.message);
+                    console.log(this.responseText);
+                }
+                else if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+                    // Request finished. Do processing here.
+                    console.log(this.responseText);
+                    //console.log(JSON.parse(this.responseText).response);
+                    sessionStorage.setItem("auth", JSON.parse(this.responseText).response);
+                    console.log(sessionStorage.getItem("auth"), "auth");
+
+                    window.open("Landing", "_self");
+                }
+            }
+
+            xmlhttp.send(JSON.stringify({"user":{
+                "email": email,
+                "password": password}}));
+        }
+
             const body = document.querySelector('.signup');
             const distancePoints = (x1, y1, x2, y2) => Math.sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
     
@@ -108,28 +163,32 @@ class Login extends Component{
             };
 
             window.Nearby = Nearby; 
+
+
     }
+
     render(){
         return(
             <div class="signup signupbackground">    
             <div class="content-signup">    
-            <form class="form-login form" action="" method="">
-                        <div class="form__item form__item--full">
-                            <label class="form__label" for="email">Email Address</label>
-                            <input class="form__input" type="email" name="email" id="email" required />
-                            <div class="form__error"></div>
-                        </div>
-                        <div class="form__item form__item--full">
-                            <label class="form__label" for="location">Password</label>
-                            <input class="form__input" type="password" name="password" id="password" required />
-                            <div class="form__error"></div>
-                        </div>
-                        <div class="form__item form__item--full form__item--actions">
-                            <input class="form__button" type="submit" name="login" value="Login" />
-                        </div>
-                    </form>
-                </div>
-            </div>   
+               <form class="form-login" action="" method="">
+                       <div class="form__item form__item--full">
+                           <label class="form__label" for="email">Email Address</label>
+                           <input class="form__input" type="email" name="email" id="email" required />
+                           <div class="form__error"></div>
+                       </div>
+                       <div class="form__item form__item--full">
+                           <label class="form__label" for="location">Password</label>
+                           <input class="form__input" type="password" name="password" id="password" required />
+                           <div class="form__error"></div>
+                       </div>
+                       <p id="error"></p>
+                       <div class="form__item form__item--full form__item--actions">
+                       <button class="form__button" type="button">Login</button>
+                       </div>
+                   </form>
+               </div>
+           </div>    
         )
     }
 }

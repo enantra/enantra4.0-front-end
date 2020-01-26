@@ -13,6 +13,7 @@
 	background: var(--color-bg);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	padding: 20px;
 }
 
 @keyframes loaderAnim {

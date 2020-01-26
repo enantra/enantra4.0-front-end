@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import clsx from 'clsx';
-import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
 import {
   Card,
@@ -12,145 +10,78 @@ import {
   Button,
   TextField
 } from '@material-ui/core';
-import { Input } from '@material-ui/core';
 
-const useStyles = makeStyles(() => ({
-  root: {}
-}));
+class AccountDetails extends React.Component{
 
-const AccountDetails = props => {
-  const { className, ...rest } = props;
+  constructor(){
+    super();
+  }
 
-  const classes = useStyles();
+  componentDidMount(){
 
-  const [values, setValues] = useState({
-    id: 'E20AVCYEA',
-    lastName: 'Zhi',
-    email: 'shen.zhi@devias.io',
-    phone: '9940559790'
-  });
+    function getAccDetails(){
+			var request = require('request');
+            var options = {
+                'method': 'GET',
+                'url': 'http://localhost:4000/api/user/getuserdetails',
+                'headers': {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'auth': sessionStorage.getItem("auth")
+                }
+            };
+            request(options, function (error, res) { 
+                if (error){
+                    console.log(error);
+                }else{
+                  var jsonD = JSON.parse(res.body).response[0];
+                  setData(jsonD.eid, jsonD.name, jsonD.email, jsonD.phone);
+                }
+            });
+		  }
 
-  const handleChange = event => {
-    setValues({
-      ...values,
-      [event.target.name]: event.target.value
-    });
-  };
+    setData("id", "name", "email", "phone");
+    getAccDetails();
 
-  const states = [
-    {
-      value: 'alabama',
-      label: 'Alabama'
-    },
-    {
-      value: 'new-york',
-      label: 'New York'
-    },
-    {
-      value: 'san-francisco',
-      label: 'San Francisco'
+    function setData(id, name, email, phone){
+      document.getElementById("id").value = id;
+      document.getElementById("id").readOnly = true;
+
+      document.getElementById("name").value = name;
+      document.getElementById("name").readOnly = true;
+
+      document.getElementById("email").value = email;
+      document.getElementById("email").readOnly = true;
+
+      document.getElementById("phone").value = phone;
+      document.getElementById("phone").readOnly = true;
     }
-  ];
 
-  return (
-    <Card
-      {...rest}
-      className={clsx(classes.root, className)}
-    >
-      <form
-        autoComplete="off"
-        noValidate
-      >
-        <CardHeader
-          title="Profile"
-        />
-        <Divider />
+  }
+
+  render(){
+    return (
+      <form autoComplete="off" noValidate style={{margin: "10px"}}>
+        <h3>Profile</h3>
         <CardContent>
-          <Grid
-            container
-            spacing={3}
-          >
-            <Grid
-              item
-              md={6}
-              xs={12}
-            >
-              <TextField
-                fullWidth
-                label="Enantra ID"
-                margin="dense"
-                name="firstName"
-                value={values.id}
-                variant="outlined"
-                readOnly
-              />
+          <Grid container spacing={3}>
+            <Grid item md={6} xs={12}>
+              <TextField fullWidth label="Enantra ID" margin="dense" name="firstName" id="id" variant="outlined" />
             </Grid>
-            <Grid
-              item
-              md={6}
-              xs={12}
-            >
-              <TextField
-                fullWidth
-                label="Name"
-                margin="dense"
-                name="lastName"
-                value={values.lastName}
-                variant="outlined"
-                readOnly
-              />
+            <Grid item md={6} xs={12}>
+              <TextField fullWidth label="Name" margin="dense" name="lastName" id="name" variant="outlined" />
             </Grid>
-            <Grid
-              item
-              md={6}
-              xs={12}
-            >
-              <TextField
-                fullWidth
-                label="Email Address"
-                margin="dense"
-                name="email"
-                value={values.email}
-                variant="outlined"
-                readOnly
-              />
+            <Grid item md={6} xs={12}>
+              <TextField fullWidth label="Email Address" margin="dense" name="email"  id="email" variant="outlined"/>
             </Grid>
-            <Grid
-              item
-              md={6}
-              xs={12}
-            >
-              <TextField
-                fullWidth
-                label="Phone Number"
-                margin="dense"
-                name="phone"
-                value={values.phone}
-                variant="outlined"
-                readOnly
-              />
-            </Grid>
-            <Grid
-              item
-              md={6}
-              xs={12}
-            >
-            </Grid>
-            <Grid
-              item
-              md={6}
-              xs={12}
-            >
+            <Grid item md={6} xs={12}>
+              <TextField fullWidth label="Phone Number" margin="dense" name="phone"  id="phone" variant="outlined"/>
             </Grid>
           </Grid>
         </CardContent>
       </form>
-    </Card>
   );
-};
+  }
 
-AccountDetails.propTypes = {
-  className: PropTypes.string
-};
+}
 
 export default AccountDetails;

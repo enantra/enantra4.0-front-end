@@ -1,94 +1,98 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import SwipeableViews from 'react-swipeable-views';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
 
-function TabPanel(props) {
-  const { children, value, index, ...other } = props;
+class RegisterationTab extends React.Component {
+  
+  constructor(){
+    super();
+  }
 
-  return (
-    <Typography
-      component="div"
-      role="tabpanel"
-      hidden={value !== index}
-      id={`full-width-tabpanel-${index}`}
-      aria-labelledby={`full-width-tab-${index}`}
-      {...other}
-    >
-      {value === index && <Box p={3}>{children}</Box>}
-    </Typography>
-  );
+  componentDidMount(){
+
+    getRegisteredEvents();
+
+    function getRegisteredEvents(){
+			var request = require('request');
+            var options = {
+                'method': 'GET',
+                'url': 'http://localhost:4000/api/user/getregevents',
+                'headers': {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'auth': sessionStorage.getItem("auth")
+                }
+            };
+            request(options, function (error, res) { 
+                if (error){
+                    console.log(error);
+                }else{
+					var jsonDa = JSON.parse(res.body);
+					var jsonD = jsonDa.response;
+					console.log(jsonD);
+					
+					for (var i = 0; i < jsonD.length; i++) {
+						var counter = jsonD[i];
+						addRegEvent(counter.eventname);
+					}
+                }
+            });
+		  }
+
+		  function addRegEvent(name){
+
+			var div = document.createElement("div");
+      div.innerHTML = name;
+      div.style.display = "inline-block";
+      div.style.backgroundColor = "#55276d";
+      div.style.padding = "20px";
+      div.style.minWidth = "150px";
+      div.style.textAlign = "center";
+      div.style.margin = "10px";
+      div.style.boxShadow = "0 2px 3px 0 rgba(0, 0, 0)";
+      div.style.borderRadius = "14px"
+
+			document.getElementById("regEvents").appendChild(div);
+		  }
+  }
+
+  render(){
+
+    return (
+      <div style={{margin: "10px"}}>
+        <h3>Registered Events</h3>
+        <div id = "regEvents">
+            </div>
+      </div>
+    );
+  }
 }
 
-TabPanel.propTypes = {
-  children: PropTypes.node,
-  index: PropTypes.any.isRequired,
-  value: PropTypes.any.isRequired,
-};
+export default RegisterationTab;
 
-function a11yProps(index) {
-  return {
-    id: `full-width-tab-${index}`,
-    'aria-controls': `full-width-tabpanel-${index}`,
-  };
-}
-
-const useStyles = makeStyles(theme => ({
-  root: {
-    backgroundColor: theme.palette.background.paper,
-    width: '100%'
-  },
-}));
-
-export default function FullWidthTabs() {
+/*export default function FullWidthTabs() {
   const classes = useStyles();
   const theme = useTheme();
   const [value, setValue] = React.useState(0);
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
-  const handleChangeIndex = index => {
-    setValue(index);
-  };
+  const regEventStyle = {
+    "display": "inline-block",
+    "backgroundColor": "blue",
+    "padding": "10px",
+    "minWidth": "150px", 
+    "textAlign": "center",
+    "margin": "10px"
+  }
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" color="default">
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          indicatorColor="primary"
-          textColor="primary"
-          variant="fullWidth"
-          aria-label="full width tabs example"
-        >
-          <Tab label="Registered Workshops" {...a11yProps(0)} />
-          <Tab label="Registered Flagships" {...a11yProps(1)} />
-          <Tab label="Registered Events" {...a11yProps(2)} />
-        </Tabs>
-      </AppBar>
-      <SwipeableViews
-        axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-        index={value}
-        onChangeIndex={handleChangeIndex}
-      >
-        <TabPanel value={value} index={0} dir={theme.direction}>
-          Item One
-        </TabPanel>
-        <TabPanel value={value} index={1} dir={theme.direction}>
-          Item Two
-        </TabPanel>
-        <TabPanel value={value} index={2} dir={theme.direction}>
-          Item Three
-        </TabPanel>
-      </SwipeableViews>
+      <h3 style={{marginLeft: "10px"}}>Registered Events</h3>
+      <div id = "regEvents">
+            <div style={regEventStyle}>
+              Event Name
+            </div>
+
+            <div style={regEventStyle}>
+              Event Name
+            </div>
+          </div>
     </div>
   );
-}
+}*/

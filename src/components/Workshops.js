@@ -11,6 +11,7 @@ import criticalthinking from '../img/workshops/criticalthinking.jpg';
 import entrepreneurship101 from '../img/workshops/entrepreneurship101.jpg';
 import iot from '../img/workshops/iot.jpg';
 import digitalmarketing from '../img/workshops/digitalmarketing.jpg';
+import Payment from './Payment'
 
 class Workshops extends Component{
     componentDidMount(){
@@ -563,7 +564,8 @@ class Workshops extends Component{
             <div class="workshops">
 			<div class="grid-wrap-workshops">
 				<div class="grid-workshops">
-					<a href="#" class="workshops-anchor grid__item-workshops">
+                    <div style={{position:"relative"}}>
+                    <a href="#" class="workshops-anchor grid__item-workshops">
 						<div class="grid__item-bg-workshops"></div>
 						<div class="grid__item-wrap-workshops">
 							<img class="grid__item-img-workshops" src={machinelearning} alt="Machine Learning" />
@@ -571,6 +573,7 @@ class Workshops extends Component{
 						<h3 class="grid__item-title-workshops">Workshops</h3>
 						<h4 class="grid__item-number-workshops">Machine<br/>Learning</h4>
 					</a>
+                    </div>
 					<a href="#" class="workshops-anchor grid__item-workshops">
 						<div class="grid__item-bg-workshops"></div>
 						<div class="grid__item-wrap-workshops">
@@ -665,6 +668,7 @@ class Workshops extends Component{
                             </li>
                         </ul>
                         </p>
+                        <Payment eventid="18520"/>
                         <p class="workshop-fees">FEES - 500 INR per student - 150 in a batch</p>
 					</div>
 				</div>
@@ -765,6 +769,7 @@ class Workshops extends Component{
                             </p>
                         </p>
                     </p>
+                    <Payment eventid="185119"/>
                     <p class="workshop-fees">FEES - 500 INR per student - 150 in a batch</p>
 					</div>
 				</div>
@@ -800,6 +805,7 @@ class Workshops extends Component{
                             <p class="workshop-subtitles">3 : The Socratic Method</p>
                             <p>Trolley problems and using critical thinking to make better decisions</p>
                         </p><br/>
+                        <Payment eventid="18517"/>
                         <p class="workshop-fees">FEES - 500 INR per student - 60 in a batch</p>
 					</div>
 				</div>
@@ -877,6 +883,7 @@ class Workshops extends Component{
                                 </li>
                             </ol>
                         </p>
+                        <Payment eventid="18518"/>
                         <p class="workshop-fees">FEES - 500 INR per student - 60 in a batch</p>
 					</div>
 				</div>
@@ -967,6 +974,7 @@ class Workshops extends Component{
                             <p class="workshop-titles">Takeaways</p><br/>
                             <p>Official Certification from Digitalshala with partnerships</p>
                         </p><br/>
+                        <Payment eventid="18522"/>
                         <p class="workshop-fees">FEES - 500 INR per student - 60 in a batch</p>
 					</div>
 				</div>
@@ -1073,6 +1081,7 @@ class Workshops extends Component{
                             <p class="workshop-titles">Takeaways</p><br/>
                             <p>Official Certification from Digitalshala with partnerships</p>
                         </p><br/>
+                        <Payment eventid="18543"/>
                         <p class="workshop-fees">FEES - 500 INR per student - 60 in a batch</p>
 					</div>
 				</div>
@@ -1085,6 +1094,7 @@ class Workshops extends Component{
 					<div class="content__item-text-workshops">
                     <p class="workshop-titles">About Workshop</p><br/>
                     <p>IoT systems allow users to achieve deeper automation, analysis, and integration within a system. They improve the reach of these areas and their accuracy. IoT utilizes existing and emerging technology for sensing, networking and robotics. IoT exploits recent advances in software, falling hardware prices and modern attitudes towards technology.</p>
+                    <Payment eventid="18521"/>
 					</div>
 				</div>
 				<button class="content__close-workshops">Close</button>
