@@ -59,7 +59,7 @@ class Payment extends React.Component {
             width: "160px",
             color: "white",
             borderRadius: "20px",
-            marginBottom: "10px"
+            marginBottom: "10vw"
           };
 
     return <center>
