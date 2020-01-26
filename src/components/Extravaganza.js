@@ -14,7 +14,7 @@ var supportsCssVars = function() { var e, t = document.createElement("style"); r
 supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");`;
 
 class Extravaganza extends Component{
-    
+
     componentDidMount(){  
 
         var bodyEl = document.querySelector('.eventsdescription'),
@@ -130,7 +130,7 @@ class Extravaganza extends Component{
                     translateY : 400, opacity : 0
                 }, 
                 {
-                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 1000
+                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 1
                 }
             );
     
@@ -141,7 +141,7 @@ class Extravaganza extends Component{
                     translateY : 400, opacity : 0
                 }, 
                 {
-                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 1000
+                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 1
                 }
             );
     
@@ -152,7 +152,7 @@ class Extravaganza extends Component{
                     translateY : 400, opacity : 0
                 }, 
                 {
-                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 1000, delay: 100
+                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 1, delay: 1
                 }
             );
     
@@ -163,7 +163,7 @@ class Extravaganza extends Component{
                     translateY : 600, opacity : 0
                 }, 
                 {
-                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 1000, delay: 200
+                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 1, delay: 2
                 }
             );
     
@@ -173,7 +173,7 @@ class Extravaganza extends Component{
                     translateY : 800, opacity : 0
                 }, 
                 {
-                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 500, delay: 300,
+                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 5, delay: 3,
                     complete: function() {
                         // remove slide--open class to the item
                         classie.remove(item, 'slide--open-eventsdescription');
@@ -192,7 +192,7 @@ class Extravaganza extends Component{
                     translateY : 0, opacity : 1
                 }, 
                 {
-                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 700, delay: 500
+                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 7, delay: 5
                 }
             );
     
@@ -202,7 +202,7 @@ class Extravaganza extends Component{
                     scaleX : 1, scaleY : 1
                 }, 
                 {
-                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.5,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.5,"y":1}]}], duration: 700, delay: 250
+                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.5,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.5,"y":1}]}], duration: 7, delay: 2
                 }
             );
         };
@@ -316,7 +316,7 @@ class Extravaganza extends Component{
                     translateX: dir === 'right' ? -1*currentEl.offsetWidth : currentEl.offsetWidth, scale: 0.7
                 }, 
                 {
-                    type: dynamics.spring, duration: 2000, friction: 600,
+                    type: dynamics.spring, duration: 2, friction: 600,
                     complete: function() {
                         dynamics.css(itemCurrent, { visibility: 'hidden' });
                     }
@@ -329,7 +329,7 @@ class Extravaganza extends Component{
                     translateX: dir === 'right' ? -250 : 250, opacity: 0
                 }, 
                 {
-                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 450
+                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 4
                 }
             );
     
@@ -343,7 +343,7 @@ class Extravaganza extends Component{
                     translateX: 0
                 }, 
                 {
-                    type: dynamics.spring, duration: 3000, friction: 700, frequency: 500,
+                    type: dynamics.spring, duration: 3, friction: 700, frequency: 5,
                     complete: function() {
                         self.items.forEach(function(item) { classie.remove(item, 'slide--current-eventsdescription'); });
                         classie.add(itemNext, 'slide--current-eventsdescription');
@@ -359,7 +359,7 @@ class Extravaganza extends Component{
                     translateX: 0, opacity: 1
                 }, 
                 {
-                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 1000
+                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 1
                 }
             );
         };
@@ -434,7 +434,7 @@ class Extravaganza extends Component{
                     scaleX : scaleVal, scaleY : scaleVal
                 }, 
                 {
-                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.5,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.5,"y":1}]}], duration: 1700
+                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.5,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.5,"y":1}]}], duration: 17
                 }
             );
             
@@ -444,7 +444,7 @@ class Extravaganza extends Component{
                     translateY : -600, opacity : 0
                 }, 
                 {
-                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 300, delay: 75
+                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 3, delay: 5
                 }
             );
     
@@ -454,7 +454,7 @@ class Extravaganza extends Component{
                     translateY : 0, opacity : 1
                 }, 
                 {
-                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 1000, delay: 300
+                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 1, delay: 3
                 }
             );
     
@@ -464,7 +464,7 @@ class Extravaganza extends Component{
                     translateY : 0, opacity : 1
                 }, 
                 {
-                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 1000, delay: 400
+                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 1, delay: 4
                 }
             );
     
@@ -474,7 +474,7 @@ class Extravaganza extends Component{
                     translateY : 0, opacity : 1
                 }, 
                 {
-                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 1000, delay: 500
+                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 1, delay: 5
                 }
             );
     
@@ -484,7 +484,7 @@ class Extravaganza extends Component{
                     translateY : 0, opacity : 1
                 }, 
                 {
-                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 1000, delay: 600
+                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 1, delay: 6
                 }
             );
     
@@ -494,7 +494,7 @@ class Extravaganza extends Component{
                     translateY : 0, opacity : 1
                 }, 
                 {
-                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 1000, delay: 700,
+                    type: dynamics.bezier, points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}], duration: 1, delay: 7,
                     complete: function() {
                         // add .noscroll to body and .scrollable to .slide__content
                         classie.add(bodyEl, 'noscroll-eventsdescription');
@@ -580,7 +580,7 @@ class Extravaganza extends Component{
         window.CircleSlideshow = CircleSlideshow;
         document.documentElement.className = 'js';
         var slideshow = new CircleSlideshow(document.getElementById('slideshow'));
-        
+
         this.props.renderEvent(false);
 }
 

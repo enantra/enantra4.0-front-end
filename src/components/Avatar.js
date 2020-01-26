@@ -25,6 +25,7 @@ import AccountDetails from './AccountDetails';
 import WorkIcon from '@material-ui/icons/Work';
 import EmojiFlagsIcon from '@material-ui/icons/EmojiFlags';
 import EmojiEventsIcon from '@material-ui/icons/EmojiEvents';
+import '../css/Menu.css';
 
 
 const useStyles = makeStyles(theme => ({
@@ -39,13 +40,20 @@ const useStyles = makeStyles(theme => ({
     padding: '1%'
   },
   root: {
-    top: 25,
-    right: 160,
     position: 'absolute',
     display: 'block',
     zIndex: 110,
     outline: 'none !important',
     color: 'white',
+    width: '64px',
+    height: '64px',
+    display: 'block',
+    cursor: 'pointer',
+    position: 'absolute',
+    top: '0.8em',
+    right: '4.50em',
+    borderRadius: '50%',
+    pointerEvents: 'auto',
   },
   button: {
       outline: 'none !important',
@@ -171,11 +179,11 @@ export default function FullScreenDialog() {
               Welcome Ambika
             </Typography>
             <div className={classes.sectionDesktop}>
-            <IconButton className={classes.button} aria-label="show 4 new items in cart" color="inherit">
+            {/*<IconButton className={classes.button} aria-label="show 4 new items in cart" color="inherit">
               <Badge badgeContent={4} color="secondary">
                 <ShoppingCartIcon />
               </Badge>
-            </IconButton>
+            </IconButton>*/}
             <IconButton
               edge="end"
               aria-label="manage account settings"

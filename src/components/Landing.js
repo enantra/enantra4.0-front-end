@@ -477,7 +477,8 @@ class Landing extends Component {
 		  
 			Tween.TweenMax.to(overlay, 2, {
 			  ease: Tween.Quad.easeOut,
-			  opacity: 0
+			  opacity: 0,
+			  zIndex: -1
 			});
 		  
 			Tween.TweenMax.set(titleLetters, {opacity: 0});
@@ -554,13 +555,12 @@ class Landing extends Component {
 									</a>
 								</ul>
 							</div>
-							<p className="dates">20 &mdash; 23 Feb 2020 &middot; Anna University &middot; Chennai</p>
-							<Avatar/>
+							<p className="dates">20 &mdash; 23 Feb 2020 <br/> Anna University &middot; Chennai</p>
+							
 							<img className="logo_corner" src={toplogo} alt="Top Logo" />
 							<img className="content__title" src={enantralogo} alt="Logo" />
 							<p className="content__subtitle">4<sup>TH</sup> EDITION</p>
 							<p className="content__tagline">South India's biggest Entrepreneurship and Management fest</p>
-							<button class="button"><span class="button">Sign Up</span></button>
 							
 							
 						</div>

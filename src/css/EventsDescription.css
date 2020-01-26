@@ -37,7 +37,9 @@ a:focus {
 .container-eventsdescription {
 	position: relative;
 	overflow: hidden;
-	width: 100%;
+	height: 100vh;
+	width: 100vw;
+	top: 0; left: 0;
 }
 
 /* Header */
@@ -117,23 +119,16 @@ a:focus {
 }
 
 
-/* Content */
-
-.content-eventsdescription {
-	padding: 3em 0;
-}
 
 /* Related demos */
 
 .content--related-eventsdescription {
 	font-weight: bold;
-	padding: 3em 1em 10em;
 	text-align: center;
 }
 
 .media-item-eventsdescription {
 	display: inline-block;
-	padding: 2em;
 	vertical-align: top;
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
@@ -158,16 +153,3 @@ a:focus {
 	padding: 0.5em;
 }
 
-@media screen and (max-width: 40em) {
-	.codrops-header {
-		-webkit-flex-wrap: wrap;
-		flex-wrap: wrap;
-		-webkit-justify-content: center;
-		justify-content: center;
-		text-align: center;
-	}
-	.codrops-header h1 {
-		width: 100%;
-		padding: 1em 0;
-	}
-}

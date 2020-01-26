@@ -39,7 +39,7 @@
 }
 
 .form::before {
-	content: 'Create an account';
+	content: 'Signup';
 	display: block;
 	padding: 1.5rem 2rem;
 	position: absolute;
@@ -53,7 +53,7 @@
 }
 
 .form-login::before {
-	content: 'Login to your account';
+	content: 'Login';
 	display: block;
 	padding: 1.5rem 2rem;
 	position: absolute;
@@ -102,6 +102,19 @@
 	border: 0;
 	font-weight: bold;
 	color: #155bda;
+}
+
+.form__input_select {
+	border-radius: 5px;
+	height: 3rem;
+	padding: 0.5rem 1rem 0.5rem 1rem;
+	width: 100%;
+	border: 0;
+	font-weight: bold;
+	color: #155bda;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .form__error {

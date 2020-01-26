@@ -458,13 +458,15 @@ class Flagships extends Component {
                 
             }
             hide() {
-                this.DOM.el.classList.remove('content__item--current-flagships');
+                
     
-                TweenFlag.TweenMax.staggerTo([this.DOM.backCtrl,this.DOM.number,this.DOM.title,this.DOM.subtitle,this.DOM.text].reverse(), 0.3, {
-                    ease: TweenFlag.Power3.easeIn,
+                TweenFlag.TweenMax.staggerTo([this.DOM.backCtrl,this.DOM.number,this.DOM.title,this.DOM.subtitle,this.DOM.text].reverse(), 0, {
+                    ease: TweenFlag.Power4.easeIn,
                     opacity: 0,
                     y: 10
-                }, 0.01);
+                }, 0);
+
+                this.DOM.el.classList.remove('content__item--current-flagships');
             }
         }
     

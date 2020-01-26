@@ -436,7 +436,7 @@ class Events extends Component {
 							<img class="grid__item-img" src={bm} alt="Some image" />
 						</div>
 						<h3 class="grid__item-title">Events</h3>
-						<h4 class="grid__item-number">Business&nbsp;Management</h4>
+						<h4 class="grid__item-number">Business<br/>Management</h4>
 					</Link>
 					<Link to='/coding' onClick={() => this.props.handleEventClick('Coding')} class="grid__item aeventsbucket">
 						<div class="grid__item-bg"></div>
@@ -452,7 +452,7 @@ class Events extends Component {
 							<img class="grid__item-img" src={efac} alt="Some image" />
 						</div>
 						<h3 class="grid__item-title">Events</h3>
-						<h4 class="grid__item-number">Events&nbsp;for&nbsp;a&nbsp;cause</h4>
+						<h4 class="grid__item-number">Events&nbsp;for<br/>a&nbsp;cause</h4>
 					</Link>
 					<Link to='/extravaganza' onClick={() => this.props.handleEventClick('Fun')} class="grid__item aeventsbucket">
 						<div class="grid__item-bg"></div>
@@ -460,7 +460,7 @@ class Events extends Component {
 							<img class="grid__item-img" src={fun} alt="Some image" />
 						</div>
 						<h3 class="grid__item-title">Events</h3>
-						<h4 class="grid__item-number">Fun&nbsp;and&nbsp;Extravaganza</h4>
+						<h4 class="grid__item-number">Fun&nbsp;and<br/>Extravaganza</h4>
 					</Link>
 					<Link to='/online' onClick={() => this.props.handleEventClick('Online')} class="grid__item aeventsbucket">
 						<div class="grid__item-bg"></div>

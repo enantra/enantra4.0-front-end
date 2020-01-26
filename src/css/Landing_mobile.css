@@ -41,7 +41,7 @@
 }
 
 .logo_corner {
-	perspective: 1000px;
+	
 	width: 100px;
 	margin:5px;
 	height: 150px;
@@ -50,7 +50,7 @@
 	left: 1em;
 }
 .social{
-	perspective: 1000px;
+	
 	width: 150px;
 	margin:0.5px;
 	height: 100px;
@@ -63,7 +63,7 @@
 .dates {
 	position: absolute;
 	top: 1em;
-	perspective: 1000px;
+	
 	justify-self: end;
 	text-align: center;
 	color: #fff;
@@ -117,7 +117,7 @@
 	font-size: 20vw;
 	text-transform: uppercase;
 	margin:;
-	perspective: 1000px;
+	
 }
 
 .content__subtitle span {
