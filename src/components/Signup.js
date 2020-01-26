@@ -92,6 +92,85 @@ class Signup extends Component {
                 });
             }
         });
+
+        submitBttn.onclick = () => {
+
+            /*registerUser({name: "NameTest",
+                    gender: "M",
+                    email: "ciddarthjeyakumar@gmail.com",
+                    phone: "9003945219",
+                    college: "SRM",
+                    department: "CSE",
+                    year: "2",
+                    city: "Chennai",
+                    dob: "08/11/2000",
+                    password: "password",
+                });*/
+
+            var validate = 0;
+            requiredElems.forEach((el) => {
+                if ( !el.value || el.type === 'email' && !validateEmail(el.value) ) {
+                    validate = 0;
+                }else{
+                    validate = 1;
+                }
+             } );
+
+             if(validate==1){
+                registerUser({name: requiredElems[0].value,
+                    gender: requiredElems[1].value,
+                    email: requiredElems[2].value,
+                    phone: requiredElems[3].value,
+                    college: requiredElems[4].value,
+                    department: requiredElems[5].value,
+                    year: requiredElems[6].value,
+                    city: requiredElems[7].value,
+                    dob: requiredElems[8].value,
+                    password: requiredElems[9].value,
+                });  
+             }else{
+                alert("Fill all Fields to Continue!");
+            }
+        }
+
+        function registerUser({name, email, password, phone, gender, college, department, year, dob, city}){
+            var xmlhttp = new XMLHttpRequest();   // new HttpRequest instance 
+            var theUrl = "http://localhost:4000/api/signup";
+            xmlhttp.open("POST", theUrl, true);
+            xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+
+            xmlhttp.onreadystatechange = function() { // Call a function when the state changes.
+                if(this.readyState === XMLHttpRequest.DONE && this.status === 500){
+                    var responseJSON = JSON.parse(this.responseText);
+                    alert(responseJSON.message);
+                    console.log(this.responseText);
+                }
+                if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+                    // Request finished. Do processing here.
+                    console.log(this.responseText);
+                    alert("Please Verify your Email ID");
+                }
+            }
+            var gen = 1;
+            if(gender == 'M' || gender == 'm')
+            gen = 1;
+            else if(gender == 'F' || gender == 'f')
+            gen = 2;
+            else
+            gen = 3;
+
+            xmlhttp.send(JSON.stringify({"user":{
+                "name":name, 
+                "email": email,
+                "password": password,
+                "phone": phone,
+                "gender": gen,
+                "college": college,
+                "department": department,
+                "year": year,
+                "dob": dob,
+                "city": city}}));
+        }
             const body = document.querySelector('.signup');
             const distancePoints = (x1, y1, x2, y2) => Math.sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
     
@@ -123,7 +202,7 @@ class Signup extends Component {
 						<div class="form__error"></div>
 					</div>
 					<div class="form__item">
-						<label class="form__label" for="lastname">Gender</label>
+						<label class="form__label" for="lastname">Gender (M, F, O)</label>
 						<input class="form__input" type="text" name="gender" id="gender" required />
 						<div class="form__error"></div>
 					</div>
@@ -147,6 +226,22 @@ class Signup extends Component {
 						<input class="form__input" type="text" name="department" id="department" required />
 						<div class="form__error"></div>
 					</div>
+                    <div class="form__item">
+						<label class="form__label" for="location">Year</label>
+						<input class="form__input" type="number" name="year" id="year" required />
+						<div class="form__error"></div>
+					</div>
+                    <div class="form__item">
+						<label class="form__label" for="location">City</label>
+						<input class="form__input" type="text" name="city" id="city" required />
+						<div class="form__error"></div>
+					</div>
+                    <div class="form__item">
+						<label class="form__label" for="location">Date of Birth</label>
+						<input class="form__input" type="date" name="date" id="date" required />
+						<div class="form__error"></div>
+					</div>
+
 					<div class="form__item">
 						<label class="form__label" for="location">Password</label>
 						<input class="form__input" type="password" name="password" id="password" required />
@@ -157,8 +252,10 @@ class Signup extends Component {
 						<input class="form__input" type="password" name="confirmpassword" id="confirmpassword" required />
 						<div class="form__error"></div>
 					</div>
+
 					<div class="form__item form__item--full form__item--actions">
-						<input class="form__button" type="submit" name="register" value="Register" />
+						
+                        <button class="form__button" type="button">Register</button>
 					</div>
 	        	</form>
 		    </div>

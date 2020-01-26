@@ -523,6 +523,10 @@ class Landing extends Component {
 			loop(1500);
 		  }
 
+		  if(sessionStorage.getItem("auth") != undefined){
+			document.getElementById("iconButton").style.display = "block";
+		  }
+
 	}
 
 	render(){
@@ -531,34 +535,39 @@ class Landing extends Component {
 					<link href="https://fonts.googleapis.com/css?family=Barlow:400,800" rel="stylesheet" />
 						<div className="content">
 							<canvas className="landscape"></canvas>
-							<div class="social">
+							<div className="social">
 								<ul>
-									<a class="social-anchor" href="https://www.twitter.com/enantra/" target="_blank">
-									<li class="twitter">Twitter<i class="fab fa-twitter" aria-hidden="true"></i></li>
+									<a className="social-anchor" href="https://www.twitter.com/enantra/" target="_blank">
+									<li className="twitter">Twitter<i className="fab fa-twitter" aria-hidden="true"></i></li>
 									</a>
 								</ul>	
 								<ul>	
-									<a class="social-anchor" href="https://www.facebook.com/enantra/" target="_blank">
-									<li class="facebook">Facebook<i class="fab fa-facebook" aria-hidden="true"></i></li>
+									<a className="social-anchor" href="https://www.facebook.com/enantra/" target="_blank">
+									<li className="facebook">Facebook<i className="fab fa-facebook" aria-hidden="true"></i></li>
 									</a>
 								</ul>
 								<ul>
-									<a class="social-anchor" href="https://www.linkedin.com/company/enantra" target="_blank">
-									<li class="linkedin">Linkedin<i class="fab fa-linkedin" aria-hidden="true"></i></li>
+									<a className="social-anchor" href="https://www.linkedin.com/company/enantra" target="_blank">
+									<li className="linkedin">Linkedin<i className="fab fa-linkedin" aria-hidden="true"></i></li>
 									</a>
 								</ul>
 								<ul>	
-									<a class="social-anchor" href="https://www.instagram.com/enantra.fest/" target="_blank">
-									<li class="instagram">Instagram<i class="fab fa-instagram" aria-hidden="true"></i></li>
+									<a className="social-anchor" href="https://www.instagram.com/enantra.fest/" target="_blank">
+									<li className="instagram">Instagram<i className="fab fa-instagram" aria-hidden="true"></i></li>
 									</a>
 								</ul>
 							</div>
-							<p className="dates">20 &mdash; 23 Feb 2020 &middot; Anna University &middot; Chennai</p>
-							<Avatar/>
+							
 							<img className="logo_corner" src={toplogo} alt="Top Logo" />
+							<div>
+								<center>
+								<p className="dates">20 &mdash; 23 Feb 2020 &middot; Anna University &middot; Chennai</p>
+							<Avatar/>
 							<img className="content__title" src={enantralogo} alt="Logo" />
 							<p className="content__subtitle">4<sup>TH</sup> EDITION</p>
 							<p className="content__tagline">South India's biggest Entrepreneurship and Management fest</p>
+								</center>
+							</div>
 						</div>
 						<div className="overlay"></div>
 				</div>

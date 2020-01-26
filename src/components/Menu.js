@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Link, Switch,Redirect } from "react-rou
 import '../css/Menu.css';
 import '../css/NormalizeMenu.css';
 
-
 var elmHamburger;
 var gNavItems;
 var elmOverlay;
@@ -159,6 +158,14 @@ class Menu extends Component {
         }
         }
       });
+
+      if(sessionStorage.getItem("auth") != undefined){
+        document.getElementById("loginItem").style.display = "none";
+        document.getElementById("signupItem").style.display = "none";
+
+        document.getElementById("logoutItem").style.display = "block";
+      }
+
     }
 
     closeMenu = () => {
@@ -172,7 +179,7 @@ class Menu extends Component {
     render(){
             return (
             <div className="demo-1">
-            <div class="main-menu">
+            <div className="main-menu">
 				    <div className="hamburger js-hover">
 					    <div className="hamburger__line hamburger__line--01">
 						    <div className="hamburger__line-in hamburger__line-in--01"></div>
@@ -191,22 +198,23 @@ class Menu extends Component {
 					    </div>
 				    </div>
               <Router>
-                <div class="global-menu">
-					        <div class="global-menu__wrap">
-						              <Link to='/' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Home');}} class="menu-anchor global-menu__item global-menu__item--demo-1">Home</Link>
-                          <Link to='/about' onClick={() => {this.closeMenu(); this.props.handleMenuClick('About');}} class="menu-anchor global-menu__item global-menu__item--demo-1">About</Link>
-						              <Link to='/events' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Events')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Events</Link>
-						              <Link to='/flagships' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Flagships')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Flagships</Link>
-						              <Link to='/workshops' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Workshops')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Workshops</Link>
-                          <Link to='/attractions' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Attractions')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Attractions</Link>
+                <div className="global-menu">
+					        <div className="global-menu__wrap">
+						              <Link to='/' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Home');}} className="menu-anchor global-menu__item global-menu__item--demo-1">Home</Link>
+                          <Link to='/about' onClick={() => {this.closeMenu(); this.props.handleMenuClick('About');}} className="menu-anchor global-menu__item global-menu__item--demo-1">About</Link>
+						              <Link to='/events' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Events')}} className="menu-anchor global-menu__item global-menu__item--demo-1">Events</Link>
+						              <Link to='/flagships' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Flagships')}} className="menu-anchor global-menu__item global-menu__item--demo-1">Flagships</Link>
+						              <Link to='/workshops' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Workshops')}} className="menu-anchor global-menu__item global-menu__item--demo-1">Workshops</Link>
+                          <Link to='/attractions' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Attractions')}} className="menu-anchor global-menu__item global-menu__item--demo-1">Attractions</Link>
 					        </div>
-                  <div class="global-menu__wrap">
-						              <Link to='/login' class="menu-anchor global-menu__item global-menu__item--demo-1">Login</Link>
-						              <Link to='/signup' class="menu-anchor global-menu__item global-menu__item--demo-1">Sign Up</Link>
-						              <Link to='/accommodation' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Accommodation')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Accommodation</Link>
-						              <Link to='/team' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Team')}} class="menu-anchor global-menu__item global-menu__item--demo-1">The Team</Link>
-                          <Link to='/sponsors' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Sponsors')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Sponsors</Link>
-                          <Link to='/contactus' onClick={() => {this.closeMenu(); this.props.handleMenuClick('ContactUs')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Contact Us</Link>
+                  <div className="global-menu__wrap">
+						              <Link to='/login' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Login')}}  className="menu-anchor global-menu__item global-menu__item--demo-1" id="loginItem">Login</Link>
+						              <Link to='/signup' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Signup')}} className="menu-anchor global-menu__item global-menu__item--demo-1" id="signupItem">Sign Up</Link>
+                          <Link to='/logout' onClick={() => {this.closeMenu(); }} className="menu-anchor global-menu__item global-menu__item--demo-1" id="logoutItem" style={{display: "none"}}>Logout</Link>
+						              <Link to='/accommodation' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Accommodation')}} className="menu-anchor global-menu__item global-menu__item--demo-1">Accommodation</Link>
+						              <Link to='/team' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Team')}} className="menu-anchor global-menu__item global-menu__item--demo-1">The Team</Link>
+                          <Link to='/sponsors' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Sponsors')}} className="menu-anchor global-menu__item global-menu__item--demo-1">Sponsors</Link>
+                          <Link to='/contactus' onClick={() => {this.closeMenu(); this.props.handleMenuClick('ContactUs')}} className="menu-anchor global-menu__item global-menu__item--demo-1">Contact Us</Link>
 			            </div>
 				        </div>
               </Router>

@@ -50,7 +50,7 @@
 }
 
 .dates {
-	position: absolute;
+	
 	top: 1em;
 	perspective: 1000px;
 	justify-self: end;
@@ -150,7 +150,7 @@ sup{
 	font-size: 2.3vw;
 }
 
-@media screen and (min-width: 53em) {
+/*@media screen and (min-width: 53em) {
 	.frame {
 		position: fixed;
 		text-align: left;
@@ -205,9 +205,6 @@ sup{
 		padding: 0;
 		justify-self: start;
 	}
-	/*.frame a {
-		pointer-events: auto;
-	}*/
 	.content {
 		height: 100vh;
 		padding: 0 0 10rem 0;
@@ -224,4 +221,4 @@ sup{
 	.dates{
 		position: fixed;
 	}
-}	
+}	*/

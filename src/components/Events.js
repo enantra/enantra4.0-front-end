@@ -11,6 +11,7 @@ import efac from '../img/events/efac.jpg';
 import online from '../img/events/online.jpg';
 import fun from '../img/events/fun.jpg';
 import coding from '../img/events/coding.jpg';
+import Payment from './Payment';
 
 const code = `document.documentElement.className = "js";
 var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
@@ -471,6 +472,7 @@ class Events extends Component {
 						<h4 class="grid__item-number">Online</h4>
 					</Link>
 				</div>
+                <Payment eventid="18514" />
 			</div>
             <div>
 				<button class="content__close-eventsbucket">Close</button>

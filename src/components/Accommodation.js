@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Iframe from 'react-iframe';
 import '../css/Accommodation.css';
 import '../css/vendor/bootstrap.css';
+import Payment from './Payment';
 
 class Accommodation extends Component{
 
@@ -47,6 +48,8 @@ class Accommodation extends Component{
                         in forfeiture of the caution deposit and/or recovery of the amount due to the damage (whichever is
                         higher)
                         <br /><br />
+                        <Payment eventid="18647" name="Register - Day 1" />
+                        <Payment eventid="18976" name="Register - Day 2" />
                         For queries email us at <em>hospitality.enantra@gmail.com</em>
                       </main>
                     </div>

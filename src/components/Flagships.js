@@ -19,6 +19,7 @@ import fourth from '../img/speakers/feature-icon-04.svg';
 import fifth from '../img/speakers/feature-icon-05.svg';
 import sixth from '../img/speakers/feature-icon-06.svg';
 import logo from '../img/speakers/logo.svg';
+import {Payment, Redirect} from './Payment';
 
 const code = `document.documentElement.className = "js";
 var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
@@ -879,6 +880,7 @@ class Flagships extends Component {
 					    <div className="content__text">The Capitalize team has deliberated on diversifying its activities for instilling leadership. Therefore, Capitalize is proposing an event based on the world renowned Model United Nations.The Model United Nations is inspired from the activities of the United Nations wherein delegates of various nations collaborate to solve existing issues through discussions,
                         resolutions in the General Assembly and Security Council. The MUN held will act as a replacement in Enantra 2020.<br/>
                         Visit us on :&nbsp;<a class="flagship-links" href="https://aumun.org/" target="_blank">aumun.org</a>
+                        <Redirect link="https://aumun.org/" />
                         </div>
 				    </div>
 				    <div className="content__item-flagships">
@@ -892,7 +894,7 @@ class Flagships extends Component {
 					    <h3 className="content__title-flagships">Startup Street</h3>
 					    <h4 className="content__subtitle-flagships">
                         <h5><em><br/>If you're interested in setting up a stall, click the button below</em></h5>
-                        <button class="btn-company btn-2-company btn-2g-company">Register here</button>
+                        <Redirect link="https://www.thecollegefever.com/events/startup-street-enantra-2020"/>
                         <h5 class="blink_effect"><em><br/>Registations free for students</em></h5>
                         </h4>
 					    <div className="content__text">A platform for interaction between new startups and students. Entrepreneurs can talk about various
@@ -903,6 +905,7 @@ class Flagships extends Component {
 					    <h3 className="content__title-flagships">6 Degree Talks</h3>
 					    <h4 className="content__subtitle-flagships"></h4>
 					    <div className="content__text">A professional talk session featuring famous personalities from all over India who will certainly leave an indelible mark with their stories on the student crowd. Hosting prominent guests, mentors, successful and emergent entrepreneurs, 6DT is an ideal chance for interaction at both a physical and virtual level. Here we witness speakers in a closed arena, expressing their unique trail. Our past speakers who have graced the event are well known figures such as Varun Agarwal, Put Chutney, Mafoy Pandiarajan, Sam Paul and so forth.<br/>
+                        <Payment eventid="18645"/>
                         <button onClick={this.onAnchorClick} class="flagship-button flagship-links">Show More</button>
                         </div>
 				    </div>
@@ -912,6 +915,7 @@ class Flagships extends Component {
 					    <h4 className="content__subtitle-flagships"></h4>
 					    <div className="content__text">The right destination for aspiring startups, techies, developers and business managers to scale-up and improvise their ideas. Teams mentored by prominent entrepreneurs are expected to develop a working prototype to be displayed. The event is licensed by Google and it commences on a Friday evening and goes on for about 54 hours.<br/>
                         Visit us on :&nbsp;<a class="flagship-links" href="http://communities.techstars.com/india/chennai-tamil-nadu-india/startup-weekend/15556" target="_blank">swchennai.in</a>
+                        <Redirect link="http://communities.techstars.com/india/chennai-tamil-nadu-india/startup-weekend/15556" />
                         </div>
                     </div>
                     <div className="content__item-flagships">
@@ -920,6 +924,7 @@ class Flagships extends Component {
 					    <h4 className="content__subtitle-flagships"></h4>
 					    <div className="content__text">A one day event for innovators to pitch their winning startup ideas fo an experienced jury on the panel. This is an exemplary platform to receive guidance and requisite inputs that will cater to the development of your unique idea, into a nascent startup, finally leading you on to the footsteps of success. The best pitch that has potential to envision itself into a viable startup, receives a pre-seed grant to create a prototype from concept.
                         <div class="blink_effect"><br/>A whopping prize money of 6.75 lakhs awaits to be bagged!</div><br/>
+                        <Redirect link="https://www.startuppitchfest.org/"/>
                         <em>Registrations free for all</em></div>
 				    </div>
 				    <button ref={closebutton => this.closebutton = closebutton} className="content__close">
