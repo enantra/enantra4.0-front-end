@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import MenuUtil from './components/MenuUtil';
 import Avatar from './components/Avatar';
 

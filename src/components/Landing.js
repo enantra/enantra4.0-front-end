@@ -311,10 +311,6 @@ class Landing extends Component {
 			  sceneTextures();
 			  render();
 		  
-			  if(isMobile)
-				window.addEventListener("touchmove", onInputMove, {passive:false})
-			  else
-				window.addEventListener("mousemove", onInputMove)
 			  
 			  window.addEventListener("resize", resize)
 			  resize()
