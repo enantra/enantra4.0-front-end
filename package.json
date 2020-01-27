@@ -52,6 +52,5 @@
   },
   "devDependencies": {
     "eslint-config-jquery": "^2.0.0"
-  },
-  "proxy": "http://localhost:3000/"
+  }
 }
