@@ -203,9 +203,9 @@ class Signup extends Component {
 					<div class="form__item">
 						<label class="form__label" for="lastname">Gender</label>
                         <select class="form__input_select" name="gender" id="gender">
-                            <option value="not">Not to specify</option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
+                            <option value="O">Not to specify</option>
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
                         </select>
 						<div class="form__error"></div>
 					</div>
