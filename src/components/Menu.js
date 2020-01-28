@@ -165,6 +165,37 @@ class Menu extends Component {
         document.getElementById("signupItem").style.display = "none";
 
         document.getElementById("logoutItem").style.display = "block";
+        document.getElementById("iconButton").style.display = "block";
+      }
+      
+      var logout = document.getElementById("logoutItem");
+      
+      logout.onclick = () => {
+        logoutUser();
+      }
+
+      function logoutUser(){
+        var request = require('request');
+        var options = {
+            'method': 'POST',
+            'url': 'http://localhost:4000/api/user/logout',
+            'headers': {
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'auth': sessionStorage.getItem("auth")
+            }
+        };
+        request(options, function (error) { 
+            if (error){
+                console.log(error);
+            }else{
+              document.getElementById("loginItem").style.display = "block";
+              document.getElementById("signupItem").style.display = "block";
+      
+              document.getElementById("logoutItem").style.display = "none";
+              document.getElementById("iconButton").style.display = "none";
+              sessionStorage.removeItem("auth");
+            }
+        });
       }
 
     }
