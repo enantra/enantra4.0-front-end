@@ -19,7 +19,7 @@ class Payment extends React.Component {
             sendPayRequest(this.state.eventid);
             else{
                 alert("Login to Continue");
-                window.open("Login", "_self");
+                window.open("login", "_self");
             }
         }
 
@@ -41,8 +41,8 @@ class Payment extends React.Component {
                     if(JSON.parse(response.body).response != undefined){
                         var id = (new Date()).getTime();
 
-                    window.open(JSON.parse(response.body).response + '?printerFriendly=true', id,
-                    "toolbar=1,scrollbars=1,location=0,statusbar=0,menubar=1,resizable=1,width=800,height=600,left = 240,top = 212");
+                    window.location.replace(JSON.parse(response.body).response + '?printerFriendly=true', id,
+                    "toolbar=1,scrollbars=1,location=0,statusbar=0,menubar=1,resizable=1,width=800,height=600,left = 240,top = 212",true);
                     }
                 }
             });
