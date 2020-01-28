@@ -521,9 +521,9 @@ class Landing extends Component {
 			loop(1500);
 		  }
 
-		  if(sessionStorage.getItem("auth") != undefined){
+		  /*if(sessionStorage.getItem("auth") != undefined){
 			document.getElementById("iconButton").style.display = "block";
-		  }
+		  }*/
 
 	}
 
@@ -560,7 +560,7 @@ class Landing extends Component {
 							<img className="logo_corner" src={toplogo} alt="Top Logo" />
 							<div>
 								<center>
-								<Avatar/>
+								{/*<Avatar/>*/}
 								<img className="content__title" src={enantralogo} alt="Logo" />
 								<p className="content__subtitle">4<sup>TH</sup> EDITION</p>
 								<p className="content__tagline">South India's biggest Entrepreneurship and Management fest</p>
