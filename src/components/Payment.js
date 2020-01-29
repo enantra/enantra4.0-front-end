@@ -27,7 +27,7 @@ class Payment extends React.Component {
             var request = require('request');
             var options = {
                 'method': 'POST',
-                'url': 'https://enantra.org/api/user/'+obj.eventid+'/register',
+                'url': 'http://localhost:4000/api/user/'+obj.eventid+'/register',
                 'headers': {
                     'Content-Type': 'application/x-www-form-urlencoded',
                     'auth': sessionStorage.getItem("auth")

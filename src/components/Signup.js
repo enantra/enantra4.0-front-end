@@ -134,7 +134,7 @@ class Signup extends Component {
 
         function registerUser({name, email, password, phone, gender, college, department, year, dob}){
             var xmlhttp = new XMLHttpRequest();   // new HttpRequest instance 
-            var theUrl = "https://enantra.org/api/signup";
+            var theUrl = "http://localhost:4000/api/signup";
             xmlhttp.open("POST", theUrl, true);
             xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 

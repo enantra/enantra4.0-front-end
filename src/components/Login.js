@@ -126,7 +126,7 @@ class Login extends Component{
 
         function loginUser({email, password}){
             var xmlhttp = new XMLHttpRequest();   // new HttpRequest instance 
-            var theUrl = "https://enantra.org/api/login";
+            var theUrl = "http://loaclhost:4000/api/login";
             xmlhttp.open("POST", theUrl, true);
             xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 
