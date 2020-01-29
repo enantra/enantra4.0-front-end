@@ -5,14 +5,27 @@ import Tween from '../js/vendor/TweenMax.min.js';
 
 
 class Login extends Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            isLoggedIn : false
+        }
+    }
+
+    setLoggedIn = () => {
+
+    }
     componentDidMount(){
 
         this.props.renderEvent(true);
+
+        var context = this.props;
         
         const lineEq = (y2, y1, x2, x1, currentVal) => {
             var m = (y2 - y1) / (x2 - x1), b = y1 - m * x1;
             return m * currentVal + b;
         };
+        
         const validateEmail = (email) => {
             var re = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
             return re.test(String(email).toLowerCase());
@@ -90,6 +103,7 @@ class Login extends Component{
                 });
             }
         });
+
         submitBttn.onclick = () => {
 
             var validate = 0;
@@ -141,6 +155,7 @@ class Login extends Component{
                 "email": email,
                 "password": password}}));
         }
+
             const body = document.querySelector('.signup');
             const distancePoints = (x1, y1, x2, y2) => Math.sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
     
@@ -159,28 +174,32 @@ class Login extends Component{
             };
 
             window.Nearby = Nearby; 
+
+
     }
+
     render(){
         return(
             <div class="signup signupbackground">    
-            <div class="login-content-signup">    
-            <form class="form-login form" action="" method="">
-                        <div class="form__item form__item--full">
-                            <label class="form__label" for="email">Email Address</label>
-                            <input class="form__input" type="email" name="email" id="email" required />
-                            <div class="form__error"></div>
-                        </div>
-                        <div class="form__item form__item--full">
-                            <label class="form__label" for="location">Password</label>
-                            <input class="form__input" type="password" name="password" id="password" required />
-                            <div class="form__error"></div>
-                        </div>
-                        <div class="form__item form__item--full form__item--actions">
-                            <input class="form__button" type="submit" name="login" value="Login" />
-                        </div>
-                    </form>
-                </div>
-            </div>   
+            <div class="content-signup">    
+               <form class="form-login" action="" method="">
+                       <div class="form__item form__item--full">
+                           <label class="form__label" for="email">Email Address</label>
+                           <input class="form__input" type="email" name="email" id="email" required />
+                           <div class="form__error"></div>
+                       </div>
+                       <div class="form__item form__item--full">
+                           <label class="form__label" for="location">Password</label>
+                           <input class="form__input" type="password" name="password" id="password" required />
+                           <div class="form__error"></div>
+                       </div>
+                       <p id="error"></p>
+                       <div class="form__item form__item--full form__item--actions">
+                       <button class="form__button" type="button">Login</button>
+                       </div>
+                   </form>
+               </div>
+           </div>    
         )
     }
 }
