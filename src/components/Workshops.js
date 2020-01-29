@@ -1102,8 +1102,68 @@ class Workshops extends Component{
 					<h3 class="content__item-subtitle-workshops"></h3>
 					<div class="content__item-text-workshops">
                     <p class="workshop-titles">About Workshop</p><br/>
-                    <p>IoT systems allow users to achieve deeper automation, analysis, and integration within a system. They improve the reach of these areas and their accuracy. IoT utilizes existing and emerging technology for sensing, networking and robotics. IoT exploits recent advances in software, falling hardware prices and modern attitudes towards technology.</p>
+                    <p>IoT systems allow users to achieve deeper automation, analysis, and integration within a system. They improve the reach of these areas and their accuracy. IoT utilizes existing and emerging technology for sensing, networking and robotics. IoT exploits recent advances in software, falling hardware prices and modern attitudes towards technology.</p></br>
+                    <p>
+                            <p class="workshop-subtitles">Introduction to IoT</p>
+                            <p>
+                                <ul>
+                                    <li>Evolution of IoT</li>
+                                    <li>IoT Architecture – Embedded, Gateway, Cloud</li>
+                                    <li>Typical constraints in IoT system</li>
+                                    <li>Security and privacy concerns in designing IoT system</li>
+                                </ul>
+                            </p>
+                            <p class="workshop-subtitles">Embedded Systems in IoT</p>
+                            <p>
+                                <ul>
+                                    <li>Available embedded boards for prototype development</li>
+                                    <li>Embedded applications and functions</li>
+                                    <li>Embedded design constraints</li>
+                                    <li>Embedded hardware and software</li>
+                                </ul>
+                            </p>
+                            <p class="workshop-subtitles">ESP8266</p>
+                            <p>
+                                <ul>
+                                    <li>Introduction to ESP8266 wifi chip</li>
+                                    <li>TCP/IP Stack of ESP8266</li>
+                                    <li>Limitations of ESP8266</li>
+                                </ul>
+                            </p>
+                            <p class="workshop-subtitles">Node MCU</p>
+                            <p>
+                                <ul>
+                                    <li>Getting started with Node MCU</li>
+                                    <li>Unique features of Node MCU</li>
+                                    <li>Pin description of Node MCU</li>
+                                </ul>
+                            </p>
+                            <p class="workshop-subtitles">Configuring Node MCU</p>
+                            <p>
+                                <ul>
+                                    <li>Installing Arduino IDE</li>
+                                    <li>Configuring device driver for Node MCU’s firmware</li>
+                                    <li>Setting up board configuration in Arduino IDE</li>
+                                    <li>Interfacing Node MCU with PC</li>
+                                </ul>
+                            </p>
+                            <p class="workshop-subtitles">Working with Digital Pins</p>
+                            <p>
+                                <ul>
+                                    <li>Configuring digital pins</li>
+                                    <li>Types of LED</li>
+                                    <li>Interfacing LED with Node MCU</li>
+                                    <li>Working with sequence of LED</li>
+                                    <li>Types of switches</li>
+                                    <li>Interfacing switches with Node MCU</li>
+                                    <li>Types of Buzzers</li>
+                                    <li>Uses of Buzzer in real time</li>
+                                    <li>Interfacing buzzer with Node MCU</li>
+                                </ul>
+                            </p>
+                        </p><br/>
                     <Payment eventid="18521"/>
+                    <p class="workshop-fees">FEES - 500 INR per student - 60 in a batch</p>
 					</div>
 				</div>
                 <div class="content__item-workshops">
