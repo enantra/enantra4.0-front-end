@@ -1041,7 +1041,7 @@ class Team extends Component{
             </a>
             <a  class="tilter tilter--1">
                 <figure class="tilter__figure">
-                    <img class="tilter__image" src={hundredtwo} alt="img01" />
+                    <img class="tilter__image" src={hundredthree} alt="img01" />
                     <div class="tilter__deco tilter__deco--shine">
                         <div></div>
                     </div>
@@ -1056,7 +1056,7 @@ class Team extends Component{
             </a>
             <a  class="tilter tilter--1">
                 <figure class="tilter__figure">
-                    <img class="tilter__image" src={hundredthree} alt="img01" />
+                    <img class="tilter__image" src={hundredtwo} alt="img01" />
                     <div class="tilter__deco tilter__deco--shine">
                         <div></div>
                     </div>
