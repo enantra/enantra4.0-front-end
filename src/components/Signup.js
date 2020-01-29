@@ -134,7 +134,7 @@ class Signup extends Component {
 
         function registerUser({name, email, password, phone, gender, college, department, year, dob}){
             var xmlhttp = new XMLHttpRequest();   // new HttpRequest instance 
-            var theUrl = "http://localhost:4000/api/signup";
+            var theUrl = "http://enantra.org/api/signup";
             xmlhttp.open("POST", theUrl, true);
             xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 
@@ -147,7 +147,7 @@ class Signup extends Component {
                 if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
                     // Request finished. Do processing here.
                     console.log(this.responseText);
-                    alert("Please Verify your Email ID");
+                    alert("Please Verify your Email ID. It'll take 10 minutes to reach you");
                 }
             }
             var gen = 1;

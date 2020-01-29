@@ -178,7 +178,7 @@ class Menu extends Component {
         var request = require('request');
         var options = {
             'method': 'POST',
-            'url': 'http://localhost:4000/api/user/logout',
+            'url': 'http://enantra.org/api/user/logout',
             'headers': {
                 'Content-Type': 'application/x-www-form-urlencoded',
                 'auth': sessionStorage.getItem("auth")
@@ -242,8 +242,8 @@ class Menu extends Component {
                           <Link to='/attractions' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Attractions')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Attractions</Link>
                   </div>
                   <div class="global-menu__wrap">
-						              <Link to='/login' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Login')}}class="menu-anchor global-menu__item global-menu__item--demo-1">Login</Link>
-						              <Link to='/signup' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Signup')}}class="menu-anchor global-menu__item global-menu__item--demo-1">Sign Up</Link>
+						              <Link to='/login' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Login')}}class="menu-anchor global-menu__item global-menu__item--demo-1" id="loginItem">Login</Link>
+						              <Link to='/signup' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Signup')}}class="menu-anchor global-menu__item global-menu__item--demo-1" id="signupItem">Sign Up</Link>
                           <Link to='/logout' onClick={() => {this.closeMenu(); }} className="menu-anchor global-menu__item global-menu__item--demo-1" id="logoutItem" style={{display: "none"}}>Logout</Link>
 						              <Link to='/accommodation' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Accommodation')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Accommodation</Link>
 						              <Link to='/team' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Team')}} class="menu-anchor global-menu__item global-menu__item--demo-1">The Team</Link>
