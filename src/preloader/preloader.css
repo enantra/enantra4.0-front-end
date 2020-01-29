@@ -15,7 +15,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #21282f;
+  color: #0e0e0f;
 }
 
 h1 {
@@ -43,6 +43,12 @@ h1 {
   font-weight: 300;
   opacity: 0.75;
   z-index: 2;
+}
+img {
+  height: 50%;
+  width : 50%;
+  margin: 25%;
+  
 }
 .c-progress.is-done {
   opacity: 0;
