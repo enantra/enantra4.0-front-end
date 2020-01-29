@@ -14,7 +14,7 @@ class RegisterationTab extends React.Component {
 			var request = require('request');
             var options = {
                 'method': 'GET',
-                'url': 'http://enantra.org/api/user/getregevents',
+                'url': 'https://enantra.org/api/user/getregevents',
                 'headers': {
                     'Content-Type': 'application/x-www-form-urlencoded',
                     'auth': sessionStorage.getItem("auth")

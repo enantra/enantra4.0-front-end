@@ -178,7 +178,7 @@ class Menu extends Component {
         var request = require('request');
         var options = {
             'method': 'POST',
-            'url': 'http://enantra.org/api/user/logout',
+            'url': 'https://enantra.org/api/user/logout',
             'headers': {
                 'Content-Type': 'application/x-www-form-urlencoded',
                 'auth': sessionStorage.getItem("auth")

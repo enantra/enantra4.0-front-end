@@ -23,7 +23,7 @@ class AccountDetails extends React.Component{
 			var request = require('request');
             var options = {
                 'method': 'GET',
-                'url': 'http://enantra.org/api/user/getuserdetails',
+                'url': 'https://enantra.org/api/user/getuserdetails',
                 'headers': {
                     'Content-Type': 'application/x-www-form-urlencoded',
                     'auth': sessionStorage.getItem("auth")

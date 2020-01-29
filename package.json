@@ -55,5 +55,5 @@
   "devDependencies": {
     "eslint-config-jquery": "^2.0.0"
   },
-  "proxy" : "http://enantra.org/"
+  "proxy" : "https://enantra.org/"
 }
