@@ -10,7 +10,16 @@ import Tween from '../js/vendor/TweenMax.min.js';
 import * as THREE from '../../node_modules/threejs-full-es6/builds/Three.es';
 import Avatar from './Avatar';
 import sign from './Signup';
+import { css } from "@emotion/core";
+import { HashLoader } from "react-spinners";
 
+const override = css`
+  display: block;
+  margin: 25%;
+  height: 50%;
+  width: 50%;
+  color: #000000;
+`;
 
 const LandingBackground = `
 vec3 mod289(vec3 x)
@@ -273,6 +282,7 @@ class Landing extends Component {
 	componentDidMount()
 	{
 		this.props.renderEvent(true);
+
 
 		let body = document.getElementsByTagName('div')[0];
 

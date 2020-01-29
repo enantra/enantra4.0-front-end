@@ -12,12 +12,12 @@ import startupstreet from '../img/ss.jpg';
 import TweenFlag from '../js/vendor/TweenMax.min.js';
 import charming from '../js/vendor/charming.min.js';
 
-import first from '../img/speakers/feature-icon-01.svg';
-import second from '../img/speakers/feature-icon-02.svg';
-import third from '../img/speakers/feature-icon-03.svg';
-import fourth from '../img/speakers/feature-icon-04.svg';
-import fifth from '../img/speakers/feature-icon-05.svg';
-import sixth from '../img/speakers/feature-icon-06.svg';
+import first from '../img/sixdt/1.jpg';
+import second from '../img/sixdt/2.jpg';
+import third from '../img/sixdt/3.jpg';
+import fourth from '../img/sixdt/4.jpg';
+import fifth from '../img/sixdt/5.jpg';
+import sixth from '../img/sixdt/6.jpg';
 import logo from '../img/speakers/logo.svg';
 import {Payment, Redirect} from './Payment';
 
@@ -724,16 +724,15 @@ class Flagships extends Component {
                     <section class="features section">
                         <div class="container">
                             <div class="features-inner section-inner has-bottom-divider">
-                                <p class="day-title">DAY 1</p>
                                 <br/>
                                 <div class="features-wrap">
                                     <div class="feature text-center is-revealing">
                                         <div class="feature-inner">
                                             <div class="feature-icon">
-                                                <img class="speakers-image" src={first} alt="Speaker 01"/>
+                                                <img src={first} alt="Speaker 01"/>
                                             </div>
-                                            <h4 class="feature-title mt-24">TBA</h4>
-                                            <p class="text-sm mb-0">Stay tuned</p>
+                                            <h4 class="feature-title mt-24">Agneshwar Jayaprakash</h4>
+                                            <p class="text-sm mb-0">Agni Group of Companies</p>
                                         </div>
                                     </div>
                                     <div class="feature text-center is-revealing">
@@ -741,8 +740,8 @@ class Flagships extends Component {
                                             <div class="feature-icon">
                                                 <img src={second} alt="Speaker 02"/>
                                             </div>
-                                            <h4 class="feature-title mt-24">TBA</h4>
-                                            <p class="text-sm mb-0">Stay tuned</p>
+                                            <h4 class="feature-title mt-24">Mugen Rao</h4>
+                                            <p class="text-sm mb-0">Actor-Singer</p>
                                         </div>
                                     </div>
                                     <div class="feature text-center is-revealing">
@@ -750,13 +749,12 @@ class Flagships extends Component {
                                             <div class="feature-icon">
                                                 <img src={third} alt="Speaker 03"/>
                                             </div>
-                                            <h4 class="feature-title mt-24">TBA</h4>
-                                            <p class="text-sm mb-0">Stay tuned</p>
+                                            <h4 class="feature-title mt-24">Radha Sharma</h4>
+                                            <p class="text-sm mb-0">Earth Calling Expeditions</p>
                                         </div>
                                     </div>
                                 </div>
                                 <br/>
-                                <p class="day-title">DAY 2</p>
                                 <br/>
                                 <div class="features-wrap">
                                     <div class="feature text-center is-revealing">
@@ -764,8 +762,8 @@ class Flagships extends Component {
                                             <div class="feature-icon">
                                                 <img src={fourth} alt="Speaker 04"/>
                                             </div>
-                                            <h4 class="feature-title mt-24">TBA</h4>
-                                            <p class="text-sm mb-0">Stay tuned</p>
+                                            <h4 class="feature-title mt-24">Suresh Kumar</h4>
+                                            <p class="text-sm mb-0">Macapp Studios</p>
                                         </div>
                                     </div>
                                     <div class="feature text-center is-revealing">
@@ -773,8 +771,8 @@ class Flagships extends Component {
                                             <div class="feature-icon">
                                                 <img src={fifth} alt="Speaker 05"/>
                                             </div>
-                                            <h4 class="feature-title mt-24">TBA</h4>
-                                            <p class="text-sm mb-0">Stay tuned</p>
+                                            <h4 class="feature-title mt-24">Vignesh</h4>
+                                            <p class="text-sm mb-0">Abhistu</p>
                                         </div>
                                     </div>
                                     <div class="feature text-center is-revealing">
@@ -782,8 +780,8 @@ class Flagships extends Component {
                                             <div class="feature-icon">
                                                 <img src={sixth} alt="Speaker 06"/>
                                             </div>
-                                            <h4 class="feature-title mt-24">TBA</h4>
-                                            <p class="text-sm mb-0">Stay tuned</p>
+                                            <h4 class="feature-title mt-24">Sidhaanth Dharmadheeran</h4>
+                                            <p class="text-sm mb-0">Warhorse</p>
                                         </div>
                                     </div>
                                 </div>

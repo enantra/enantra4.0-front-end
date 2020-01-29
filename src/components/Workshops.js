@@ -1102,7 +1102,7 @@ class Workshops extends Component{
 					<h3 class="content__item-subtitle-workshops"></h3>
 					<div class="content__item-text-workshops">
                     <p class="workshop-titles">About Workshop</p><br/>
-                    <p>IoT systems allow users to achieve deeper automation, analysis, and integration within a system. They improve the reach of these areas and their accuracy. IoT utilizes existing and emerging technology for sensing, networking and robotics. IoT exploits recent advances in software, falling hardware prices and modern attitudes towards technology.</p></br>
+                    <p>IoT systems allow users to achieve deeper automation, analysis, and integration within a system. They improve the reach of these areas and their accuracy. IoT utilizes existing and emerging technology for sensing, networking and robotics. IoT exploits recent advances in software, falling hardware prices and modern attitudes towards technology.</p><br/>
                     <p>
                             <p class="workshop-subtitles">Introduction to IoT</p>
                             <p>

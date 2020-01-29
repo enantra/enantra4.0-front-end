@@ -14,6 +14,7 @@ class Signup extends Component {
             var m = (y2 - y1) / (x2 - x1), b = y1 - m * x1;
             return m * currentVal + b;
         };
+        
         const validateEmail = (email) => {
             var re = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
             return re.test(String(email).toLowerCase());
@@ -123,16 +124,15 @@ class Signup extends Component {
                     college: requiredElems[4].value,
                     department: requiredElems[5].value,
                     year: requiredElems[6].value,
-                    city: requiredElems[7].value,
-                    dob: requiredElems[8].value,
-                    password: requiredElems[9].value,
+                    dob: requiredElems[7].value,
+                    password: requiredElems[8].value,
                 });  
              }else{
                 alert("Fill all Fields to Continue!");
             }
         }
 
-        function registerUser({name, email, password, phone, gender, college, department, year, dob, city}){
+        function registerUser({name, email, password, phone, gender, college, department, year, dob}){
             var xmlhttp = new XMLHttpRequest();   // new HttpRequest instance 
             var theUrl = "http://localhost:4000/api/signup";
             xmlhttp.open("POST", theUrl, true);
@@ -167,8 +167,7 @@ class Signup extends Component {
                 "college": college,
                 "department": department,
                 "year": year,
-                "dob": dob,
-                "city": city}}));
+                "dob": dob}}));
         }
             const body = document.querySelector('.signup');
             const distancePoints = (x1, y1, x2, y2) => Math.sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
@@ -201,12 +200,8 @@ class Signup extends Component {
 						<div class="form__error"></div>
 					</div>
 					<div class="form__item">
-						<label class="form__label" for="lastname">Gender</label>
-                        <select class="form__input_select" name="gender" id="gender">
-                            <option value="O">Not to specify</option>
-                            <option value="M">Male</option>
-                            <option value="F">Female</option>
-                        </select>
+						<label class="form__label" for="lastname">Gender (M, F, O)</label>
+						<input class="form__input" type="text" name="gender" id="gender" required />
 						<div class="form__error"></div>
 					</div>
 					<div class="form__item">
@@ -220,7 +215,7 @@ class Signup extends Component {
 						<div class="form__error"></div>
 					</div>
 					<div class="form__item">
-						<label class="form__label" for="college">College</label>
+						<label class="form__label" for="phone">College</label>
 						<input class="form__input" type="text" name="college" id="college" required />
 						<div class="form__error"></div>
 					</div>
@@ -232,11 +227,6 @@ class Signup extends Component {
                     <div class="form__item">
 						<label class="form__label" for="location">Year</label>
 						<input class="form__input" type="number" name="year" id="year" required />
-						<div class="form__error"></div>
-					</div>
-                    <div class="form__item">
-						<label class="form__label" for="location">City</label>
-						<input class="form__input" type="text" name="city" id="city" required />
 						<div class="form__error"></div>
 					</div>
                     <div class="form__item">
