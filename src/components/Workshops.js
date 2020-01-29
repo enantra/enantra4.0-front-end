@@ -11,6 +11,7 @@ import criticalthinking from '../img/workshops/criticalthinking.jpg';
 import entrepreneurship101 from '../img/workshops/entrepreneurship101.jpg';
 import iot from '../img/workshops/iot.jpg';
 import digitalmarketing from '../img/workshops/digitalmarketing.jpg';
+import stock from '../img/workshops/stock.jpg';
 import Payment from './Payment'
 
 class Workshops extends Component{
@@ -622,6 +623,14 @@ class Workshops extends Component{
 						<h3 class="grid__item-title-workshops">Workshops</h3>
 						<h4 class="grid__item-number-workshops">Internet&nbsp;of<br/>Things(IoT)</h4>
 					</a>
+                    <a href="#" class="workshops-anchor grid__item-workshops">
+						<div class="grid__item-bg-workshops"></div>
+						<div class="grid__item-wrap-workshops">
+							<img class="grid__item-img-workshops" src={stock} alt="IoT" />
+						</div>
+						<h3 class="grid__item-title-workshops">Workshops</h3>
+						<h4 class="grid__item-number-workshops">Stock&nbsp;Marketing&nbsp;&&nbsp;Investment</h4>
+					</a>
 				</div>
 			</div>
 			<div class="content-workshops">
@@ -1095,6 +1104,88 @@ class Workshops extends Component{
                     <p class="workshop-titles">About Workshop</p><br/>
                     <p>IoT systems allow users to achieve deeper automation, analysis, and integration within a system. They improve the reach of these areas and their accuracy. IoT utilizes existing and emerging technology for sensing, networking and robotics. IoT exploits recent advances in software, falling hardware prices and modern attitudes towards technology.</p>
                     <Payment eventid="18521"/>
+					</div>
+				</div>
+                <div class="content__item-workshops">
+					<div class="content__item-intro-workshops">
+						<img class="content__item-img-workshops" src={stock} alt="Stock Marketing and Investment" />
+						<h2 class="content__item-title-workshops"></h2>
+					</div>
+					<h3 class="content__item-subtitle-workshops"></h3>
+					<div class="content__item-text-workshops">
+						<p class="workshop-titles">About Workshop</p><br/>
+						<p>
+                        In Stock Marketing & Investment workshop we learn about Stock. The stock market is the market in which shares of publicly held companies are issued and traded either through exchanges or over the counter market. The stock market lets investors participate in the financial achievements of the companies whose shares they hold. Stocks are traded through exchanges. The stock market makes it possible to grow small initial sums of money into large ones, and to become wealthy without taking the risk of starting a business or making the sacrifices that often accompany a high-paying career.
+                        </p><br/>
+						<p class="workshop-titles">DAY 1</p><br/>
+                        <p>
+                            <p class="workshop-titles">Session 1</p><br/>
+                            <p class="workshop-subtitles">Introduction</p>
+                            <p>
+                                <ul>
+                                    <li>Investment Game</li>
+                                    <li>Basic / Why/How /When</li>
+                                </ul>
+                            </p>
+                            <p class="workshop-subtitles">Types of Investments</p>
+                            <p>
+                                <ul>
+                                    <li>Stock, Basic of Stocks</li>
+                                    <li>Theory of Stock Exchange</li>
+                                    <li>Theory & Common Terms used in Stock Market</li>
+                                    <li>Every day usage and Practical Problem</li>
+                                </ul>
+                            </p>
+                            <p class="workshop-subtitles">Practical Session</p><br/>
+                            <p class="workshop-subtitles">Trading / Trade Systems / Protocols</p><br/>
+                            <p class="workshop-subtitles">Introduction</p>
+                            <p>
+                                <ul>
+                                    <li>Neat</li>
+                                    <li>Market Type</li>
+                                    <li>Normal – Odd lot – Retail Debt Market</li>
+                                    <li>Clearing and Settlement</li>
+                                    <li>Introduction – Transaction Cycle, Settlement Process, Settlement Agencies, Risks in Settlement</li>
+                                    <li>Settlement Cycle</li>
+                                    <li>Securities Settlement</li>
+                                    <li>Funds Settlement</li>
+                                </ul>
+                            </p>
+                            <p class="workshop-subtitles">Trading Membership</p>
+                            <p>
+                                <ul>
+                                    <li>Stock Brokers – Introduction, Membership in NSE</li>
+                                    <li>Sub-Brokers</li>
+                                </ul>
+                            </p>
+                            <p class="workshop-subtitles">Session 2</p><br/>
+                            <p class="workshop-subtitles">Introduction of Currency Trading</p>
+                            <p>
+                                <ul>
+                                    <li>Need of Currency Trading</li>
+                                    <li>Requirement for Currency trading for Students</li>
+                                    <li>Growth of Currency Derivatives in world</li>
+                                </ul>
+                            </p>
+                            <p class="workshop-subtitles">Introduction of Commodities Trading</p>
+                            <p>
+                                <ul>
+                                    <li>Need of Commodities Trading</li>
+                                    <li>Requirement for Commodities trading for Engineers</li>
+                                    <li>Growth of Commodities Derivatives in world</li>
+                                </ul>
+                            </p>
+                            <p class="workshop-subtitles">Technical Analysis</p>
+                            <p>
+                                <ul>
+                                    <li>Basic of Technical Analysis</li>
+                                    <li>Understanding Charts & Patterns</li>
+                                    <li>Understanding of Business Publications like Newspaper, Portals , Magazines</li>
+                                </ul>
+                            </p>
+                        </p><br/>
+                        <Payment eventid="18975"/>
+                        <p class="workshop-fees">FEES - 500 INR per student - 60 in a batch</p>
 					</div>
 				</div>
 				<button class="content__close-workshops">Close</button>
