@@ -140,7 +140,7 @@ class Login extends Component{
                     sessionStorage.setItem("auth", JSON.parse(this.responseText).response);
                     console.log(sessionStorage.getItem("auth"), "auth");
 
-                    window.open("landing", "_self");
+                    window.open("/", "_self");
                 }
             }
 

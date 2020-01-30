@@ -41,7 +41,7 @@ class Payment extends React.Component {
                     if(JSON.parse(response.body).response != undefined){
                         var id = (new Date()).getTime();
 
-                    window.location.replace(JSON.parse(response.body).response + '?printerFriendly=true', id,
+                    window.location.replace(JSON.parse(response.body).response,id,
                     "toolbar=1,scrollbars=1,location=0,statusbar=0,menubar=1,resizable=1,width=800,height=600,left = 240,top = 212",true);
                     }
                 }
