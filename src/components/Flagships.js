@@ -729,16 +729,16 @@ class Flagships extends Component {
                                     <div class="feature text-center is-revealing">
                                         <div class="feature-inner">
                                             <div class="feature-icon">
-                                                <img src={first} alt="Speaker 01"/>
+                                                <img class="speakers-image speakers-box" src={first} alt="Speaker 01"/>
                                             </div>
-                                            <h4 class="feature-title mt-24">Agneshwar Jayaprakash</h4>
+                                            <h4 class="feature-title mt-24">Agnishwar Jayaprakash</h4>
                                             <p class="text-sm mb-0">Agni Group of Companies</p>
                                         </div>
                                     </div>
                                     <div class="feature text-center is-revealing">
                                         <div class="feature-inner">
                                             <div class="feature-icon">
-                                                <img src={second} alt="Speaker 02"/>
+                                                <img class="speakers-image speakers-box" src={second} alt="Speaker 02"/>
                                             </div>
                                             <h4 class="feature-title mt-24">Mugen Rao</h4>
                                             <p class="text-sm mb-0">Actor-Singer</p>
@@ -747,7 +747,7 @@ class Flagships extends Component {
                                     <div class="feature text-center is-revealing">
                                         <div class="feature-inner">
                                             <div class="feature-icon">
-                                                <img src={third} alt="Speaker 03"/>
+                                                <img class="speakers-image speakers-box" src={third} alt="Speaker 03"/>
                                             </div>
                                             <h4 class="feature-title mt-24">Radha Sharma</h4>
                                             <p class="text-sm mb-0">Earth Calling Expeditions</p>
@@ -760,7 +760,7 @@ class Flagships extends Component {
                                     <div class="feature text-center is-revealing">
                                         <div class="feature-inner">
                                             <div class="feature-icon">
-                                                <img src={fourth} alt="Speaker 04"/>
+                                                <img class="speakers-image speakers-box" src={fourth} alt="Speaker 04"/>
                                             </div>
                                             <h4 class="feature-title mt-24">Suresh Kumar</h4>
                                             <p class="text-sm mb-0">Macapp Studios</p>
@@ -769,7 +769,7 @@ class Flagships extends Component {
                                     <div class="feature text-center is-revealing">
                                         <div class="feature-inner">
                                             <div class="feature-icon">
-                                                <img src={fifth} alt="Speaker 05"/>
+                                                <img class="speakers-image speakers-box" src={fifth} alt="Speaker 05"/>
                                             </div>
                                             <h4 class="feature-title mt-24">Vignesh</h4>
                                             <p class="text-sm mb-0">Abhistu</p>
@@ -778,7 +778,7 @@ class Flagships extends Component {
                                     <div class="feature text-center is-revealing">
                                         <div class="feature-inner">
                                             <div class="feature-icon">
-                                                <img src={sixth} alt="Speaker 06"/>
+                                                <img class="speakers-image speakers-box" src={sixth} alt="Speaker 06"/>
                                             </div>
                                             <h4 class="feature-title mt-24">Sidhaanth Dharmadheeran</h4>
                                             <p class="text-sm mb-0">Warhorse</p>
