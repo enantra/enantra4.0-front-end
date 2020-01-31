@@ -97,9 +97,9 @@ class Login extends Component{
             }
         });
 
-        const forgotPassword = document.getElementById("forgotpassword");
+        const resendlink = document.getElementById("resendlink");
 
-        forgotPassword.onclick = () => {
+        resendlink.onclick = () => {
 
             var validate = 0;
             const mail = requiredElems[0].value;
@@ -239,7 +239,7 @@ class Login extends Component{
                        <button class="form__button" type="button">Login</button>
                        </div>
                        <div class="form__item form__item--full form__item--actions">
-                       <button class="form__button" type="button">Resend Verification</button>
+                       <button id="resendlink" class="form__button" type="button">Resend Verification</button>
                        </div>
                    </form>
                </div>
