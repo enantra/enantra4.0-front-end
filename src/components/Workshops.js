@@ -778,7 +778,7 @@ class Workshops extends Component{
                             </p>
                         </p>
                     </p>
-                    <Payment eventid="185119"/>
+                    <Payment eventid="18519"/>
                     <p class="workshop-fees">FEES - 500 INR per student - 150 in a batch</p>
 					</div>
 				</div>
@@ -1090,7 +1090,7 @@ class Workshops extends Component{
                             <p class="workshop-titles">Takeaways</p><br/>
                             <p>Official Certification from Digitalshala with partnerships</p>
                         </p><br/>
-                        <Payment eventid="18543"/>
+                        <Payment eventid="18643"/>
                         <p class="workshop-fees">FEES - 500 INR per student - 60 in a batch</p>
 					</div>
 				</div>

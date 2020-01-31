@@ -97,6 +97,54 @@ class Login extends Component{
             }
         });
 
+        const forgotPassword = document.getElementById("forgotpassword");
+
+        forgotPassword.onclick = () => {
+
+            var validate = 0;
+            const mail = requiredElems[0].value;
+
+            if( !mail || !validateEmail(mail) ){
+                validate = 0;
+            }
+            else{
+                validate = 1;
+            }
+
+            if(validate==1){
+                resendLink({email : requiredElems[0].value});
+            }
+            else{
+                alert("Enter a valid mail address");
+            }
+        }
+
+        function resendLink({email}){
+
+            var xmlhttp = new XMLHttpRequest();
+            var theUrl = "https://enantra.org/api/resendtoken";
+            xmlhttp.open("POST", theUrl, true);
+            xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+
+            xmlhttp.onreadystatechange = function() { // Call a function when the state changes.
+                if(this.readyState === XMLHttpRequest.DONE && (this.status === 401 || this.status === 420 || this.status === 400)){
+                    document.getElementById("error").innerHTML = JSON.parse(this.responseText).message
+                }
+                else if(this.readyState === XMLHttpRequest.DONE && this.status === 500){
+                    var responseJSON = JSON.parse(this.responseText);
+                    alert(responseJSON.message);
+                }
+                else if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+                    alert("Verification link has been sent. Please verify you mail soon.");
+                }
+            }
+
+            xmlhttp.send(JSON.stringify({
+                "email": email,
+            }));
+        }
+
+
         submitBttn.onclick = () => {
 
             var validate = 0;
@@ -189,6 +237,9 @@ class Login extends Component{
                        <p id="error"></p>
                        <div class="form__item form__item--full form__item--actions">
                        <button class="form__button" type="button">Login</button>
+                       </div>
+                       <div class="form__item form__item--full form__item--actions">
+                       <button class="form__button" type="button">Resend Verification</button>
                        </div>
                    </form>
                </div>
