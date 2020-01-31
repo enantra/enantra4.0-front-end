@@ -144,8 +144,10 @@ class Login extends Component{
             }));
         }
 
+        const loginbutton = document.getElementById("loginbutton");
 
-        submitBttn.onclick = () => {
+
+        loginbutton.onclick = () => {
 
             var validate = 0;
             requiredElems.forEach((el) => {
@@ -236,7 +238,7 @@ class Login extends Component{
                        </div>
                        <p id="error"></p>
                        <div class="form__item form__item--full form__item--actions">
-                       <button class="form__button" type="button">Login</button>
+                       <button id="loginbutton" class="form__button" type="button">Login</button>
                        </div>
                        <div class="form__item form__item--full form__item--actions">
                        <button id="resendlink" class="form__button" type="button">Resend Verification</button>
