@@ -243,6 +243,9 @@ class Login extends Component{
                        <div class="form__item form__item--full form__item--actions">
                        <button id="resendlink" class="form__button" type="button">Resend Verification</button>
                        </div>
+                       <div class="form__item form__item--full form__item--actions">
+                       <p class="account">Don't have an account yet? Sign up for one</p>
+                       </div> 
                    </form>
                </div>
            </div>    

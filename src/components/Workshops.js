@@ -643,6 +643,7 @@ class Workshops extends Component{
 					<div class="content__item-text-workshops">
 						<p class="workshop-description">
                         Machine learning is a type of artificial intelligence (AI) that provides computers with the ability to learn without being explicitly programmed. Machine learning focuses on the development of computer programs that can change when exposed to new data.<br/><br/>
+                        <p class="workshop-titles">Date : Feb 22nd,2020</p><br/>
                         <p class="workshop-titles">Topics to be Covered in Workshop (20% Theory & 80% Hands-On Lab Session)</p>
                         <br/>
                         <ul>
@@ -689,6 +690,7 @@ class Workshops extends Component{
 					<h3 class="content__item-subtitle-workshops">Workshop on Digital Marketing - One Day Workshop on Digital Marketing, SEO, SMO, SMM & Online Branding</h3>
 					<div class="content__item-text-workshops">
                     <p class="workshop-description">
+                        <p class="workshop-titles">Date : Feb 21st, 2020</p><br/>
 						<p class="workshop-titles">About Workshop</p><br/>
 						<p>Digital marketing (also known as data-driven marketing) is an umbrella term for the marketing of products or services using digital technologies, mainly on the Internet, but also including mobile phones, display advertising, and any other digital medium. A social networking service is an online service, platform, or site that focuses on facilitating the building of social networks or social relations among people who, for example, share interests, activities, backgrounds, or real-life connections.</p><br/>
                         <p class="workshop-titles">What You Will Learn</p><br/>
@@ -789,6 +791,7 @@ class Workshops extends Component{
 					</div>
 					<h3 class="content__item-subtitle-workshops">Workshop on Critical Thinking and First Principles</h3>
 					<div class="content__item-text-workshops">
+                        <p class="workshop-titles">Date : Feb 21st, 2020</p><br/>
 						<p class="workshop-titles">About Workshop</p><br/>
 						<p>
                         The Critical Thinking and First Principles Workshop is designed to transform participants into Thinkers. They understand the key of problem solving, decision making and building a business.
@@ -825,9 +828,10 @@ class Workshops extends Component{
 					</div>
 					<h3 class="content__item-subtitle-workshops">Workshop on Entrepreneurship</h3>
 					<div class="content__item-text-workshops">
+                        <p class="workshop-titles">Date : Feb 20th, 2020</p><br/>
 						<p class="workshop-titles">About Workshop</p><br/>
 						<p>A 6 hour workshop to out participants on the journey of building a company. Participants would be taken through the fundamentals of building a company - from Product Development, Market Fit to taking it to Scale. Participants get their hands dirty with actually conceptualising a product, vetting it with customer feedback and then going through the steps of taking it to scale.</p><br/>
-						<p class="workshop-titles">Program Structure</p><br/>
+                        <p class="workshop-titles">Program Structure</p><br/>
                         <p>
                             <ol>
                                 <li>Who is an Entrepreneur
@@ -903,6 +907,7 @@ class Workshops extends Component{
 					</div>
 					<h3 class="content__item-subtitle-workshops"></h3>
 					<div class="content__item-text-workshops">
+                        <p class="workshop-titles">Date : Feb 22nd,2020</p><br/>
 						<p class="workshop-titles">About Workshop</p><br/>
 						<p>
                         This workshop is an exclusive workshop from participants who wants to explore the field of Webreneurship and explore unlimited opportunities. In this era of Internet every business is up and running on Digital Platforms. There are tons of opportunities on the Internet which helps Webreneurs to make an outstanding career. In this workshop participants will be completely trained on the aspects, channels and ways of how Webreneurship happens.<br/>
@@ -994,6 +999,7 @@ class Workshops extends Component{
 					</div>
 					<h3 class="content__item-subtitle-workshops"></h3>
 					<div class="content__item-text-workshops">
+                        <p class="workshop-titles">Date : Feb 21st,2020</p><br/>
 						<p class="workshop-titles">About Workshop</p><br/>
 						<p>
                         A one of a kind masterclass which makes the participants to get trained on complete Road Map on being an Entrepreneur. This Workshop Covers everything which an Entrepreneur needs to be successful. By end of the workshop the participant will have a clear Road Map on where to start and how to plan the entire Entrepreneurial journey.
@@ -1101,6 +1107,7 @@ class Workshops extends Component{
 					</div>
 					<h3 class="content__item-subtitle-workshops"></h3>
 					<div class="content__item-text-workshops">
+                    <p class="workshop-titles">Date : Feb 22nd,2020</p><br/>
                     <p class="workshop-titles">About Workshop</p><br/>
                     <p>IoT systems allow users to achieve deeper automation, analysis, and integration within a system. They improve the reach of these areas and their accuracy. IoT utilizes existing and emerging technology for sensing, networking and robotics. IoT exploits recent advances in software, falling hardware prices and modern attitudes towards technology.</p><br/>
                     <p>
@@ -1173,6 +1180,7 @@ class Workshops extends Component{
 					</div>
 					<h3 class="content__item-subtitle-workshops"></h3>
 					<div class="content__item-text-workshops">
+                        <p class="workshop-titles">Date : Feb 22nd,2020</p><br/>
 						<p class="workshop-titles">About Workshop</p><br/>
 						<p>
                         In Stock Marketing & Investment workshop we learn about Stock. The stock market is the market in which shares of publicly held companies are issued and traded either through exchanges or over the counter market. The stock market lets investors participate in the financial achievements of the companies whose shares they hold. Stocks are traded through exchanges. The stock market makes it possible to grow small initial sums of money into large ones, and to become wealthy without taking the risk of starting a business or making the sacrifices that often accompany a high-paying career.

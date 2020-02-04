@@ -12,6 +12,10 @@
 	'demos info';
 }
 
+.account{
+	text-align: center;
+}
+
 .form {
 	background: #f4f5f7;
 	border-radius: 20px;
