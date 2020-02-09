@@ -32,6 +32,7 @@ import sixtytwo from '../img/team/62.jpg';
 import sixtythree from '../img/team/63.jpg';
 import seventyone from '../img/team/71.jpg';
 import seventytwo from '../img/team/72.jpg';
+import seventythree from '../img/team/73.jpg';
 import eightyone from '../img/team/81.jpg';
 import eighthytwo from '../img/team/82.jpg';
 import ninetyone from '../img/team/91.jpg';
@@ -899,13 +900,13 @@ class Team extends Component{
             </header>
             <a  class="tilter tilter--1">
                 <figure class="tilter__figure">
-                    <img class="tilter__image" alt="img01" />
+                    <img class="tilter__image" src={seventythree} alt="img01" />
                     <div class="tilter__deco tilter__deco--shine">
                         <div></div>
                     </div>
                     <figcaption class="tilter__caption">
-                        <h3 class="tilter__title">Tarun</h3>
-                        <p class="tilter__description"></p>
+                        <h3 class="tilter__title">Vignesh</h3>
+                        <p class="tilter__description">7200294234</p>
                     </figcaption>
                     <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
                         <path d="M20.5,20.5h260v375h-260V20.5z" />
