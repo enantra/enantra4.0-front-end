@@ -206,6 +206,10 @@ a.menu-anchor:focus {
 	padding: 0.5em;
 }
 
+.global-menu__item-quick{
+	font-size: 40px;
+}
+
 .global-menu__item {
 	color: var(--color-menu);
 	font-family: var(--font-family-menu);

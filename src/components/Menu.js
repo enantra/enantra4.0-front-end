@@ -7,6 +7,7 @@ import Avatar from './Avatar';
 var elmHamburger;
 var gNavItems;
 var elmOverlay;
+var gButtonItem;
 
 
 var overlay;
@@ -198,6 +199,10 @@ class Menu extends Component {
         });
       }
 
+      document.getElementById("directlink").onclick = () => {
+        window.location.href = "https://www.thecollegefever.com/events/enantra-entrepreneueship-mantra"
+      }
+
     }
 
     closeMenu = () => {
@@ -209,6 +214,22 @@ class Menu extends Component {
     }
 
     render(){
+          const buttonStyle = {
+            padding: "10px",
+            backgroundColor: "#cb0301",
+            border: "none",
+            outline: "none",
+            width: "wrap",
+            color: "white",
+            borderRadius: "30px",
+            fontSize: "calc(2vw + 1vh + .5vmin)",
+            textAlign: "center"
+          };
+          const positionButton = {
+            position: "absolute",
+            bottom: "30px",
+            zIndex: "100"
+          };
             return (
             <div className="demo-1">
               
@@ -250,6 +271,9 @@ class Menu extends Component {
                           <Link to='/sponsors' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Sponsors')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Sponsors</Link>
                           <Link to='/contactus' onClick={() => {this.closeMenu(); this.props.handleMenuClick('ContactUs')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Contact Us</Link>
 			            </div>
+                  <div id="directlink" style={positionButton}>
+                    <button style={buttonStyle} class="menu-anchor global-menu__item" to="">Quick link - Payment</button>
+                  </div>
 				        </div>
               </Router>
 			            <svg className="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
