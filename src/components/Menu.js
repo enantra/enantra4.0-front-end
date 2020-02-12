@@ -226,10 +226,10 @@ class Menu extends Component {
             textAlign: "center"
           };
           const positionButton = {
-            position: "absolute",
-            bottom: "30px",
+            display: "block",
+            position: "relative",
             zIndex: "100"
-          };
+          }
             return (
             <div className="demo-1">
               
@@ -254,6 +254,7 @@ class Menu extends Component {
 				    </div>
               <Router> 
                 <div class="global-menu">
+                  <div class="menu__items">
 					        <div class="global-menu__wrap">
 						              <Link to='/' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Home');}} class="menu-anchor global-menu__item global-menu__item--demo-1">Home</Link>
                           <Link to='/about' onClick={() => {this.closeMenu(); this.props.handleMenuClick('About');}} class="menu-anchor global-menu__item global-menu__item--demo-1">About</Link>
@@ -271,8 +272,10 @@ class Menu extends Component {
                           <Link to='/sponsors' onClick={() => {this.closeMenu(); this.props.handleMenuClick('Sponsors')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Sponsors</Link>
                           <Link to='/contactus' onClick={() => {this.closeMenu(); this.props.handleMenuClick('ContactUs')}} class="menu-anchor global-menu__item global-menu__item--demo-1">Contact Us</Link>
 			            </div>
-                  <div id="directlink" style={positionButton}>
-                    <button style={buttonStyle} class="menu-anchor global-menu__item" to="">Quick link - Payment</button>
+                  </div>
+                  <br/>
+                  <div style={positionButton}>
+                  <button id="directlink" style={buttonStyle} class="global-menu__item" to="">Quick link - Payment</button>
                   </div>
 				        </div>
               </Router>

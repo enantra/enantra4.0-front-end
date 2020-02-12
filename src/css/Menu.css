@@ -39,6 +39,18 @@
 	opacity: 1;
 }
 
+button.menu-anchor-quick{
+	text-decoration: none;
+	outline: none;
+	font-size : var(--font-size-menu);
+	color: var(--color-menu);
+	line-height: 1.3em;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 a.menu-anchor {
 	text-decoration: none;
 	outline: none;
@@ -185,10 +197,16 @@ a.menu-anchor:focus {
 	font-weight: var(--font-weight-title);
 }
 
+.menu__items{
+	display: flex;
+	flex-direction: row;
+}
+
 .global-menu {
 	width: 100vw;
 	height: 100vh;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	position: absolute;
