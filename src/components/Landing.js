@@ -12,6 +12,7 @@ import Avatar from './Avatar';
 import sign from './Signup';
 import { css } from "@emotion/core";
 import { HashLoader } from "react-spinners";
+import Modal from "react-bootstrap/Modal";
 
 const override = css`
   display: block;
@@ -262,6 +263,14 @@ void main(){
 */
 
 class Landing extends Component {
+
+	constructor(){
+		super()
+		this.state = {
+			modal : false
+		}
+		this.setModalShow = this.setModalShow.bind(this)
+	}
 
 	/*loadScript(source,id,type){
 		var tag = document.createElement('script');
@@ -537,13 +546,19 @@ class Landing extends Component {
 
 	}
 
+	setModalShow = (value) => {
+		this.setState({
+			modal : value
+		})
+	}
+
 	render(){
 		const buttonStyle = {
 			padding: "10px",
 			backgroundColor: "#cb0301",
 			border: "none",
 			outline: "none",
-			width: "200px",
+			width: "230px",
 			color: "white",
 			borderRadius: "20px"
 		};
@@ -582,12 +597,20 @@ class Landing extends Component {
 								<img className="content__title" src={enantralogo} alt="Logo" />
 								<p className="content__subtitle">4<sup>TH</sup> EDITION</p>
 								<p className="content__tagline">South India's biggest Entrepreneurship and Management fest</p><br/>
-								<button className="content__tagline" style={buttonStyle}>How to register</button><br/><br/>
+								<button className="content__tagline"  onClick={() => this.setModalShow(true)} style={buttonStyle}>How to register</button><br/><br/>
 								<p className="content__subtitle">To register, click on signup link in menu</p>
 								</center>
 							</div>
 						</div>
 						<div className="overlay"></div>
+						<Modal size="lg" show={this.state.modal} onHide={() => this.setModalShow(false)} aria-labelledby="example-modal-sizes-title-lg">
+        		<Modal.Header closeButton>
+          			<Modal.Title id="example-modal-sizes-title-lg">Instructions</Modal.Title>
+        		</Modal.Header>
+        		<Modal.Body scrollable={true}>
+						Will be updated soon
+						</Modal.Body>
+      			</Modal>
 				</div>
 		)
 	}
