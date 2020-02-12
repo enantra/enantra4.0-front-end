@@ -13,6 +13,20 @@ import sign from './Signup';
 import { css } from "@emotion/core";
 import { HashLoader } from "react-spinners";
 import Modal from "react-bootstrap/Modal";
+import one from '../img/steps/1.jpg';
+import two from '../img/steps/2.jpg';
+import three from '../img/steps/3.jpg';
+import four from '../img/steps/4.jpg';
+import five from '../img/steps/5.jpg';
+import six from '../img/steps/6.jpg';
+import seven from '../img/steps/7.jpg';
+import eight from '../img/steps/8.jpg';
+import nine from '../img/steps/9.jpg';
+import ten from '../img/steps/10.jpg';
+import eleven from '../img/steps/11.jpg';
+import twelve from '../img/steps/12.jpg';
+import thirteen from '../img/steps/13.jpg';
+import fourteen from '../img/steps/14.jpg';
 
 const override = css`
   display: block;
@@ -608,8 +622,23 @@ class Landing extends Component {
           			<Modal.Title id="example-modal-sizes-title-lg">Instructions</Modal.Title>
         		</Modal.Header>
         		<Modal.Body scrollable={true}>
-						Will be updated soon
-						</Modal.Body>
+					<center>
+					<img src={one} alt="Step 1"/><br/>
+					<img src={two} alt="Step 2"/><br/>
+					<img src={three} alt="Step 3"/><br/>
+					<img src={four} alt="Step 4"/><br/>
+					<img src={five} alt="Step 5"/><br/>
+					<img src={six} alt="Step 6"/><br/>
+					<img src={seven} alt="Step 7"/><br/>
+					<img src={eight} alt="Step 8"/><br/>
+					<img src={nine} alt="Step 9"/><br/>
+					<img src={ten} alt="Step 10"/><br/>
+					<img src={eleven} alt="Step 11"/><br/>
+					<img src={twelve} alt="Step 12"/><br/>
+					<img src={thirteen} alt="Step 13"/><br/>
+					<img src={fourteen} alt="Step 14"/>
+					</center>
+				</Modal.Body>
       			</Modal>
 				</div>
 		)
