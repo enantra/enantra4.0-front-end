@@ -21,7 +21,7 @@ const override = css`
   color: #000000;
 `;
 
-const LandingBackground = `
+/*const LandingBackground = `
 vec3 mod289(vec3 x)
 {
 	return x - floor(x * (1.0 / 289.0)) * 289.0;
@@ -259,11 +259,11 @@ void main(){
 		gl_FragColor.rgb = mix( gl_FragColor.rgb, fogColor, fogFactor );
 	#endif
 }`;
-
+*/
 
 class Landing extends Component {
 
-	loadScript(source,id,type){
+	/*loadScript(source,id,type){
 		var tag = document.createElement('script');
 		tag.async = true;
 	
@@ -278,13 +278,13 @@ class Landing extends Component {
 		}
 	
 		return tag;
-	}
+	}*/
 	componentDidMount()
 	{
 		this.props.renderEvent(true);
 
 
-		let body = document.getElementsByTagName('div')[0];
+		/*let body = document.getElementsByTagName('div')[0];
 
 		let background = this.loadScript("","custom-vertex","x-shader/x-vertex");
 		body.appendChild(background);
@@ -402,7 +402,7 @@ class Landing extends Component {
 			  
 			  scene.add( sky );
 		  
-			  /*var sunSphere = new THREE.Mesh(
+			  var sunSphere = new THREE.Mesh(
 				new THREE.SphereBufferGeometry( 20000, 16, 8 ),
 				new THREE.MeshBasicMaterial( { color: 0xffffff } )
 			  );
@@ -416,7 +416,7 @@ class Landing extends Component {
 			  sunSphere.position.y = 400000 * Math.sin( phi ) * Math.sin( theta );
 			  sunSphere.position.z = 400000 * Math.sin( phi ) * Math.cos( theta );
 			  
-			  sky.material.uniforms.sunPosition.value.copy( sunSphere.position );*/
+			  sky.material.uniforms.sunPosition.value.copy( sunSphere.position );
 			}
 		  
 			function resize(){
@@ -469,7 +469,7 @@ class Landing extends Component {
 			function lerp (start, end, amt){
 			  return (1 - amt) * start + amt * end
 			}
-		  }
+		  }*/
 		  
 		  const getRandomNumber = (min, max) => (Math.random() * (max - min) + min);
 		  
@@ -538,6 +538,15 @@ class Landing extends Component {
 	}
 
 	render(){
+		const buttonStyle = {
+			padding: "10px",
+			backgroundColor: "#cb0301",
+			border: "none",
+			outline: "none",
+			width: "200px",
+			color: "white",
+			borderRadius: "20px"
+		};
 		return (
 				<div className="stripes landingbody">
 					<link href="https://fonts.googleapis.com/css?family=Barlow:400,800" rel="stylesheet" />
@@ -566,14 +575,15 @@ class Landing extends Component {
 								</ul>
 							</div>
 							<p className="dates">20 &mdash; 23 Feb 2020 <br/> Anna University &middot; Chennai</p>
-							
 							<img className="logo_corner" src={toplogo} alt="Top Logo" />
 							<div>
 								<center>
 								{/*<Avatar/>*/}
 								<img className="content__title" src={enantralogo} alt="Logo" />
 								<p className="content__subtitle">4<sup>TH</sup> EDITION</p>
-								<p className="content__tagline">South India's biggest Entrepreneurship and Management fest</p>
+								<p className="content__tagline">South India's biggest Entrepreneurship and Management fest</p><br/>
+								<button className="content__tagline" style={buttonStyle}>How to register</button><br/><br/>
+								<p className="content__subtitle">To register, click on signup link in menu</p>
 								</center>
 							</div>
 						</div>
