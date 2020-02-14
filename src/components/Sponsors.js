@@ -6,6 +6,16 @@ import '../css/vendor/bootstrap.css';
 import '../css/vendor/base.min.css';
 import '../css/vendor/tab.min.css';
 import '../css/vendor/event.min.css';
+import stall from '../img/sponsors/stall.png';
+import sixdt from '../img/sponsors/6DT.png';
+import studio from '../img/sponsors/studio.png';
+import travel from '../img/sponsors/travel.png';
+import webhosting from '../img/sponsors/webhosting.png';
+import band from '../img/sponsors/band.png';
+import educonsultancy from '../img/sponsors/educonsultancy.png';
+import knowledgesharing from '../img/sponsors/knowledgesharing.png';
+import socialinitiative from '../img/sponsors/socialinitiative.jpg';
+import print from '../img/sponsors/print.png';
 
 const styles = {
     bounceIn: {
@@ -22,16 +32,109 @@ class Sponsors extends Component{
         return(
         <div class="sponsors-body">
             <div class="container">
-                <div class="heading-sponsors d-flex justify-content-center">
-                        <h1 class="heading-buffer">SPONSORS</h1>
-                </div> 
-                <div class="content-sponsors d-flex justify-content-center">
-                    <StyleRoot>
-                    <div  style={styles.bounceIn}>
-                        <h1 class="sponsors-buffer">STAY TUNED</h1>
+                <div class="centre-block">
+                    <h1 class="heading-sponsors heading-sponsors center-block text-center">SPONSORS</h1>
+                </div>
+                <div>
+                    <h2 class="fontchange-sponsor center-block text-center">Official Partner - 6DT</h2>
+                </div>
+                <br/>
+                <div class="row justify-content-center align-items-center text-center inner-data">
+                    <div class='col-8 col-md-3 col-sm-8'>
+                        <img src={sixdt} width="100%"/>
                     </div>
-                    </StyleRoot>
+                </div>
+                <br/><br/>
+                <div>
+                    <h2 class="fontchange-sponsor center-block text-center">Band Partner - Entretainment</h2>
+                </div>
+                <br/>
+                <div class="row justify-content-center align-items-center text-center inner-data">
+                    <div class='col-8 col-md-3 col-sm-8'>
+                        <img src={band} width="100%"/>
+                    </div>
+                </div>
+                <br/><br/>
+                <div>
+                    <h2 class="fontchange-sponsor center-block text-center">Web Hosting Partner</h2>
+                </div>
+                <br/>
+                <div class="row justify-content-center align-items-center text-center inner-data">
+                    <div class='col-8 col-md-3 col-sm-8'>
+                        <img src={webhosting} width="100%"/>
+                    </div>
+                </div>
+                <br/><br/>
+                <div>
+                    <h2 class="fontchange-sponsor center-block text-center">Print Partner</h2>
+                </div>
+                <br/>
+                <div class="row justify-content-center align-items-center text-center inner-data">
+                    <div class='col-8 col-md-3 col-sm-8'>
+                        <img src={print} width="100%"/>
+                    </div>
+                </div>
+                <br/><br/>
+                <div>
+                    <h2 class="fontchange-sponsor center-block text-center">Education Consultancy Partner</h2>
+                </div>
+                <br/>
+                <div class="row justify-content-center align-items-center text-center inner-data">
+                    <div class='col-8 col-md-3 col-sm-8'>
+                        <img src={educonsultancy} width="100%"/>
+                    </div>
+                </div>
+                <br/><br/>
+                <div>
+                    <h2 class="fontchange-sponsor center-block text-center">Knowledge Sharing Partner</h2>
+                </div>
+                <br/>
+                <div class="row justify-content-center align-items-center text-center inner-data">
+                    <div class='col-8 col-md-3 col-sm-8'>
+                        <img src={knowledgesharing} width="100%"/>
+                    </div>
+                </div>
+                <br/><br/>
+                <div>
+                    <h2 class="fontchange-sponsor center-block text-center">Social Initiative Partner</h2>
+                </div>
+                <br/>
+                <div class="row justify-content-center align-items-center text-center inner-data">
+                    <div class='col-8 col-md-3 col-sm-8'>
+                        <img src={socialinitiative} width="100%"/>
+                    </div>
+                </div>
+                <br/><br/>
+                <div>
+                    <h2 class="fontchange-sponsor center-block text-center">Stall Partner</h2>
+                </div>
+                <br/>
+                <div class="row justify-content-center align-items-center text-center inner-data">
+                    <div class='col-8 col-md-3 col-sm-8'>
+                        <img src={stall} width="100%"/>
+                    </div>
                 </div> 
+                <br/><br/>
+                <div>
+                    <h2 class="fontchange-sponsor center-block text-center">Music Studio Partner</h2>
+                </div>
+                <br/>
+                <div class="row justify-content-center align-items-center text-center inner-data">
+                    <div class='col-8 col-md-3 col-sm-8'>
+                        <img src={studio} width="100%"/>
+                    </div>
+                </div>
+                <br/><br/>
+                <div>
+                    <h2 class="fontchange-sponsor center-block text-center">Travel Partner</h2>
+                </div>
+                <br/>
+                <div class="row justify-content-center align-items-center text-center inner-data">
+                    <div class='col-8 col-md-3 col-sm-8'>
+                        <img src={travel} width="100%"/>
+                    </div>
+                </div>
+                <br/><br/>
             </div>       
         </div>
         )

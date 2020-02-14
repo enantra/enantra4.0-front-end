@@ -1,7 +1,12 @@
 @font-face {
     font-family: Poppins-SemiBold;
     src: local('Poppins-SemiBold'), url('../fonts/Poppins-SemiBold.ttf');
-  }
+}
+
+@font-face {
+	font-family: Poppins-Regular;
+	src: local('Poppins-Regular'), url('../fonts/Poppins-Regular.ttf');
+}  
 
 .sponsors-body{
     margin: 0;
@@ -9,8 +14,15 @@
     overflow: auto;
     font-family: 'Source Sans Pro', sans-serif;
     color: #ffffff;
-    background: rgb(32, 31, 31);
+    background: rgb(48, 48, 48);
     font-weight: 500;
+}
+
+.fontchange-sponsor{
+    font-family: Poppins-SemiBold;
+    font-weight: 100;
+    font-size: 2em;
+    color: #f5f377;
 }
 
 .sponsors-buffer{
@@ -23,10 +35,10 @@
 }
 
 .heading-sponsors{
-    max-width: 100%;
-    font-size: 6em;
-    text-align: center;
-    margin-top:35%;
+    margin: 100px auto 40px auto;
+    max-width: 110%;
+    font-family: Poppins-SemiBold;
+    font-size: 5vw;
 }
 
 .heading-sponsors img{
@@ -41,4 +53,16 @@
     font-weight: 700;
     font-family: 'Ubuntu', sans-serif;
     font-size: calc(2vw + 1vh + .5vmin)
+}
+
+@media screen and (min-width: 53em) {
+	body {
+		padding: 0;
+    }
+}
+
+@media screen and (max-width:768px){
+    .heading-sponsors{
+        font-size: 32px;
+    }
 }
