@@ -16,6 +16,9 @@ import educonsultancy from '../img/sponsors/educonsultancy.png';
 import knowledgesharing from '../img/sponsors/knowledgesharing.png';
 import socialinitiative from '../img/sponsors/socialinitiative.jpg';
 import print from '../img/sponsors/print.png';
+import tshirt from '../img/sponsors/tshirt.jpg';
+import sports from '../img/sponsors/decathlon.png';
+import ecosystem from '../img/sponsors/ecosystem.jpg';
 
 const styles = {
     bounceIn: {
@@ -132,6 +135,36 @@ class Sponsors extends Component{
                 <div class="row justify-content-center align-items-center text-center inner-data">
                     <div class='col-8 col-md-3 col-sm-8'>
                         <img src={travel} width="100%"/>
+                    </div>
+                </div>
+                <br/><br/>
+                <div>
+                    <h2 class="fontchange-sponsor center-block text-center">T-Shirt Partner</h2>
+                </div>
+                <br/>
+                <div class="row justify-content-center align-items-center text-center inner-data">
+                    <div class='col-8 col-md-3 col-sm-8'>
+                        <img src={tshirt} width="100%"/>
+                    </div>
+                </div>
+                <br/><br/>
+                <div>
+                    <h2 class="fontchange-sponsor center-block text-center">Sports Partner</h2>
+                </div>
+                <br/>
+                <div class="row justify-content-center align-items-center text-center inner-data">
+                    <div class='col-8 col-md-3 col-sm-8'>
+                        <img src={sports} width="100%"/>
+                    </div>
+                </div>
+                <br/><br/>
+                <div>
+                    <h2 class="fontchange-sponsor center-block text-center">Ecosystem Partner</h2>
+                </div>
+                <br/>
+                <div class="row justify-content-center align-items-center text-center inner-data">
+                    <div class='col-8 col-md-3 col-sm-8'>
+                        <img src={ecosystem} width="100%"/>
                     </div>
                 </div>
                 <br/><br/>
