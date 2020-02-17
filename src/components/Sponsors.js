@@ -19,6 +19,8 @@ import print from '../img/sponsors/print.png';
 import tshirt from '../img/sponsors/tshirt.jpg';
 import sports from '../img/sponsors/decathlon.png';
 import ecosystem from '../img/sponsors/ecosystem.jpg';
+import edii from '../img/sponsors/edii.jpg';
+import cedi from '../img/sponsors/cedi.png';
 
 const styles = {
     bounceIn: {
@@ -38,6 +40,26 @@ class Sponsors extends Component{
                 <div class="centre-block">
                     <h1 class="heading-sponsors heading-sponsors center-block text-center">SPONSORS</h1>
                 </div>
+                <div>
+                    <h2 class="fontchange-sponsor center-block text-center">Co-Sponsor</h2>
+                </div>
+                <br/>
+                <div class="row justify-content-center align-items-center text-center inner-data">
+                    <div class='col-8 col-md-3 col-sm-8'>
+                        <img src={edii} width="100%"/>
+                    </div>
+                </div>
+                <br/><br/>
+                <div>
+                    <h2 class="fontchange-sponsor center-block text-center">Incubation Sponsor</h2>
+                </div>
+                <br/>
+                <div class="row justify-content-center align-items-center text-center inner-data">
+                    <div class='col-8 col-md-3 col-sm-8'>
+                        <img src={cedi} width="100%"/>
+                    </div>
+                </div>
+                <br/><br/>
                 <div>
                     <h2 class="fontchange-sponsor center-block text-center">Official Partner - 6DT</h2>
                 </div>

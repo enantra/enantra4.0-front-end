@@ -1169,8 +1169,7 @@ class Workshops extends Component{
                                 </ul>
                             </p>
                         </p><br/>
-                    <Payment eventid="18521"/>
-                    <p class="workshop-fees">FEES - 500 INR per student - 60 in a batch</p>
+                    <p class="workshop-fees">REGISTRATIONS CLOSED</p>
 					</div>
 				</div>
                 <div class="content__item-workshops">
