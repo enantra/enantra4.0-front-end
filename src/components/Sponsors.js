@@ -87,7 +87,7 @@ class Sponsors extends Component{
                 </div>
                 <br/><br/>
                 <div>
-                    <h2 class="fontchange-sponsor center-block text-center">On-Day Media Partner</h2>
+                    <h2 class="fontchange-sponsor center-block text-center">On-Campus Media Partner</h2>
                 </div>
                 <br/>
                 <div class="row justify-content-center align-items-center text-center inner-data">
