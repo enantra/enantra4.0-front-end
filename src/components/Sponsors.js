@@ -24,6 +24,13 @@ import cedi from '../img/sponsors/cedi.png';
 import indianoil from '../img/sponsors/indianoil.jpg';
 import inox from '../img/sponsors/inox.png';
 import satvat from '../img/sponsors/satvat.jpg';
+import gt from '../img/sponsors/gt.jpg';
+import cegincubator from '../img/sponsors/cegincubator.jpg';
+import happymenus from '../img/sponsors/happymenus.jpg';
+import lassi from '../img/sponsors/lassi.jpg';
+import punpaadu from '../img/sponsors/punpaadu.jpg';
+import scossa from '../img/sponsors/scossa.jpg';
+import collegefever from '../img/sponsors/collegefever.png';
 
 const styles = {
     bounceIn: {
@@ -62,6 +69,12 @@ class Sponsors extends Component{
                         <img src={cedi} width="100%"/>
                     </div>
                 </div>
+                <br/>
+                <div class="row justify-content-center align-items-center text-center inner-data">
+                    <div class='col-8 col-md-3 col-sm-8'>
+                        <img src={cegincubator} width="100%"/>
+                    </div>
+                </div>
                 <br/><br/>
                 <div>
                     <h2 class="fontchange-sponsor center-block text-center">Official Partner - 6DT</h2>
@@ -70,6 +83,56 @@ class Sponsors extends Component{
                 <div class="row justify-content-center align-items-center text-center inner-data">
                     <div class='col-8 col-md-3 col-sm-8'>
                         <img src={sixdt} width="100%"/>
+                    </div>
+                </div>
+                <br/><br/>
+                <div>
+                    <h2 class="fontchange-sponsor center-block text-center">On-Day Media Partner</h2>
+                </div>
+                <br/>
+                <div class="row justify-content-center align-items-center text-center inner-data">
+                    <div class='col-8 col-md-3 col-sm-8'>
+                        <img src={gt} width="100%"/>
+                    </div>
+                </div>
+                <br/><br/>
+                <div>
+                    <h2 class="fontchange-sponsor center-block text-center">Catering Partner</h2>
+                </div>
+                <br/>
+                <div class="row justify-content-center align-items-center text-center inner-data">
+                    <div class='col-8 col-md-3 col-sm-8'>
+                        <img src={happymenus} width="100%"/>
+                    </div>
+                </div>
+                <br/><br/>
+                <div>
+                    <h2 class="fontchange-sponsor center-block text-center">Digital Media Partner</h2>
+                </div>
+                <br/>
+                <div class="row justify-content-center align-items-center text-center inner-data">
+                    <div class='col-8 col-md-3 col-sm-8'>
+                        <img src={punpaadu} width="100%"/>
+                    </div>
+                </div>
+                <br/><br/>
+                <div>
+                    <h2 class="fontchange-sponsor center-block text-center">Hospitality Partner</h2>
+                </div>
+                <br/>
+                <div class="row justify-content-center align-items-center text-center inner-data">
+                    <div class='col-8 col-md-3 col-sm-8'>
+                        <img src={scossa} width="100%"/>
+                    </div>
+                </div>
+                <br/><br/>
+                <div>
+                    <h2 class="fontchange-sponsor center-block text-center">Ticketing Partner</h2>
+                </div>
+                <br/>
+                <div class="row justify-content-center align-items-center text-center inner-data">
+                    <div class='col-8 col-md-3 col-sm-8'>
+                        <img src={collegefever} width="100%"/>
                     </div>
                 </div>
                 <br/><br/>
@@ -100,6 +163,16 @@ class Sponsors extends Component{
                 <div class="row justify-content-center align-items-center text-center inner-data">
                     <div class='col-8 col-md-3 col-sm-8'>
                         <img src={indianoil} width="100%"/>
+                    </div>
+                </div>
+                <br/><br/>
+                <div>
+                    <h2 class="fontchange-sponsor center-block text-center">Lassi Partner</h2>
+                </div>
+                <br/>
+                <div class="row justify-content-center align-items-center text-center inner-data">
+                    <div class='col-8 col-md-3 col-sm-8'>
+                        <img src={lassi} width="100%"/>
                     </div>
                 </div>
                 <br/><br/>
