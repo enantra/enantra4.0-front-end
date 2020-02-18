@@ -21,6 +21,8 @@ import sports from '../img/sponsors/decathlon.png';
 import ecosystem from '../img/sponsors/ecosystem.jpg';
 import edii from '../img/sponsors/edii.jpg';
 import cedi from '../img/sponsors/cedi.png';
+import indianoil from '../img/sponsors/indianoil.jpg';
+import inox from '../img/sponsors/inox.png';
 
 const styles = {
     bounceIn: {
@@ -67,6 +69,26 @@ class Sponsors extends Component{
                 <div class="row justify-content-center align-items-center text-center inner-data">
                     <div class='col-8 col-md-3 col-sm-8'>
                         <img src={sixdt} width="100%"/>
+                    </div>
+                </div>
+                <br/><br/>
+                <div>
+                    <h2 class="fontchange-sponsor center-block text-center">Energy Partner</h2>
+                </div>
+                <br/>
+                <div class="row justify-content-center align-items-center text-center inner-data">
+                    <div class='col-8 col-md-3 col-sm-8'>
+                        <img src={indianoil} width="100%"/>
+                    </div>
+                </div>
+                <br/><br/>
+                <div>
+                    <h2 class="fontchange-sponsor center-block text-center">Multiplex Partner</h2>
+                </div>
+                <br/>
+                <div class="row justify-content-center align-items-center text-center inner-data">
+                    <div class='col-8 col-md-3 col-sm-8'>
+                        <img src={inox} width="100%"/>
                     </div>
                 </div>
                 <br/><br/>
