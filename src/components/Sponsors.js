@@ -23,6 +23,7 @@ import edii from '../img/sponsors/edii.jpg';
 import cedi from '../img/sponsors/cedi.png';
 import indianoil from '../img/sponsors/indianoil.jpg';
 import inox from '../img/sponsors/inox.png';
+import satvat from '../img/sponsors/satvat.jpg';
 
 const styles = {
     bounceIn: {
@@ -73,6 +74,26 @@ class Sponsors extends Component{
                 </div>
                 <br/><br/>
                 <div>
+                    <h2 class="fontchange-sponsor center-block text-center">Band Partner - Entretainment</h2>
+                </div>
+                <br/>
+                <div class="row justify-content-center align-items-center text-center inner-data">
+                    <div class='col-8 col-md-3 col-sm-8'>
+                        <img src={band} width="100%"/>
+                    </div>
+                </div>
+                <br/><br/>
+                <div>
+                    <h2 class="fontchange-sponsor center-block text-center">Gift Sponsor - Startup Weekend</h2>
+                </div>
+                <br/>
+                <div class="row justify-content-center align-items-center text-center inner-data">
+                    <div class='col-8 col-md-3 col-sm-8'>
+                        <img src={satvat} width="100%"/>
+                    </div>
+                </div>
+                <br/><br/>
+                <div>
                     <h2 class="fontchange-sponsor center-block text-center">Energy Partner</h2>
                 </div>
                 <br/>
@@ -89,16 +110,6 @@ class Sponsors extends Component{
                 <div class="row justify-content-center align-items-center text-center inner-data">
                     <div class='col-8 col-md-3 col-sm-8'>
                         <img src={inox} width="100%"/>
-                    </div>
-                </div>
-                <br/><br/>
-                <div>
-                    <h2 class="fontchange-sponsor center-block text-center">Band Partner - Entretainment</h2>
-                </div>
-                <br/>
-                <div class="row justify-content-center align-items-center text-center inner-data">
-                    <div class='col-8 col-md-3 col-sm-8'>
-                        <img src={band} width="100%"/>
                     </div>
                 </div>
                 <br/><br/>
