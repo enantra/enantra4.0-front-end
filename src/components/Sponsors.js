@@ -31,6 +31,9 @@ import lassi from '../img/sponsors/lassi.jpg';
 import punpaadu from '../img/sponsors/punpaadu.jpg';
 import scossa from '../img/sponsors/scossa.jpg';
 import collegefever from '../img/sponsors/collegefever.png';
+import lifestyle from '../img/sponsors/lifestyle.png';
+import noodle from '../img/sponsors/noodletheory.jpg';
+import tea from '../img/sponsors/teavillacafe.jpg';
 
 const styles = {
     bounceIn: {
@@ -153,6 +156,36 @@ class Sponsors extends Component{
                 <div class="row justify-content-center align-items-center text-center inner-data">
                     <div class='col-8 col-md-3 col-sm-8'>
                         <img src={satvat} width="100%"/>
+                    </div>
+                </div>
+                <br/><br/>
+                <div>
+                    <h2 class="fontchange-sponsor center-block text-center">Gifting Partner</h2>
+                </div>
+                <br/>
+                <div class="row justify-content-center align-items-center text-center inner-data">
+                    <div class='col-8 col-md-3 col-sm-8'>
+                        <img src={lifestyle} width="100%"/>
+                    </div>
+                </div>
+                <br/><br/>
+                <div>
+                    <h2 class="fontchange-sponsor center-block text-center">Food and Beverage Partner</h2>
+                </div>
+                <br/>
+                <div class="row justify-content-center align-items-center text-center inner-data">
+                    <div class='col-8 col-md-3 col-sm-8'>
+                        <img src={tea} width="100%"/>
+                    </div>
+                </div>
+                <br/><br/>
+                <div>
+                    <h2 class="fontchange-sponsor center-block text-center">Food Street Partner</h2>
+                </div>
+                <br/>
+                <div class="row justify-content-center align-items-center text-center inner-data">
+                    <div class='col-8 col-md-3 col-sm-8'>
+                        <img src={noodle} width="100%"/>
                     </div>
                 </div>
                 <br/><br/>
